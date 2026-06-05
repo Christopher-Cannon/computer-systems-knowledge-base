@@ -1,7 +1,7 @@
 <template>
   <button @click="toggleTheme" class="toggle-btn">
-    <span v-if="isDarkMode">Dark</span>
-    <span v-else>light</span>
+    <img v-if="isDarkMode" src="/public/icons/sun-solid-full.svg" alt="">
+    <img v-else src="/public/icons/moon-solid-full.svg" alt="">
   </button>
 </template>
 
@@ -13,15 +13,6 @@ const { isDarkMode, toggleTheme } = useTheme();
 
 <style scoped>
 .toggle-btn {
-    background-color: var(--primary);
-    border: 0;
-    border-radius: 0.25rem;
-    color: white;
-    cursor: pointer;
-    padding: 0.25rem 1rem;
-}
-
-.toggle-btn:hover {
-    background-color: var(--primary-darker);
+    width: 50px;
 }
 </style>

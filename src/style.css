@@ -1,13 +1,26 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Inter";
+    font-display: auto;
+    font-weight: 400 700;
+    src: url(/public/fonts/InterVariable.ttf);
+}
+
+:root {
+    --page-width: 1440px;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+}
+
 :root {
     --bg-colour: #fffcfd;
     --text-colour: #262626;
     --primary: #840fe4;
     --primary-darker: #6e11b9;
     --grey: #eeeced;
-    --grey-border: #dedcdd;
-    --grey-border-hover: #bebcbd;
+    --grey-secondary: #dedcdd;
+    --grey-tertiary: #bebcbd;
 }
 
 [data-theme="dark"] {
@@ -16,8 +29,8 @@
     --primary: #840fe4;
     --primary-darker: #6e11b9;
     --grey: #353234;
-    --grey-border: #444143;
-    --grey-border-hover: #555254;
+    --grey-secondary: #444143;
+    --grey-tertiary: #555254;
 }
 
 * {
@@ -41,17 +54,69 @@ input,
 textarea,
 button {
     color: var(--text-colour);
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 1rem;
     transition: color 0.15s ease-in-out;
 }
 
-h1 {
-    font-size: 3rem;
+button {
+    border: 0;
+    cursor: pointer;
 }
 
-h2 {
+label {
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: bold;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.h1 {
     font-size: 2.4rem;
+}
+
+.h2 {
+    font-size: 2rem;
+}
+
+.h3 {
+    font-size: 1.6rem;
+}
+
+.h4 {
+    font-size: 1.4rem;
+}
+
+.h5 {
+    font-size: 1.2rem;
+}
+
+.h6 {
+    font-size: 1.1rem;
+}
+
+.section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 .link {
@@ -61,7 +126,7 @@ h2 {
 
 .card {
     background-color: var(--grey);
-    border: 1px solid var(--grey-border);
+    border: 1px solid var(--grey-secondary);
     border-radius: 0.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -70,5 +135,36 @@ h2 {
 }
 
 .card:hover {
-    border: 1px solid var(--grey-border-hover);
+    border: 1px solid var(--grey-tertiary);
+}
+
+@media screen and (min-width: 900px) {
+    .h1 {
+        font-size: 3.2rem;
+    }
+
+    .h2 {
+        font-size: 2.6rem;
+    }
+
+    .h3 {
+        font-size: 2.0rem;
+    }
+
+    .h4 {
+        font-size: 1.6rem;
+    }
+
+    .h5 {
+        font-size: 1.3rem;
+    }
+
+    .h6 {
+        font-size: 1.1rem;
+    }
+
+    .section {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
 }
