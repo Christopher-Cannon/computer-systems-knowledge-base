@@ -11,7 +11,7 @@
                 <dark-mode-toggle />
     
                 <button class="mobile-nav-btn">
-                    <img src="/public/icons/bars-solid-full.svg" alt="">
+                    <img :src="`/public/icons/${navBtnFilename}`" alt="">
                 </button>
             </div>
         </div>
@@ -38,6 +38,13 @@
 
 <script setup>
 import DarkModeToggle from "../DarkModeToggle.vue";
+import { useTheme } from '../../composables/useTheme';
+import { ref, computed, watch } from "vue";
+
+const { theme } = useTheme();
+const navBtnFilename = ref(theme.value === 'dark' ? 'bars-solid-full-white.svg' : 'bars-solid-full.svg');
+
+watch(theme, (newTheme) => navBtnFilename.value = newTheme === 'dark' ? 'bars-solid-full-white.svg' : 'bars-solid-full.svg');
 
 const navLinks = [
     { path: "/", label: "Hardware", sublinks: [

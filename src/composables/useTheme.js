@@ -1,37 +1,22 @@
-import { ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
+import { useStorage } from '@vueuse/core'
+
+const theme = useStorage('theme', () => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+});
 
 export function useTheme() {
-    const isDarkMode = ref(false);
-
     onMounted(() => {
-        const savedTheme = sanitiseTheme(localStorage.getItem('theme'));
-
-        if (savedTheme) {
-            isDarkMode.value = savedTheme === 'dark';
-        } else {
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            isDarkMode.value = prefersDark;
-            document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-        }
-        applyTheme(isDarkMode.value);
+        document.documentElement.setAttribute('data-theme', theme.value);
     });
 
     const toggleTheme = () => {
-        isDarkMode.value = !isDarkMode.value;
-        applyTheme(isDarkMode.value);
-        localStorage.setItem('theme', isDarkMode.value ? 'dark' : 'light')
+        theme.value = theme.value === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme.value);
     };
 
-    const sanitiseTheme = (theme) => {
-        return ['light', 'dark'].includes(theme) ? theme : 'light';
-    }
-
-    const applyTheme = (isDark) => {
-        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-    }
-
     return {
-        isDarkMode,
+        theme,
         toggleTheme,
     };
 }
