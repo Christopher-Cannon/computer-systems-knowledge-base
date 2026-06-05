@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+    --bg-colour: #fffcfd;
+    --text-colour: #262626;
+    --primary: #840fe4;
+    --primary-darker: #6e11b9;
+    --grey: #eeeced;
+    --grey-border: #dedcdd;
+    --grey-border-hover: #bebcbd;
+}
+
+[data-theme="dark"] {
+    --bg-colour: #262626;
+    --text-colour: #fffcfd;
+    --primary: #840fe4;
+    --primary-darker: #6e11b9;
+    --grey: #353234;
+    --grey-border: #444143;
+    --grey-border-hover: #555254;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--bg-colour);
+    margin: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+    transition: background-color 0.15s ease-in-out;
+}
+
+body,
+input,
+textarea,
+button {
+    color: var(--text-colour);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    transition: color 0.15s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+.link {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--grey);
+    border: 1px solid var(--grey-border);
+    border-radius: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    transition: border 0.15s ease-in-out;
+}
+
+.card:hover {
+    border: 1px solid var(--grey-border-hover);
+}
