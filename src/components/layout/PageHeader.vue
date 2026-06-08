@@ -8,9 +8,9 @@
             </h1>
 
             <div class="flex gap-[1rem]">
-                <dark-mode-toggle />
+                <dark-mode-toggle class="hide-desktop"/>
     
-                <button class="mobile-nav-btn" @click="toggleNav">
+                <button class="mobile-nav-btn hide-desktop" @click="toggleNav">
                     <img
                         :src="`/public/icons/bars-solid-full${suffix}.svg`"
                         alt="" 
@@ -28,7 +28,11 @@
 
         <nav id="navigation" class="hide-mobile">
             <ul class="nav-list">
-                <li v-for="(category, index) in navLinks" :key="index">
+                <li
+                    v-for="(category, index) in navLinks" 
+                    :key="index" 
+                    class="nav-list-item"
+                >
                     <span class="h4 category-heading hide-desktop">
                         {{ `${index + 1}` + '. ' }}
                     </span>
@@ -43,6 +47,9 @@
                             </router-link>
                         </li>
                     </ul>
+                </li>
+                <li class="mb-[-4px] ml-[1rem]">
+                    <dark-mode-toggle class="hide-mobile"/>
                 </li>
             </ul>
         </nav>
@@ -147,7 +154,7 @@ const navLinks = [
         width: 100%;
     }
 
-    .nav-list > li {
+    .nav-list-item {
         padding-bottom: 0.5rem;
         width: calc(50% - 0.5rem);
     }
@@ -181,14 +188,84 @@ const navLinks = [
     }
 
     @media (min-width: 900px) {
-        .nav-list > li {
+        .nav-list-item {
             width: calc(33% - 0.75rem);
         }
     }
 
     @media (min-width: 1440px) {
-        .nav-list > li {
-            width: calc(20% - 1rem);
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .top-bar {
+            display: block;
+        }
+
+        h1 {
+            line-height: 1.1;
+        }
+        
+        .nav-list {
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: nowrap;
+            position: static;
+        }
+
+        .nav-list-item {
+            border-radius: var(--radius-sm);
+            min-width: 185px;
+            position: relative;
+            padding: 0;
+        }
+        
+        .nav-list-item:hover {
+            background-color: var(--grey);
+        }
+        
+        .category-heading {
+            border: 1px solid var(--grey);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            display: block;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+        }
+        
+        .nav-list-item:hover > .category-heading {
+            border: 1px solid var(--grey-secondary);
+            border-bottom: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .dropdown {
+            background-color: var(--grey);
+            border: 1px solid var(--grey);
+            border-bottom-left-radius: var(--radius-sm);
+            border-bottom-right-radius: var(--radius-sm);
+            gap: 0;
+            display: none;
+            padding: 0.5rem;
+            position: absolute;
+            margin-top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .nav-list-item:hover > .dropdown {
+            border: 1px solid var(--grey-secondary);
+            border-top: 0;
+            display: block;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
         }
 
         .hide-desktop {
