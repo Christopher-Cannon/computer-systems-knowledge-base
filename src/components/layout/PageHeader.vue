@@ -10,17 +10,30 @@
             <div class="flex gap-[1rem]">
                 <dark-mode-toggle />
     
-                <button class="mobile-nav-btn">
-                    <img :src="`/public/icons/${navBtnFilename}`" alt="">
+                <button class="mobile-nav-btn" @click="toggleNav">
+                    <img
+                        :src="`/public/icons/bars-solid-full${suffix}.svg`"
+                        alt="" 
+                        id="open-btn"
+                    >
+                    <img
+                        :src="`/public/icons/xmark-solid-full${suffix}.svg`"
+                        alt="" 
+                        id="close-btn" 
+                        class="hide-mobile"
+                    >
                 </button>
             </div>
         </div>
 
-        <nav>
+        <nav id="navigation" class="hide-mobile">
             <ul class="nav-list">
                 <li v-for="(category, index) in navLinks" :key="index">
+                    <span class="h4 category-heading hide-desktop">
+                        {{ `${index + 1}` + '. ' }}
+                    </span>
                     <span class="h4 category-heading">
-                        {{ `${index + 1}` + '. ' + category.label }}
+                        {{ category.label }}
                     </span>
 
                     <ul class="dropdown">
@@ -39,12 +52,30 @@
 <script setup>
 import DarkModeToggle from "../DarkModeToggle.vue";
 import { useTheme } from '../../composables/useTheme';
-import { ref, computed, watch } from "vue";
+import { ref, watch } from "vue";
 
 const { theme } = useTheme();
-const navBtnFilename = ref(theme.value === 'dark' ? 'bars-solid-full-white.svg' : 'bars-solid-full.svg');
+const navIsVisible = ref(false);
+const suffix = ref(theme.value === 'dark' ? '-white' : '');
 
-watch(theme, (newTheme) => navBtnFilename.value = newTheme === 'dark' ? 'bars-solid-full-white.svg' : 'bars-solid-full.svg');
+const toggleNav = () => {
+    navIsVisible.value = !navIsVisible.value;
+
+    if (navIsVisible.value) {
+        document.querySelector("#navigation").classList.remove("hide-mobile");
+        document.querySelector("#open-btn").classList.add("hide-mobile");
+        document.querySelector("#close-btn").classList.remove("hide-mobile");
+    } else {
+        document.querySelector("#navigation").classList.add("hide-mobile");
+        document.querySelector("#open-btn").classList.remove("hide-mobile");
+        document.querySelector("#close-btn").classList.add("hide-mobile");
+    }
+};
+
+watch(
+    theme, 
+    (newTheme) => suffix.value = newTheme === 'dark' ? '-white' : ''
+);
 
 const navLinks = [
     { path: "/", label: "Hardware", sublinks: [
@@ -93,7 +124,14 @@ const navLinks = [
     }
 
     .mobile-nav-btn {
+        position: relative;
         width: 50px;
+    }
+
+    .mobile-nav-btn > img {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .nav-list {
@@ -136,6 +174,12 @@ const navLinks = [
         background-color: var(--grey-secondary);
     }
 
+    @media (max-width: 1439.97px) {
+        .hide-mobile {
+            display: none;
+        }
+    }
+
     @media (min-width: 900px) {
         .nav-list > li {
             width: calc(33% - 0.75rem);
@@ -145,6 +189,10 @@ const navLinks = [
     @media (min-width: 1440px) {
         .nav-list > li {
             width: calc(20% - 1rem);
+        }
+
+        .hide-desktop {
+            display: none;
         }
     }
 </style>
