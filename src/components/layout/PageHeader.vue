@@ -212,55 +212,39 @@ const navLinks = [
         .nav-list {
             justify-content: flex-end;
             align-items: center;
-            gap: 0.5rem;
+            gap: 2rem;
             flex-wrap: nowrap;
             position: static;
         }
 
         .nav-list-item {
-            border-radius: var(--radius-sm);
-            min-width: 185px;
+            min-width: min-content;
+            max-width: min-content;
             position: relative;
             padding: 0;
         }
         
-        .nav-list-item:hover {
-            background-color: var(--grey);
-        }
-        
         .category-heading {
-            border: 1px solid var(--grey);
-            border-radius: var(--radius-sm);
             cursor: pointer;
             display: block;
             font-size: 1.2rem;
             padding: 0.5rem;
         }
-        
-        .nav-list-item:hover > .category-heading {
-            border: 1px solid var(--grey-secondary);
-            border-bottom: 0;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
 
         .dropdown {
             background-color: var(--grey);
-            border: 1px solid var(--grey);
-            border-bottom-left-radius: var(--radius-sm);
-            border-bottom-right-radius: var(--radius-sm);
+            border: 1px solid var(--grey-secondary);
+            border-radius: var(--radius-sm);
             gap: 0;
             display: none;
             padding: 0.5rem;
             position: absolute;
             margin-top: 0;
-            left: 0;
-            right: 0;
+            left: -4.5rem;
+            right: -4.5rem;
         }
 
         .nav-list-item:hover > .dropdown {
-            border: 1px solid var(--grey-secondary);
-            border-top: 0;
             display: block;
         }
 
