@@ -19,6 +19,7 @@ import LogicSimple from "../pages/LogicSimple.vue";
 import LogicComplex from "../pages/LogicComplex.vue";
 import Glossary from "../pages/Glossary.vue";
 import ResourceLinks from "../pages/ResourceLinks.vue";
+import Test from "../pages/Test.vue";
 
 const routes = [
     { path: "/", name: "Home", component: Home },
@@ -42,6 +43,7 @@ const routes = [
     { path: "/complex-logic-gates", name: "Complex Logic Gates", component: LogicComplex },
     { path: "/glossary", name: "Glossary", component: Glossary },
     { path: "/links", name: "Links", component: ResourceLinks },
+    { path: "/test", name: "Test", component: Test },
 ];
 
 const router = createRouter({
