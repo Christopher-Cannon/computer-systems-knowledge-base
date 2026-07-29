@@ -42,7 +42,11 @@
 
                     <ul class="dropdown">
                         <li v-for="link in category.sublinks" :key="link.label">
-                            <router-link :to="link.path" class="nav-link">
+                            <router-link
+                                :to="link.path"
+                                @click="toggleNav"
+                                class="nav-link"
+                            >
                                 {{ link.label }}
                             </router-link>
                         </li>
