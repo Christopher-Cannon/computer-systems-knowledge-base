@@ -112,10 +112,18 @@ const navLinks = [
         { path: "/logic-simple-gates", label: "Simple Logic Gates"},
         { path: "/logic-complex-gates", label: "Complex Logic Gates"},
     ] },
+    { path: "/", label: "Resources", sublinks: [
+        { path: "/glossary", label: "Glossary"},
+        { path: "/links", label: "Links"},
+    ] },
 ];
 </script>
 
 <style>
+    .page-header {
+        border-bottom: 1px solid var(--grey-secondary);
+    }
+
     nav {
         position: relative;
         width: 100%;
@@ -212,7 +220,7 @@ const navLinks = [
         .nav-list {
             justify-content: flex-end;
             align-items: center;
-            gap: 2rem;
+            gap: 1rem;
             flex-wrap: nowrap;
             position: static;
         }
