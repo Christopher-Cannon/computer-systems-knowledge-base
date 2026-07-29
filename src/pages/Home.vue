@@ -85,7 +85,7 @@ const tableData = [
         />
 
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eum <Link href="/">here is a link</Link> ipsum cum quam suscipit porro voluptates quas, blanditiis quibusdam asperiores atque repudiandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eum <Link href="/test">here is a link</Link> ipsum cum quam suscipit porro voluptates quas, blanditiis quibusdam asperiores atque repudiandae?
         </p>
         
         <InfoBox label="Something to Think About">

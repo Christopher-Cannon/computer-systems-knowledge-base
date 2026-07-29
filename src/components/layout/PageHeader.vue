@@ -87,7 +87,7 @@ watch(
 const navLinks = [
     { path: "/", label: "Hardware", sublinks: [
         { path: "/hardware-overview", label: "Overview"},
-        { path: "/cpu", label: "CPU"},
+        { path: "/cpu-architecture", label: "CPU Architecture"},
         { path: "/memory", label: "Memory"},
         { path: "/storage", label: "Storage"},
     ] },
@@ -109,8 +109,8 @@ const navLinks = [
         { path: "/hex-subtraction", label: "Hex Subtraction"},
     ] },
     { path: "/", label: "Logic", sublinks: [
-        { path: "/logic-simple-gates", label: "Simple Logic Gates"},
-        { path: "/logic-complex-gates", label: "Complex Logic Gates"},
+        { path: "/simple-logic-gates", label: "Simple Logic Gates"},
+        { path: "/complex-logic-gates", label: "Complex Logic Gates"},
     ] },
     { path: "/", label: "Resources", sublinks: [
         { path: "/glossary", label: "Glossary"},
