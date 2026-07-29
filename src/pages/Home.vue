@@ -88,7 +88,7 @@ const tableData = [
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eum <Link href="/">here is a link</Link> ipsum cum quam suscipit porro voluptates quas, blanditiis quibusdam asperiores atque repudiandae?
         </p>
         
-        <InfoBox>
+        <InfoBox label="Something to Think About">
             <p class="!mt-0">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempore modi esse impedit nobis labore.
             </p>

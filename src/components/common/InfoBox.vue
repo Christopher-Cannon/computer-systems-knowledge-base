@@ -35,7 +35,7 @@
 import { computed } from 'vue';
 
 const props = defineProps({
-    text: {
+    label: {
         type: String,
         required: false,
     },
@@ -49,7 +49,12 @@ const props = defineProps({
     },
 });
 
-const defaultLabel = computed(() => props.warning ? "Caution" : props.danger ? "Danger" : "Info");
+const defaultLabel = computed(() => {
+    if (props.label) {
+        return props.label;
+    }
+    return props.warning ? "Caution" : props.danger ? "Danger" : "Info";
+});
 </script>
 
 <style scoped>
