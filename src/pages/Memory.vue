@@ -17,6 +17,44 @@ import MinorHeading from '../components/common/MinorHeading.vue';
             It comes in a variety of forms to meet the needs of the system.
         </p>
 
+        <MinorHeading>Random Access Memory</MinorHeading>
+
+        <p>
+            Volatile memory used to store data, instructions and memory addresses while programs run. Comes in two distinct forms.
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>Static RAM: </b>
+                Small but fast, used for CPU caches.
+            </li>
+            <li>
+                <b>Dynamic RAM: </b>
+                Much larger than SRAM, but a lot slower. Used for system memory and needs to be constantly refreshed to preserve state.
+            </li>
+        </ul>
+
+        <h4 class="h3">CPU Cache</h4>
+
+        <p>
+            For storing data that the CPU is actively working with. It's proximity means it is fast and is usually where the CPU looks first for what it needs, but is relatively small due to space constraints. There are usually several levels of cache available:
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>L1:</b>
+                Closest to the CPU cores with each core usually getting its own dedicated L1 cache. Very small (in the tens of KB) but the fastest to access.
+            </li>
+            <li>
+                <b>L2:</b>
+                Larger (hundreds of KB to several MB), but slower than L1 cache. May be shared between several CPU cores.
+            </li>
+            <li>
+                <b>L3:</b>
+                Much larger (tens or hundreds of MB) and slower than L2 cache, but is shared by all CPU cores and reduces need to access RAM.
+            </li>
+        </ul>
+
         <MinorHeading>Read-Only Memory</MinorHeading>
 
         <p>
