@@ -1,7 +1,52 @@
 <script setup>
 import MainHeading from '../components/common/MainHeading.vue';
 import MinorHeading from '../components/common/MinorHeading.vue';
+import Table from '../components/common/Table.vue';
 
+const ddrData = [
+    {
+        "Type": "SDRAM",
+        "Released": "1993",
+        "Bus Clock (MHz)": "100~166",
+        "Data Transfer Rate (MT/s)": "100~166",
+        "Voltage": "3.3V",
+    },
+    {
+        "Type": "DDR",
+        "Released": "2000",
+        "Bus Clock (MHz)": "133~200",
+        "Data Transfer Rate (MT/s)": "266~400",
+        "Voltage": "2.5V",
+    },
+    {
+        "Type": "DDR2",
+        "Released": "2003",
+        "Bus Clock (MHz)": "266~400",
+        "Data Transfer Rate (MT/s)": "533~800",
+        "Voltage": "1.8V",
+    },
+    {
+        "Type": "DDR3",
+        "Released": "2007",
+        "Bus Clock (MHz)": "533~800",
+        "Data Transfer Rate (MT/s)": "1066~1600",
+        "Voltage": "1.5V",
+    },
+    {
+        "Type": "DDR4",
+        "Released": "2014",
+        "Bus Clock (MHz)": "1066~1600",
+        "Data Transfer Rate (MT/s)": "2133~3200",
+        "Voltage": "1.2V",
+    },
+    {
+        "Type": "DDR5",
+        "Released": "2019",
+        "Bus Clock (MHz)": "1600~3200",
+        "Data Transfer Rate (MT/s)": "3200~6400",
+        "Voltage": "1.1V",
+    },
+];
 
 </script>
 
@@ -37,7 +82,7 @@ import MinorHeading from '../components/common/MinorHeading.vue';
         <h4 class="h3">CPU Cache</h4>
 
         <p>
-            For storing data that the CPU is actively working with. It's proximity means it is fast and is usually where the CPU looks first for what it needs, but is relatively small due to space constraints. There are usually several levels of cache available:
+            A type of SRAM used for storing data that the CPU is actively working with. It's proximity means it is fast and is usually where the CPU looks first for what it needs, but is relatively small due to space constraints. Modern CPUs made after ~2008 generally have three levels of cache available:
         </p>
 
         <ul class="list">
@@ -54,6 +99,18 @@ import MinorHeading from '../components/common/MinorHeading.vue';
                 Much larger (tens or hundreds of MB) and slower than L2 cache, but is shared by all CPU cores and reduces need to access RAM.
             </li>
         </ul>
+
+        <h4 class="h3">Main Memory</h4>
+
+        <p>
+            A type of DRAM used for temporary storage of bulk data that will be lost unless powered. Organised into pages of around 4KB in size that are allocated to processes by the operating system as required.
+        </p>
+
+        <p>
+            Double data rate (DDR) memory can transfer data on the rising and falling edge of the system clock.
+        </p>
+
+        <Table :data="ddrData"/>
 
         <MinorHeading>Read-Only Memory</MinorHeading>
 

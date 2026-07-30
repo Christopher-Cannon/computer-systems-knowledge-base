@@ -148,6 +148,7 @@ img {
     flex-direction: column;
     gap: 0.5rem;
     list-style: square;
+    margin: 2rem auto;
     padding-left: 1rem;
 }
 
