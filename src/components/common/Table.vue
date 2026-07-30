@@ -1,18 +1,20 @@
 <template>
-    <table>
-        <thead>
-            <tr>
-                <th v-for="heading in tableHeadings" :key="heading">
-                    {{ heading }}
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="(row, index) in props.data" :key="index">
-                <td v-for="value in row">{{ value }}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th v-for="heading in tableHeadings" :key="heading">
+                        {{ heading }}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(row, index) in props.data" :key="index">
+                    <td v-for="value in row">{{ value }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </template>
 
 <script setup>
@@ -29,6 +31,11 @@ const tableHeadings = computed(() => Object.keys(props.data[0]));
 </script>
 
 <style scoped>
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
 table {
     background-color: var(--bg-colour);
     border: 2px solid var(--primary);
@@ -43,7 +50,7 @@ table {
 th {
     background-color: var(--primary);
     color: var(--bg-colour);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 th,
