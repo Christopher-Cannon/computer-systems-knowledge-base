@@ -32,6 +32,10 @@ const props = defineProps({
     border-radius: var(--radius-md);
 }
 
+.image:hover {
+    opacity: 0.9;
+}
+
 @media (max-width: 799.97px) {
     .image {
         margin: 2rem auto;
