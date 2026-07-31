@@ -1,6 +1,7 @@
 <script setup>
 import MainHeading from '../components/common/MainHeading.vue';
 import MinorHeading from '../components/common/MinorHeading.vue';
+import PrevNextNav from '../components/common/PrevNextNav.vue';
 import SideImage from '../components/common/SideImage.vue';
 import Table from '../components/common/Table.vue';
 
@@ -49,10 +50,19 @@ const ddrData = [
     },
 ];
 
+const prevNextNavData = {
+    "prevHref": "/cpu-architecture",
+    "prevLabel": "CPU Architecture",
+    "nextHref": "/storage",
+    "nextLabel": "Storage",
+};
+
 </script>
 
 <template>
     <section class="section wrapper">
+        <PrevNextNav :data="prevNextNavData" />
+        
         <MainHeading>Memory</MainHeading>
 
         <p>
@@ -201,6 +211,8 @@ const ddrData = [
         <p>
             Often used for BIOS settings, microcontroller firmware and smart cards. Flash memory, used in <abbr title="Universal Serial Bus">USB</abbr> flash drives, <abbr title="Secure Digital">SD</abbr> cards and SSDs, are also a type of EEPROM.
         </p>
+
+        <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
 

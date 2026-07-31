@@ -16,6 +16,7 @@
 :root {
     --bg-colour: #fffcfd;
     --text-colour: #262626;
+    --text-grey: #6e6e6e;
     --primary: #840fe4;
     --primary-darker: #6e11b9;
     --info: #402cf0;
@@ -29,6 +30,7 @@
 [data-theme="dark"] {
     --bg-colour: #262626;
     --text-colour: #fffcfd;
+    --text-grey: #b6b0b2;
     --primary: #840fe4;
     --primary-darker: #6e11b9;
     --info: #402cf0;
@@ -44,6 +46,7 @@
 }
 
 html {
+    background-color: var(--bg-colour);
     font-size: 20px;
 }
 
