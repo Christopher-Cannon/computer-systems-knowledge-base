@@ -1,6 +1,7 @@
 <script setup>
 import MainHeading from '../components/common/MainHeading.vue';
 import MinorHeading from '../components/common/MinorHeading.vue';
+import SideImage from '../components/common/SideImage.vue';
 import Table from '../components/common/Table.vue';
 
 const ddrData = [
@@ -112,6 +113,50 @@ const ddrData = [
 
         <Table :data="ddrData"/>
 
+        <p>
+            Main memory contains two primary areas for storing data: the stack and the heap.
+        </p>
+
+        <h5 class="h4">The Stack</h5>
+
+        <p>
+            A region of memory used for short-lived and automatically managed data like function parameters, local variables and return addresses that specify where to go after executing a function. Follows a last in, first out structure, much like a stack of plates.
+        </p>
+
+        <p>
+            The stack grows from the highest memory address down.
+        </p>
+
+        <h5 class="h4">The Heap</h5>
+
+        <p>
+            A region of memory used for dynamic allocation of objects and data structures and isn't as ordered as the stack, meaning it tends to be slower. There is a risk of memory leaks if the programmer or garbage collector does not free memory correctly.
+        </p>
+
+        <p>
+            The heap grows from the lowest memory address up.
+        </p>
+
+        <h4 class="h3">Virtual Memory</h4>
+
+        <p>
+            An area on a storage device, such as a HDD or SSD, that can be used to store rarely used pages of memory if free RAM space runs out. This prevents the system from crashing, though fetching data from virtual memory is slower than RAM. Often referred to as the page file (Windows) or swap space (GNU/Linux).
+        </p>
+
+        <p>
+            Thrashing can occur if the system spends more time swapping between RAM and disk than executing processes. This is made worse by fragmented file systems, slow hard drives or simply a lack of RAM.
+        </p>
+
+        <h4 class="h3">Direct Memory Access</h4>
+
+        <p>
+            Allows hardware devices, such as disk controllers, sound cards and network adapters, to read or write to memory directly without needing the CPU's assistance.
+        </p>
+
+        <p>
+            This speeds up data transfers and allows the CPU to concentrate on other tasks without constantly being interrupted.2
+        </p>
+
         <MinorHeading>Read-Only Memory</MinorHeading>
 
         <p>
@@ -134,14 +179,18 @@ const ddrData = [
 
         <h4 class="h3">Erasable PROM</h4>
 
-        <p>
-            Can be erased using ultraviolet light and reprogrammed many times using special tools.
-        </p>
-
-        <p>
-            Their increased versatility meant they saw use as BIOS chips in early PCs.
-        </p>
-
+        <SideImage
+            src="/public/images/forest.avif"
+            alt="A dense forest."
+        >
+            <p>
+                Can be erased using ultraviolet light and reprogrammed many times using special tools.
+            </p>
+    
+            <p>
+                Their increased versatility meant they saw use as BIOS chips in early PCs.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Electrically Erasable ROM</h4>
 

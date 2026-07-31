@@ -7,6 +7,6 @@
 <style scoped>
 .main-heading {
     border-bottom: 3px solid var(--primary);
-    margin-bottom: 1.5rem;
+    margin: 0 0 1.5rem;
 }
 </style>
