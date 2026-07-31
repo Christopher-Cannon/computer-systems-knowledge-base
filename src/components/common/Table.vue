@@ -42,7 +42,7 @@ table {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: var(--radius-md);
-    margin: 2rem 0;
+    margin: 1rem 0;
     overflow: hidden;
     width: 100%;
 }
