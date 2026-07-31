@@ -199,7 +199,7 @@ const ddrData = [
         </p>
 
         <p>
-            Often used for BIOS settings, microcontroller firmware and smart cards. Flash memory, used in <abbr title="Universal Serial Bus">USB</abbr> flash drives, SD cards and SSDs, are also a type of EEPROM.
+            Often used for BIOS settings, microcontroller firmware and smart cards. Flash memory, used in <abbr title="Universal Serial Bus">USB</abbr> flash drives, <abbr title="Secure Digital">SD</abbr> cards and SSDs, are also a type of EEPROM.
         </p>
     </section>
 </template>
