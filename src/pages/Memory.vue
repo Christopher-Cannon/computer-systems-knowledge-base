@@ -62,7 +62,7 @@ const prevNextNavData = {
 <template>
     <section class="section wrapper">
         <PrevNextNav :data="prevNextNavData" />
-        
+
         <MainHeading>Memory</MainHeading>
 
         <p>
@@ -90,7 +90,7 @@ const prevNextNavData = {
             </li>
         </ul>
 
-        <h4 class="h3">CPU Cache</h4>
+        <h4 class="h3" id="cpu-cache">CPU Cache</h4>
 
         <p>
             A type of SRAM used for storing data that the CPU is actively working with. It's proximity means it is fast and is usually where the CPU looks first for what it needs, but is relatively small due to space constraints. Modern CPUs made after ~2008 generally have three levels of cache available:
