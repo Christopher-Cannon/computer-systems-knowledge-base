@@ -72,11 +72,11 @@ const ddrData = [
         <ul class="list">
             <li>
                 <b>Static RAM: </b>
-                Small but fast, used for CPU caches.
+                SRAM is small but fast, used for <abbr title="Central Processing Unit">CPU</abbr> caches.
             </li>
             <li>
                 <b>Dynamic RAM: </b>
-                Much larger than SRAM, but a lot slower. Used for system memory and needs to be constantly refreshed to preserve state.
+                DRAM is much larger than SRAM, but a lot slower. Used for system memory and needs to be constantly refreshed to preserve state.
             </li>
         </ul>
 
@@ -89,11 +89,11 @@ const ddrData = [
         <ul class="list">
             <li>
                 <b>L1:</b>
-                Closest to the CPU cores with each core usually getting its own dedicated L1 cache. Very small (in the tens of KB) but the fastest to access.
+                Closest to the CPU cores with each core usually getting its own dedicated L1 cache. Very small (in the tens of <abbr title="KiloBytes">KB</abbr>) but the fastest to access.
             </li>
             <li>
                 <b>L2:</b>
-                Larger (hundreds of KB to several MB), but slower than L1 cache. May be shared between several CPU cores.
+                Larger (hundreds of KB to several <abbr title="MegaBytes">MB</abbr>), but slower than L1 cache. May be shared between several CPU cores.
             </li>
             <li>
                 <b>L3:</b>
@@ -140,7 +140,7 @@ const ddrData = [
         <h4 class="h3">Virtual Memory</h4>
 
         <p>
-            An area on a storage device, such as a HDD or SSD, that can be used to store rarely used pages of memory if free RAM space runs out. This prevents the system from crashing, though fetching data from virtual memory is slower than RAM. Often referred to as the page file (Windows) or swap space (GNU/Linux).
+            An area on a storage device, such as a <abbr title="Hard Disk Drive">HDD</abbr> or <abbr title="Solid State Drive">SSD</abbr>, that can be used to store rarely used pages of memory if free RAM space runs out. This prevents the system from crashing, though fetching data from virtual memory is slower than RAM. Often referred to as the page file (Windows) or swap space (GNU/Linux).
         </p>
 
         <p>
@@ -154,7 +154,7 @@ const ddrData = [
         </p>
 
         <p>
-            This speeds up data transfers and allows the CPU to concentrate on other tasks without constantly being interrupted.2
+            This speeds up data transfers and allows the CPU to concentrate on other tasks without constantly being interrupted.
         </p>
 
         <MinorHeading>Read-Only Memory</MinorHeading>
@@ -188,7 +188,7 @@ const ddrData = [
             </p>
     
             <p>
-                Their increased versatility meant they saw use as BIOS chips in early PCs.
+                Their increased versatility meant they saw use as <abbr title="Basic Input Output System">BIOS</abbr> chips in early PCs.
             </p>
         </SideImage>
 
@@ -199,7 +199,7 @@ const ddrData = [
         </p>
 
         <p>
-            Often used for BIOS settings, microcontroller firmware and smart cards. Flash memory, used in USB flash drives, SD cards and SSDs, are also a type of EEPROM.
+            Often used for BIOS settings, microcontroller firmware and smart cards. Flash memory, used in <abbr title="Universal Serial Bus">USB</abbr> flash drives, SD cards and SSDs, are also a type of EEPROM.
         </p>
     </section>
 </template>
