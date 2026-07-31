@@ -145,7 +145,7 @@ const prevNextNavData = {
         <h5 class="h4">Data Bus</h5>
 
         <p>
-            Carries data between the CPU and main memory in either direction for reading from or writing to the locaiton specified by the address bus.
+            Carries data between the CPU and main memory in either direction for reading from or writing to the location specified by the address bus.
         </p>
 
         <h5 class="h4" id="control-bus">Control Bus</h5>
@@ -189,7 +189,7 @@ const prevNextNavData = {
         <MinorHeading>Architecture</MinorHeading>
 
         <p>
-            Single VS multi-core CPUs, notable architectures (8086, Pentium, Intel Core, Ryzen, RISC-V, Snapdragon, Apple M)
+            Single VS multi-core CPUs, notable architectures (x86-64, Intel Core, Ryzen, RISC-V, Snapdragon, Apple M)
         </p>
 
         <PrevNextNav :data="prevNextNavData" />
