@@ -202,7 +202,7 @@ const prevNextNavData = {
             </p>
         </SideImage>
 
-        <h4 class="h3">Electrically Erasable ROM</h4>
+        <h4 class="h3" id="eeprom">Electrically Erasable ROM</h4>
 
         <p>
             Can be erased without the need for UV light. Despite being slower than main memory (RAM), it eventually took the place of EPROM due to it being more convenient.
