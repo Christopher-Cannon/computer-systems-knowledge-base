@@ -184,7 +184,12 @@ const prevNextNavData = {
 
         <MinorHeading>Layer Interaction</MinorHeading>
 
-        <ol class="list">
+        <p>
+            A typical file operation might result in the following actions taken
+            by each OS layer:
+        </p>
+
+        <ol class="list numbered">
             <li><b>User interface:</b> User opens a file.</li>
             <li>
                 <b>File management:</b>

@@ -156,6 +156,10 @@ img {
     padding-left: 2rem;
 }
 
+.list.numbered {
+    list-style: decimal;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
