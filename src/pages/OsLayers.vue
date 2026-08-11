@@ -85,6 +85,32 @@ const prevNextNavData = {
 
         <p>
             Handles allocation and tracking of memory addresses in main memory.
+            Determines how processes are allocated and arranged in memory and
+            manages swapping data between main memory and virtual memory.
+        </p>
+
+        <h4 class="h3">Partitioning</h4>
+
+        <p>
+            A type of contiguous memory allocation where processes are assigned
+            a single block of memory, keeping all associated data and
+            instructions close together. Can lead to poor utilisation of memory
+            since free space in a partition cannot be used by other processes.
+        </p>
+
+        <h4 class="h3">Segmentation</h4>
+
+        <p>
+            A type of non-contiguous allocated memory where processes are
+            divided into small chunks, representing variables, functions,
+            arrays, etc, and placed wherever there is space in memory, so data
+            for one process will tend not to be next to each other.
+        </p>
+
+        <p>
+            Memory allocation methods like this are preferred in modern
+            operating systems since, while more complex than partitioning, it
+            allows memory space to be utilised more effectively.
         </p>
 
         <MinorHeading>Input / Output</MinorHeading>
