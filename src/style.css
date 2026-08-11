@@ -160,19 +160,6 @@ img {
     list-style: decimal;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 2rem auto;
-}
-
-@media (min-width: 600px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media (min-width: 900px) {
     .h1 {
         font-size: 3.4rem;
@@ -196,9 +183,5 @@ img {
 
     .h6 {
         font-size: 1.1rem;
-    }
-
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }

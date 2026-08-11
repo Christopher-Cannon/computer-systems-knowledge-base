@@ -6,14 +6,14 @@
     I don't know how good this looks, so maybe stick to even numbered data
     sets instead.
     -->
-    <div class="grid" :class="props.data.length % 2 === 1 ? 'balanced' : ''">
+    <div class="grid">
         <a
             v-for="(image, index) in props.data"
             :key="index"
             :href="image.src"
             class="gallery-image-link"
         >
-            <img :src="image.src" :alt="image.alt" class="gallery-image">
+            <img :src="image.src" :alt="image.alt" class="gallery-image" />
         </a>
     </div>
 </template>
@@ -28,11 +28,30 @@ const props = defineProps({
 </script>
 
 <style scoped>
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 3rem auto;
+}
+
 .gallery-image {
     border-radius: var(--radius-md);
 }
 
 .gallery-image:hover {
     opacity: 0.9;
+}
+
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 </style>

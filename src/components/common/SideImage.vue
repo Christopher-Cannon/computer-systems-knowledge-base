@@ -5,7 +5,7 @@
         </div>
 
         <a :href="props.src" class="image-box">
-            <img :src="props.src" :alt="props.alt" class="image">
+            <img :src="props.src" :alt="props.alt" class="image" />
         </a>
     </div>
 </template>
@@ -38,7 +38,7 @@ const props = defineProps({
 
 @media (max-width: 799.97px) {
     .image {
-        margin: 2rem auto;
+        margin: 3rem auto;
     }
 }
 

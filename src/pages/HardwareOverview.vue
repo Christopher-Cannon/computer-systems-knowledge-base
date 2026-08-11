@@ -1,4 +1,5 @@
 <script setup>
+import ImageGallery from "../components/common/ImageGallery.vue";
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
@@ -11,6 +12,25 @@ const prevNextNavData = {
     nextHref: "/cpu",
     nextLabel: "CPU Architecture",
 };
+
+const deviceData = [
+    {
+        src: "/public/images/hardware overview/desktop.avif",
+        alt: "A desktop computer.",
+    },
+    {
+        src: "/public/images/hardware overview/laptop.avif",
+        alt: "An HP laptop computer.",
+    },
+    {
+        src: "/public/images/hardware overview/tablets.avif",
+        alt: "Several Samsung tablet computers.",
+    },
+    {
+        src: "/public/images/hardware overview/smartphones.avif",
+        alt: "Several generic smartphones.",
+    },
+];
 </script>
 
 <template>
@@ -49,6 +69,8 @@ const prevNextNavData = {
             </li>
         </ul>
 
+        <ImageGallery :data="deviceData" />
+
         <MinorHeading>Internal Components</MinorHeading>
 
         <p>
@@ -58,91 +80,142 @@ const prevNextNavData = {
 
         <h4 class="h3">CPU</h4>
 
-        <p>
-            The brain of the computer that processes instructions and makes
-            things happen. Modern CPUs usually come with multiple cores and some
-            form of frequency boosting and/or hyperthreading technology to
-            better handle demanding computation and multi-tasking.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/ryzen cpu.avif"
+            alt="Generic AMD Ryzen CPU."
+        >
+            <p>
+                The brain of the computer that processes instructions and makes
+                things happen. Modern CPUs usually come with multiple cores and
+                some form of frequency boosting and/or hyperthreading technology
+                to better handle demanding computation and multi-tasking.
+            </p>
+
+            <a href="/cpu" class="link">Read more...</a>
+        </SideImage>
 
         <h4 class="h3">GPU</h4>
 
-        <p>
-            Handles the rendering of images, video and 3D graphics. Dedicated
-            graphics cards are required for serious tasks, such as gaming, video
-            editing or 3D modelling. Many CPUs come with integrated graphics
-            chips that are enough for general use.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/gpu2.avif"
+            alt="Generic graphics card."
+        >
+            <p>
+                Handles the rendering of images, video and 3D graphics.
+                Dedicated graphics cards are required for serious tasks, such as
+                gaming, video editing or 3D modelling. Many CPUs come with
+                integrated graphics chips that are enough for general use.
+            </p>
+        </SideImage>
 
         <h4 class="h3">RAM</h4>
 
-        <p>
-            Temporary working storage space for actively running programs.
-            Modern computers usually have 8-16GB DDR4 or DDR5 RAM as a minimum,
-            going up to 32GB or more for high-end systems. Faster RAM speeds
-            (measured in MHz) can improve data transfer rates.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/ram.avif"
+            alt="Two RAM sticks."
+        >
+            <p>
+                Temporary working storage space for actively running programs.
+                Modern computers usually have 8-16GB DDR4 or DDR5 RAM as a
+                minimum, going up to 32GB or more for high-end systems. Faster
+                RAM speeds (measured in MHz) can improve data transfer rates.
+            </p>
+
+            <a href="/memory" class="link">Read more...</a>
+        </SideImage>
 
         <h4 class="h3">Motherboard</h4>
 
-        <p>
-            The main circuit board that connects all components together.
-            Possesses a CPU socket, RAM slots, expansion slots (PCI, PCIe),
-            power connectors and rear
-            <abbr title="Input / Output">I/O</abbr> ports. Can come in various
-            form factors to fit different case sizes (<abbr
-                title="Advanced Technology eXtended"
-                >ATX</abbr
-            >, micro-ATX,
-            <abbr title="mini-Information Technology eXtended">mini-ITX</abbr>).
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/motherboard.avif"
+            alt="An Intel motherboard."
+        >
+            <p>
+                The main circuit board that connects all components together.
+                Possesses a CPU socket, RAM slots, expansion slots (PCI, PCIe),
+                power connectors and rear
+                <abbr title="Input / Output">I/O</abbr> ports. Can come in
+                various form factors to fit different case sizes (<abbr
+                    title="Advanced Technology eXtended"
+                    >ATX</abbr
+                >, micro-ATX,
+                <abbr title="mini-Information Technology eXtended"
+                    >mini-ITX</abbr
+                >).
+            </p>
+        </SideImage>
 
         <h4 class="h3">Storage</h4>
 
-        <p>
-            Long-term data storage mediums include hard disk drives (HDDs) and
-            solid state drives (SSDs). SSDs are now the standard for operating
-            system installation and general usage, coming in
-            <abbr title="Serial Advanced Technology Attachment">SATA</abbr>,
-            mSATA and NVMe variants.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/storage mediums.avif"
+            alt="Storage mediums in a row, including a hard drive and various SSDs."
+        >
+            <p>
+                Long-term data storage mediums include hard disk drives (HDDs)
+                and solid state drives (SSDs). SSDs are now the standard for
+                operating system installation and general usage, coming in
+                <abbr title="Serial Advanced Technology Attachment">SATA</abbr>,
+                mSATA and NVMe variants.
+            </p>
 
-        <p>
-            HDDs are generally cheaper at larger sizes (1TB and up) and find
-            common use for bulk storage and archival purposes. They are much
-            slower than SSDs, are fragile due to their mechanical design and may
-            require defragmentation with frequent use to keep them performant.
-        </p>
+            <p>
+                HDDs are generally cheaper at larger sizes (1TB and up) and find
+                common use for bulk storage and archival purposes. They are much
+                slower than SSDs, are fragile due to their mechanical design and
+                may require defragmentation with frequent use to keep them
+                performant.
+            </p>
+
+            <a href="/storage" class="link">Read more...</a>
+        </SideImage>
 
         <h4 class="h3">Power Supply</h4>
 
-        <p>
-            Converts wall electricity into usable power for components. Come in
-            different wattage tiers (e.g. 400w, 600w, 750w). Higher tiers are
-            required for more demanding components. Usually given a rating to
-            denote energy efficiency, such as 80 plus bronze/gold/platinum, with
-            higher rated PSUs being more efficient and producing less heat.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/psu.avif"
+            alt="A semi-modular power supply unit."
+        >
+            <p>
+                Converts wall electricity into usable power for components. Come
+                in different wattage tiers (e.g. 400w, 600w, 750w). Higher tiers
+                are required for more demanding components. Usually given a
+                rating to denote energy efficiency, such as 80 plus
+                bronze/gold/platinum, with higher rated PSUs being more
+                efficient and producing less heat.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Cooling</h4>
 
-        <p>
-            CPUs and GPUs generate heat under load, so appropriate cooling is
-            essential to prevent failure. Heatsinks with fans are common and can
-            vary in size, while water cooling solutions may be found in high-end
-            systems. Thermal compound is required to properly transfer heat from
-            the chip to the cooler. Cases may also have fans to help air move
-            through the system.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/heatsink.avif"
+            alt="A large heatsink with two fans."
+        >
+            <p>
+                CPUs and GPUs generate heat under load, so appropriate cooling
+                is essential to prevent failure. Heatsinks with fans are common
+                and can vary in size, while water cooling solutions may be found
+                in high-end systems. Thermal compound is required to properly
+                transfer heat from the chip to the cooler. Cases may also have
+                fans to help air move through the system.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Case</h4>
 
-        <p>
-            Houses internal system components in a hard shell for protection and
-            ease of movement. They come in different sizes and shapes depending
-            on one's needs. Enthusiasts may prefer aesthetically pleasing cases
-            with lighting options and the ability to show off the internals.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/case1.avif"
+            alt="A standard desktop computer case."
+        >
+            <p>
+                Houses internal system components in a hard shell for protection
+                and ease of movement. They come in different sizes and shapes
+                depending on one's needs. Enthusiasts may prefer aesthetically
+                pleasing cases with lighting options and the ability to show off
+                the internals.
+            </p>
+        </SideImage>
 
         <MinorHeading>Peripherals</MinorHeading>
 
@@ -154,43 +227,91 @@ const prevNextNavData = {
 
         <h4 class="h3">Monitors</h4>
 
-        <p>
-            Displays visual output from a computer system and come in different
-            sizes and aspect ratios (16:9, 21:9, 4:3, 8:5). Modern computers
-            support multiple monitor setups, popular with professionals and
-            enthusiasts. High refresh rate monitors are popular with gamers.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/ultrawide monitor.avif"
+            alt="An ultrawide monitor on a desk."
+        >
+            <p>
+                Displays visual output from a computer system and come in
+                different sizes and aspect ratios (16:9, 21:9, 4:3, 8:5). Modern
+                computers support multiple monitor setups, popular with
+                professionals and enthusiasts. High refresh rate monitors are
+                popular with gamers.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Speakers</h4>
 
-        <p>
-            Provide a way to hear sound generated by the system and may connect
-            to internal or external sound cards for better quality.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/speakers.avif"
+            alt="A pair of computer speakers."
+        >
+            <p>
+                Provide a way to hear sound generated by the system and may
+                connect to internal or external sound cards for better quality.
+                Without these, headphones must be used instead.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Printers</h4>
 
-        <p>
-            Allows for the reproduction of digital visuals, such as documents
-            and images, on paper using ink or toner. Printing in colour is
-            usually more expensive since it uses more ink.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/printer.avif"
+            alt="An inkjet printer."
+        >
+            <p>
+                Allows for the reproduction of digital visuals, such as
+                documents and images, on paper using ink or toner. Printing in
+                colour is usually more expensive since it uses more ink.
+            </p>
+
+            <p>
+                Some find it easier to read, analyse and annotate research notes
+                and/or material on paper. Another merit to physical backups of
+                digital resources are that they can be accessed away from a
+                computer.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Mice</h4>
 
-        <p>
-            Allows one to interact with visual elements and controls of
-            graphical user interfaces using an array of buttons plus at least
-            one scroll wheel.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/mouse.avif"
+            alt="A generic computer mouse."
+        >
+            <p>
+                Allows one to interact with visual elements and controls of
+                graphical user interfaces using an array of buttons plus at
+                least one scroll wheel.
+            </p>
+
+            <p>
+                Higher quality mice may be wireless with a rechargeable battery,
+                allow for button remapping or even include sets of weights to
+                alter the feel of the device.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Keyboards</h4>
 
-        <p>
-            Allows one to interact with a computer system with an array of keys
-            representing letters, numbers, symbols and control characters. They
-            vary widely in size, format and the types of key switches used.
-        </p>
+        <SideImage
+            src="/public/images/hardware overview/keyboard.avif"
+            alt="A full-size computer keyboard."
+        >
+            <p>
+                Allows one to interact with a computer system with an array of
+                keys representing letters, numbers, symbols and control
+                characters. They vary widely in size, layout and the types of
+                key switches used.
+            </p>
+
+            <p>
+                Premium boards often feature long-lasting mechanical switches
+                that offer a more precise feel than traditional rubber dome
+                keys, though your mileage may vary. Other sought after switches
+                include topre and buckling springs.
+            </p>
+        </SideImage>
 
         <MinorHeading>Trends</MinorHeading>
 
@@ -202,10 +323,13 @@ const prevNextNavData = {
                 speeds before dual and quad-core appeared later in the decade.
             </li>
             <li>RAM space increased from megabytes to gigabytes in size.</li>
-            <li>HDDs grew from tens to hundreds of gigabytes.</li>
+            <li>Hard drives grew from tens to hundreds of gigabytes.</li>
             <li>
-                AGP phased out in favour of PCI Express, allowing for greater
-                graphics processing throughput.
+                <abbr title="Accelerated Graphics Port">AGP</abbr> phased out in
+                favour of
+                <abbr title="Peripheral Component Interconnect Express"
+                    >PCI Express</abbr
+                >, allowing for greater graphics processing bandwidth.
             </li>
             <li>
                 LCD monitors become standard over CRTs due to their less bulky
