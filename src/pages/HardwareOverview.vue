@@ -9,7 +9,7 @@ import Table from "../components/common/Table.vue";
 const prevNextNavData = {
     prevHref: "/",
     prevLabel: "Home",
-    nextHref: "/cpu",
+    nextHref: "/cpu-architecture",
     nextLabel: "CPU Architecture",
 };
 
@@ -91,7 +91,7 @@ const deviceData = [
                 to better handle demanding computation and multi-tasking.
             </p>
 
-            <a href="/cpu" class="link">Read more...</a>
+            <a href="/cpu-architecture" class="link">Read more...</a>
         </SideImage>
 
         <h4 class="h3">GPU</h4>
