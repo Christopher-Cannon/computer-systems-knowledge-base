@@ -176,7 +176,45 @@ const prevNextNavData = {
 
         <h4 class="h3">File Sizes</h4>
 
+        <p>
+            The amount of space a file occupies on a storage device. There are
+            two common ways to represent the size of files: decimal units and
+            binary units.
+        </p>
+
+        <p>
+            Historically, '<abbr title="KiloByte">KB</abbr>' equalled 1024 bytes
+            since computers naturally work in binary, but storage vendors stuck
+            with decimal (1KB = 1000 bytes) because it makes drives look bigger.
+            To fix the clash, the
+            <abbr title="International Electrotechnical Commission ">IEC</abbr>
+            introduced <abbr title="KibiByte">KiB</abbr>,
+            <abbr title="MebiByte">MiB</abbr>,
+            <abbr title="GibiByte">GiB</abbr>, etc in 1998, but in everyday use
+            many people still say “KB” when they really mean “KiB.”
+        </p>
+
         <MinorHeading>ASCII</MinorHeading>
+
+        <p>
+            Computers represent characters like letters and digits with binary.
+            The American Standard Code for Information Interchange was developed
+            in the 1960s as a way of standardising teleprinter code.
+        </p>
+
+        <p>
+            It uses 7 bit binary numbers for each character for a total of 128
+            characters, which includes upper and lowercase letters, numbers,
+            punctuation and various control codes.
+        </p>
+
+        <p>
+            ASCII was built for the English language and lacks support for
+            diacritics, Cyrillic, east Asian languages and many special
+            characters. Modern systems now generally use Unicode that supports
+            millions of characters, covering every language as well as countless
+            symbols and emoji.
+        </p>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
