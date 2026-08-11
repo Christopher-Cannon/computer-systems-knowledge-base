@@ -8,8 +8,8 @@ import Table from "../components/common/Table.vue";
 const prevNextNavData = {
     prevHref: "/os-layers",
     prevLabel: "Operating System Layers",
-    nextHref: "/bin-dec",
-    nextLabel: "Binary - Decimal Conversion",
+    nextHref: "/binary-hexadecimal",
+    nextLabel: "Binary and Hexadecimal",
 };
 </script>
 
