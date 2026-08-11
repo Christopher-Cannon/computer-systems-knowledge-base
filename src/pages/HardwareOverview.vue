@@ -194,8 +194,64 @@ const prevNextNavData = {
         <MinorHeading>Trends</MinorHeading>
 
         <h4 class="h3">2000s</h4>
+
+        <ul class="list">
+            <li>
+                CPUs were mostly single-core with a focus on increasing clock
+                speeds before dual and quad-core appeared later in the decade.
+            </li>
+            <li>RAM space increased from megabytes to gigabytes in size.</li>
+            <li>HDDs grew from tens to hundreds of gigabytes.</li>
+            <li>
+                AGP phased out in favour of PCI Express, allowing for greater
+                graphics processing throughput.
+            </li>
+            <li>
+                LCD monitors become standard over CRTs due to their less bulky
+                design.
+            </li>
+        </ul>
+
         <h4 class="h3">2010s</h4>
+
+        <ul class="list">
+            <li>
+                Multi-core CPUs generally the standard with a focus on improving
+                energy efficiency and power by reducing their physical size.
+            </li>
+            <li>Having 8 to 16GB of RAM becomes common.</li>
+            <li>
+                SSDs become mainstream due to their improved speed and
+                robustness over HDDs.
+            </li>
+            <li>
+                USB 3 allows for much faster data transfer between the system
+                and peripherals, especially external storage.
+            </li>
+        </ul>
+
         <h4 class="h3">2020s</h4>
+
+        <ul class="list">
+            <li>
+                CPUs commonly feature 6-8 cores or more with hyperthreading.
+            </li>
+            <li>
+                GPUs start including raytracing and AI-specific technologies.
+            </li>
+            <li>
+                NVMe SSDs become popular due to high speeds and low-profile
+                design.
+            </li>
+            <li>
+                USB-C offers the most versatile USB connector so far with some
+                variants used for device charging and video output.
+            </li>
+            <li>
+                High refresh rate monitors grow in popularity, especially with
+                gamers.
+            </li>
+        </ul>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
