@@ -163,6 +163,10 @@ nav {
     padding-bottom: 1rem;
 }
 
+.h3 {
+    margin: 1rem 0;
+}
+
 .mobile-nav-btn {
     position: relative;
     width: 50px;

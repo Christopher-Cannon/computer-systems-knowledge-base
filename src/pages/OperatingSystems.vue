@@ -91,9 +91,19 @@ const singleMultiProcessorData = [
 
         <MinorHeading>Single and Multi User</MinorHeading>
 
+        <p>
+            Operating systems can be designed to work with just one user or
+            several at once.
+        </p>
+
         <Table :data="singleMultiUserData" />
 
         <MinorHeading>Single and Multi Processor</MinorHeading>
+
+        <p>
+            Operating systems can be designed for single CPU cores or several at
+            the same time.
+        </p>
 
         <Table :data="singleMultiProcessorData" />
 
