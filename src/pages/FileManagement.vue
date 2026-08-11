@@ -11,6 +11,147 @@ const prevNextNavData = {
     nextHref: "/binary-hexadecimal",
     nextLabel: "Binary and Hexadecimal",
 };
+
+const asciiDataOne = [
+    { character: "NULL", decimal: 0, binary: "00000000" },
+    { character: "START OF HEADING", decimal: 1, binary: "00000001" },
+    { character: "START OF TEXT", decimal: 2, binary: "00000010" },
+    { character: "END OF TEXT", decimal: 3, binary: "00000011" },
+    { character: "END OF TRANSMISSION", decimal: 4, binary: "00000100" },
+    { character: "ENQUIRY", decimal: 5, binary: "00000101" },
+    { character: "ACKNOWLEDGE", decimal: 6, binary: "00000110" },
+    { character: "BELL", decimal: 7, binary: "00000111" },
+    { character: "BACKSPACE", decimal: 8, binary: "00001000" },
+    { character: "HORIZONTAL TAB", decimal: 9, binary: "00001001" },
+    { character: "LINE FEED", decimal: 10, binary: "00001010" },
+    { character: "VERTICAL TAB", decimal: 11, binary: "00001011" },
+    { character: "FORM FEED", decimal: 12, binary: "00001100" },
+    { character: "CARRIAGE RETURN", decimal: 13, binary: "00001101" },
+    { character: "SHIFT OUT", decimal: 14, binary: "00001110" },
+    { character: "SHIFT IN", decimal: 15, binary: "00001111" },
+    { character: "DATA LINK ESCAPE", decimal: 16, binary: "00010000" },
+    { character: "DEVICE CONTROL 1", decimal: 17, binary: "00010001" },
+    { character: "DEVICE CONTROL 2", decimal: 18, binary: "00010010" },
+    { character: "DEVICE CONTROL 3", decimal: 19, binary: "00010011" },
+    { character: "DEVICE CONTROL 4", decimal: 20, binary: "00010100" },
+    { character: "NEGATIVE ACKNOWLEDGE", decimal: 21, binary: "00010101" },
+    { character: "SYNCHRONOUS IDLE", decimal: 22, binary: "00010110" },
+    { character: "END OF TRANS. BLOCK", decimal: 23, binary: "00010111" },
+    { character: "CANCEL", decimal: 24, binary: "00011000" },
+    { character: "END OF MEDIUM", decimal: 25, binary: "00011001" },
+    { character: "SUBSTITUTE", decimal: 26, binary: "00011010" },
+    { character: "ESCAPE", decimal: 27, binary: "00011011" },
+    { character: "FILE SEPARATOR", decimal: 28, binary: "00011100" },
+    { character: "GROUP SEPARATOR", decimal: 29, binary: "00011101" },
+    { character: "RECORD SEPARATOR", decimal: 30, binary: "00011110" },
+    { character: "UNIT SEPARATOR", decimal: 31, binary: "00011111" },
+
+    { character: "SPACE", decimal: 32, binary: "00100000" },
+    { character: "!", decimal: 33, binary: "00100001" },
+    { character: '"', decimal: 34, binary: "00100010" },
+    { character: "#", decimal: 35, binary: "00100011" },
+    { character: "$", decimal: 36, binary: "00100100" },
+    { character: "%", decimal: 37, binary: "00100101" },
+    { character: "&", decimal: 38, binary: "00100110" },
+    { character: "'", decimal: 39, binary: "00100111" },
+    { character: "(", decimal: 40, binary: "00101000" },
+    { character: ")", decimal: 41, binary: "00101001" },
+    { character: "*", decimal: 42, binary: "00101010" },
+    { character: "+", decimal: 43, binary: "00101011" },
+    { character: ",", decimal: 44, binary: "00101100" },
+    { character: "-", decimal: 45, binary: "00101101" },
+    { character: ".", decimal: 46, binary: "00101110" },
+    { character: "/", decimal: 47, binary: "00101111" },
+
+    { character: "0", decimal: 48, binary: "00110000" },
+    { character: "1", decimal: 49, binary: "00110001" },
+    { character: "2", decimal: 50, binary: "00110010" },
+    { character: "3", decimal: 51, binary: "00110011" },
+    { character: "4", decimal: 52, binary: "00110100" },
+    { character: "5", decimal: 53, binary: "00110101" },
+    { character: "6", decimal: 54, binary: "00110110" },
+    { character: "7", decimal: 55, binary: "00110111" },
+    { character: "8", decimal: 56, binary: "00111000" },
+    { character: "9", decimal: 57, binary: "00111001" },
+
+    { character: ":", decimal: 58, binary: "00111010" },
+    { character: ";", decimal: 59, binary: "00111011" },
+    { character: "<", decimal: 60, binary: "00111100" },
+    { character: "=", decimal: 61, binary: "00111101" },
+    { character: ">", decimal: 62, binary: "00111110" },
+    { character: "?", decimal: 63, binary: "00111111" },
+];
+
+const asciiDataTwo = [
+    { character: "@", decimal: 64, binary: "01000000" },
+
+    { character: "A", decimal: 65, binary: "01000001" },
+    { character: "B", decimal: 66, binary: "01000010" },
+    { character: "C", decimal: 67, binary: "01000011" },
+    { character: "D", decimal: 68, binary: "01000100" },
+    { character: "E", decimal: 69, binary: "01000101" },
+    { character: "F", decimal: 70, binary: "01000110" },
+    { character: "G", decimal: 71, binary: "01000111" },
+    { character: "H", decimal: 72, binary: "01001000" },
+    { character: "I", decimal: 73, binary: "01001001" },
+    { character: "J", decimal: 74, binary: "01001010" },
+    { character: "K", decimal: 75, binary: "01001011" },
+    { character: "L", decimal: 76, binary: "01001100" },
+    { character: "M", decimal: 77, binary: "01001101" },
+    { character: "N", decimal: 78, binary: "01001110" },
+    { character: "O", decimal: 79, binary: "01001111" },
+    { character: "P", decimal: 80, binary: "01010000" },
+    { character: "Q", decimal: 81, binary: "01010001" },
+    { character: "R", decimal: 82, binary: "01010010" },
+    { character: "S", decimal: 83, binary: "01010011" },
+    { character: "T", decimal: 84, binary: "01010100" },
+    { character: "U", decimal: 85, binary: "01010101" },
+    { character: "V", decimal: 86, binary: "01010110" },
+    { character: "W", decimal: 87, binary: "01010111" },
+    { character: "X", decimal: 88, binary: "01011000" },
+    { character: "Y", decimal: 89, binary: "01011001" },
+    { character: "Z", decimal: 90, binary: "01011010" },
+
+    { character: "[", decimal: 91, binary: "01011011" },
+    { character: "\\", decimal: 92, binary: "01011100" },
+    { character: "]", decimal: 93, binary: "01011101" },
+    { character: "^", decimal: 94, binary: "01011110" },
+    { character: "_", decimal: 95, binary: "01011111" },
+    { character: "`", decimal: 96, binary: "01100000" },
+
+    { character: "a", decimal: 97, binary: "01100001" },
+    { character: "b", decimal: 98, binary: "01100010" },
+    { character: "c", decimal: 99, binary: "01100011" },
+    { character: "d", decimal: 100, binary: "01100100" },
+    { character: "e", decimal: 101, binary: "01100101" },
+    { character: "f", decimal: 102, binary: "01100110" },
+    { character: "g", decimal: 103, binary: "01100111" },
+    { character: "h", decimal: 104, binary: "01101000" },
+    { character: "i", decimal: 105, binary: "01101001" },
+    { character: "j", decimal: 106, binary: "01101010" },
+    { character: "k", decimal: 107, binary: "01101011" },
+    { character: "l", decimal: 108, binary: "01101100" },
+    { character: "m", decimal: 109, binary: "01101101" },
+    { character: "n", decimal: 110, binary: "01101110" },
+    { character: "o", decimal: 111, binary: "01101111" },
+    { character: "p", decimal: 112, binary: "01110000" },
+    { character: "q", decimal: 113, binary: "01110001" },
+    { character: "r", decimal: 114, binary: "01110010" },
+    { character: "s", decimal: 115, binary: "01110011" },
+    { character: "t", decimal: 116, binary: "01110100" },
+    { character: "u", decimal: 117, binary: "01110101" },
+    { character: "v", decimal: 118, binary: "01110110" },
+    { character: "w", decimal: 119, binary: "01110111" },
+    { character: "x", decimal: 120, binary: "01111000" },
+    { character: "y", decimal: 121, binary: "01111001" },
+    { character: "z", decimal: 122, binary: "01111010" },
+
+    { character: "{", decimal: 123, binary: "01111011" },
+    { character: "|", decimal: 124, binary: "01111100" },
+    { character: "}", decimal: 125, binary: "01111101" },
+    { character: "~", decimal: 126, binary: "01111110" },
+    { character: "DELETE", decimal: 127, binary: "01111111" },
+];
 </script>
 
 <template>
@@ -216,8 +357,21 @@ const prevNextNavData = {
             symbols and emoji.
         </p>
 
+        <div class="table-columns">
+            <Table :data="asciiDataOne" />
+            <Table :data="asciiDataTwo" />
+        </div>
+
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media (min-width: 900px) {
+    .table-columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+</style>
