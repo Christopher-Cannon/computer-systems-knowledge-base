@@ -78,7 +78,7 @@ const prevNextNavData = {
 
         <p>
             Temporary working storage space for actively running programs.
-            Modern computers usually have 16GB DDR4 or DDR5 RAM as a minimum,
+            Modern computers usually have 8-16GB DDR4 or DDR5 RAM as a minimum,
             going up to 32GB or more for high-end systems. Faster RAM speeds
             (measured in MHz) can improve data transfer rates.
         </p>
@@ -94,7 +94,7 @@ const prevNextNavData = {
                 title="Advanced Technology eXtended"
                 >ATX</abbr
             >, micro-ATX,
-            <abbr title="Information Technology eXtended">mini-ITX</abbr>).
+            <abbr title="mini-Information Technology eXtended">mini-ITX</abbr>).
         </p>
 
         <h4 class="h3">Storage</h4>
@@ -130,8 +130,9 @@ const prevNextNavData = {
             CPUs and GPUs generate heat under load, so appropriate cooling is
             essential to prevent failure. Heatsinks with fans are common and can
             vary in size, while water cooling solutions may be found in high-end
-            systems. Cases may also have fans to help air move through the
-            system.
+            systems. Thermal compound is required to properly transfer heat from
+            the chip to the cooler. Cases may also have fans to help air move
+            through the system.
         </p>
 
         <h4 class="h3">Case</h4>
