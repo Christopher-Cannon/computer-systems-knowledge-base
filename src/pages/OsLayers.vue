@@ -181,6 +181,32 @@ const prevNextNavData = {
             <abbr title="Graphical User Interface">GUI</abbr> featuring windows,
             text inputs, buttons and other common desktop metaphors.
         </p>
+
+        <MinorHeading>Layer Interaction</MinorHeading>
+
+        <ol class="list">
+            <li><b>User interface:</b> User opens a file.</li>
+            <li>
+                <b>File management:</b>
+                The file is located and permissions are checked.
+            </li>
+            <li>
+                <b>I/O:</b>
+                File data is read from disk, screen displays output when there
+                is something to show.
+            </li>
+            <li>
+                <b>Memory management:</b>
+                File contents are loaded into main memory and instructions sent
+                to the CPU.
+            </li>
+            <li>
+                <b>Kernel:</b>
+                Coordinates everything via CPU process scheduling.
+            </li>
+        </ol>
+
+        <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
 
