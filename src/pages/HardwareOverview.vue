@@ -18,6 +18,152 @@ const prevNextNavData = {
         <PrevNextNav :data="prevNextNavData" />
 
         <MainHeading>Hardware Overview</MainHeading>
+
+        <p>
+            The physical parts that make up a computer system, necessary for
+            performing computation, managing data and rendering graphical
+            output. External devices, also known as peripherals, such as mice,
+            keyboards and monitors are required to properly interface with the
+            computer.
+        </p>
+
+        <p>Computers come in a variety of forms:</p>
+
+        <ul class="list">
+            <li>
+                <b>Desktops:</b>
+                Static devices with core components stored in a separate case
+                that are preferred when performance is required. Highly modular
+                and easily upgraded.
+            </li>
+            <li>
+                <b>Laptops:</b>
+                Portable all-in-one computers that vary in size and power.
+                Components in newer laptops are highly integrated, reducing
+                their upgradeability but making them relatively lightweight.
+            </li>
+            <li>
+                <b>Smartphones and Tablets:</b>
+                Slim and portable touch screen devices that offer reasonable
+                computing performance on the go.
+            </li>
+        </ul>
+
+        <MinorHeading>Internal Components</MinorHeading>
+
+        <p>
+            These are the components that make up a typical system unit of a
+            desktop computer.
+        </p>
+
+        <h4 class="h3">CPU</h4>
+
+        <p>
+            The brain of the computer that processes instructions and makes
+            things happen. Modern CPUs usually come with multiple cores and some
+            form of frequency boosting and/or hyperthreading technology to
+            better handle demanding computation and multi-tasking.
+        </p>
+
+        <h4 class="h3">GPU</h4>
+
+        <p>
+            Handles the rendering of images, video and 3D graphics. Dedicated
+            graphics cards are required for serious tasks, such as gaming, video
+            editing or 3D modelling. Many CPUs come with integrated graphics
+            chips that are enough for general use.
+        </p>
+
+        <h4 class="h3">RAM</h4>
+
+        <p>
+            Temporary working storage space for actively running programs.
+            Modern computers usually have 16GB DDR4 or DDR5 RAM as a minimum,
+            going up to 32GB or more for high-end systems. Faster RAM speeds
+            (measured in MHz) can improve data transfer rates.
+        </p>
+
+        <h4 class="h3">Motherboard</h4>
+
+        <p>
+            The main circuit board that connects all components together.
+            Possesses a CPU socket, RAM slots, expansion slots (PCI, PCIe),
+            power connectors and rear
+            <abbr title="Input / Output">I/O</abbr> ports. Can come in various
+            form factors to fit different case sizes (<abbr
+                title="Advanced Technology eXtended"
+                >ATX</abbr
+            >, micro-ATX,
+            <abbr title="Information Technology eXtended">mini-ITX</abbr>).
+        </p>
+
+        <h4 class="h3">Storage</h4>
+
+        <p>
+            Long-term data storage mediums include hard disk drives (HDDs) and
+            solid state drives (SSDs). SSDs are now the standard for operating
+            system installation and general usage, coming in
+            <abbr title="Serial Advanced Technology Attachment">SATA</abbr>,
+            mSATA and NVMe variants.
+        </p>
+
+        <p>
+            HDDs are generally cheaper at larger sizes (1TB and up) and find
+            common use for bulk storage and archival purposes. They are much
+            slower than SSDs, are fragile due to their mechanical design and may
+            require defragmentation with frequent use to keep them performant.
+        </p>
+
+        <h4 class="h3">Power Supply</h4>
+
+        <p>
+            Converts wall electricity into usable power for components. Come in
+            different wattage tiers (e.g. 400w, 600w, 750w). Higher tiers are
+            required for more demanding components. Usually given a rating to
+            denote energy efficiency, such as 80 plus bronze/gold/platinum, with
+            higher rated PSUs being more efficient and producing less heat.
+        </p>
+
+        <h4 class="h3">Cooling</h4>
+
+        <p>
+            CPUs and GPUs generate heat under load, so appropriate cooling is
+            essential to prevent failure. Heatsinks with fans are common and can
+            vary in size, while water cooling solutions may be found in high-end
+            systems. Cases may also have fans to help air move through the
+            system.
+        </p>
+
+        <h4 class="h3">Case</h4>
+
+        <p>
+            Houses internal system components in a hard shell for protection and
+            ease of movement. They come in different sizes and shapes depending
+            on one's needs. Enthusiasts may prefer aesthetically pleasing cases
+            with lighting options and the ability to show off the internals.
+        </p>
+
+        <MinorHeading>Peripherals</MinorHeading>
+
+        <p>
+            These are external devices that enable interaction with computer
+            systems. Many of these are specialised and are not required for
+            general use.
+        </p>
+
+        <h4 class="h3">Monitors</h4>
+        <h4 class="h3">Speakers</h4>
+        <h4 class="h3">Printers</h4>
+        <h4 class="h3">Mice</h4>
+        <h4 class="h3">Keyboards</h4>
+        <h4 class="h3">Gamepads</h4>
+
+        <MinorHeading>Trends</MinorHeading>
+
+        <h4 class="h3">2000s</h4>
+        <h4 class="h3">2010s</h4>
+        <h4 class="h3">2020s</h4>
+
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
