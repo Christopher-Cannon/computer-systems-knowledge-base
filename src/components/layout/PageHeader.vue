@@ -8,20 +8,20 @@
             </h1>
 
             <div class="flex gap-[1rem]">
-                <dark-mode-toggle class="hide-desktop"/>
-    
+                <dark-mode-toggle class="hide-desktop" />
+
                 <button class="mobile-nav-btn hide-desktop" @click="toggleNav">
                     <img
                         :src="`/public/icons/bars-solid-full${suffix}.svg`"
-                        alt="" 
+                        alt=""
                         id="open-btn"
-                    >
+                    />
                     <img
                         :src="`/public/icons/xmark-solid-full${suffix}.svg`"
-                        alt="" 
-                        id="close-btn" 
+                        alt=""
+                        id="close-btn"
                         class="hide-mobile"
-                    >
+                    />
                 </button>
             </div>
         </div>
@@ -29,12 +29,12 @@
         <nav id="navigation" class="hide-mobile">
             <ul class="nav-list">
                 <li
-                    v-for="(category, index) in navLinks" 
-                    :key="index" 
+                    v-for="(category, index) in navLinks"
+                    :key="index"
                     class="nav-list-item"
                 >
                     <span class="h4 category-heading hide-desktop">
-                        {{ `${index + 1}` + '. ' }}
+                        {{ `${index + 1}` + ". " }}
                     </span>
                     <span class="h4 category-heading">
                         {{ category.label }}
@@ -53,7 +53,7 @@
                     </ul>
                 </li>
                 <li class="mb-[-4px] ml-[1rem]">
-                    <dark-mode-toggle class="hide-mobile"/>
+                    <dark-mode-toggle class="hide-mobile" />
                 </li>
             </ul>
         </nav>
@@ -62,12 +62,12 @@
 
 <script setup>
 import DarkModeToggle from "../DarkModeToggle.vue";
-import { useTheme } from '../../composables/useTheme';
+import { useTheme } from "../../composables/useTheme";
 import { ref, watch } from "vue";
 
 const { theme } = useTheme();
 const navIsVisible = ref(false);
-const suffix = ref(theme.value === 'dark' ? '-white' : '');
+const suffix = ref(theme.value === "dark" ? "-white" : "");
 
 const toggleNav = () => {
     navIsVisible.value = !navIsVisible.value;
@@ -84,188 +84,209 @@ const toggleNav = () => {
 };
 
 watch(
-    theme, 
-    (newTheme) => suffix.value = newTheme === 'dark' ? '-white' : ''
+    theme,
+    (newTheme) => (suffix.value = newTheme === "dark" ? "-white" : "")
 );
 
 const navLinks = [
-    { path: "/", label: "Hardware", sublinks: [
-        { path: "/hardware-overview", label: "Overview"},
-        { path: "/cpu-architecture", label: "CPU Architecture"},
-        { path: "/memory", label: "Memory"},
-        { path: "/storage", label: "Storage"},
-    ] },
-    { path: "/", label: "Software", sublinks: [
-        { path: "/types-of-software", label: "Types of Software"},
-        { path: "/operating-systems", label: "Operating Systems"},
-        { path: "/os-layers", label: "OS Layers"},
-        { path: "/file-management", label: "File Management"},
-    ] },
-    { path: "/", label: "Conversions", sublinks: [
-        { path: "/bin-dec", label: "Binary - Decimal"},
-        { path: "/bin-hex", label: "Binary - Hex"},
-        { path: "/dec-hex", label: "Decimal - Hex"},
-    ] },
-    { path: "/", label: "Arithmetic", sublinks: [
-        { path: "/binary-addition", label: "Binary Addition"},
-        { path: "/binary-subtraction", label: "Binary Subtraction"},
-        { path: "/hex-addition", label: "Hex Addition"},
-        { path: "/hex-subtraction", label: "Hex Subtraction"},
-    ] },
-    { path: "/", label: "Logic", sublinks: [
-        { path: "/simple-logic-gates", label: "Simple Logic Gates"},
-        { path: "/complex-logic-gates", label: "Complex Logic Gates"},
-    ] },
-    { path: "/", label: "Resources", sublinks: [
-        { path: "/glossary", label: "Glossary"},
-        { path: "/links", label: "Links"},
-    ] },
+    {
+        path: "/",
+        label: "Hardware",
+        sublinks: [
+            { path: "/hardware-overview", label: "Hardware Overview" },
+            { path: "/cpu-architecture", label: "CPU Architecture" },
+            { path: "/memory", label: "Memory" },
+            { path: "/storage", label: "Storage" },
+        ],
+    },
+    {
+        path: "/",
+        label: "Software",
+        sublinks: [
+            { path: "/types-of-software", label: "Types of Software" },
+            { path: "/operating-systems", label: "Operating Systems" },
+            { path: "/os-layers", label: "OS Layers" },
+            { path: "/file-management", label: "File Management" },
+        ],
+    },
+    {
+        path: "/",
+        label: "Conversions",
+        sublinks: [
+            { path: "/binary-hexadecimal", label: "Binary and Hexadecimal" },
+            { path: "/base-conversion", label: "Base Conversion" },
+        ],
+    },
+    {
+        path: "/",
+        label: "Arithmetic",
+        sublinks: [
+            { path: "/binary-arithmetic", label: "Binary Arithmetic" },
+            { path: "/hex-arithmetic", label: "Hex Arithmetic" },
+        ],
+    },
+    {
+        path: "/",
+        label: "Logic",
+        sublinks: [
+            { path: "/simple-logic-gates", label: "Simple Logic Gates" },
+            { path: "/complex-logic-gates", label: "Complex Logic Gates" },
+        ],
+    },
+    {
+        path: "/",
+        label: "Resources",
+        sublinks: [
+            { path: "/glossary", label: "Glossary" },
+            { path: "/links", label: "Links" },
+        ],
+    },
 ];
 </script>
 
 <style>
-    .page-header {
-        border-bottom: 1px solid var(--grey-secondary);
-    }
+.page-header {
+    border-bottom: 1px solid var(--grey-secondary);
+}
 
-    nav {
-        position: relative;
+nav {
+    position: relative;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mobile-nav-btn {
+    position: relative;
+    width: 50px;
+}
+
+.mobile-nav-btn > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-list {
+    background-color: var(--bg-colour);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-list-item {
+    padding-bottom: 0.5rem;
+    width: calc(50% - 0.5rem);
+}
+
+.category-heading {
+    font-weight: bold;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-link {
+    background-color: var(--grey);
+    border-radius: var(--radius-sm);
+    display: block;
+    padding: 0.25rem;
+}
+
+.nav-link:hover {
+    background-color: var(--grey-secondary);
+}
+
+@media (max-width: 1439.97px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .nav-list-item {
+        width: calc(33% - 0.75rem);
+    }
+}
+
+@media (min-width: 1440px) {
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
     .top-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        display: block;
     }
 
-    .mobile-nav-btn {
-        position: relative;
-        width: 50px;
-    }
-
-    .mobile-nav-btn > img {
-        position: absolute;
-        top: 0;
-        left: 0;
+    h1 {
+        line-height: 1.1;
     }
 
     .nav-list {
-        background-color: var(--bg-colour);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
+        align-items: center;
         gap: 1rem;
-        list-style: none;
-        padding: 1rem;
-        position: absolute;
-        text-align: center;
-        width: 100%;
+        flex-wrap: nowrap;
+        position: static;
     }
 
     .nav-list-item {
-        padding-bottom: 0.5rem;
-        width: calc(50% - 0.5rem);
+        min-width: min-content;
+        max-width: min-content;
+        position: relative;
+        padding: 0;
     }
 
     .category-heading {
-        font-weight: bold;
+        cursor: pointer;
+        display: block;
+        font-size: 1.2rem;
+        padding: 0.5rem;
     }
 
     .dropdown {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
+        background-color: var(--grey);
+        border: 1px solid var(--grey-secondary);
+        border-radius: var(--radius-sm);
+        gap: 0;
+        display: none;
+        padding: 0.5rem;
+        position: absolute;
+        margin-top: 0;
+        left: -4.5rem;
+        right: -4.5rem;
+    }
+
+    .nav-list-item:hover > .dropdown {
+        display: block;
     }
 
     .nav-link {
-        background-color: var(--grey);
-        border-radius: var(--radius-sm);
-        display: block;
-        padding: 0.25rem;
+        padding: 0.5rem 1rem;
     }
 
-    .nav-link:hover {
-        background-color: var(--grey-secondary);
+    .hide-desktop {
+        display: none;
     }
-
-    @media (max-width: 1439.97px) {
-        .hide-mobile {
-            display: none;
-        }
-    }
-
-    @media (min-width: 900px) {
-        .nav-list-item {
-            width: calc(33% - 0.75rem);
-        }
-    }
-
-    @media (min-width: 1440px) {
-        .page-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-
-        .top-bar {
-            display: block;
-        }
-
-        h1 {
-            line-height: 1.1;
-        }
-        
-        .nav-list {
-            justify-content: flex-end;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: nowrap;
-            position: static;
-        }
-
-        .nav-list-item {
-            min-width: min-content;
-            max-width: min-content;
-            position: relative;
-            padding: 0;
-        }
-        
-        .category-heading {
-            cursor: pointer;
-            display: block;
-            font-size: 1.2rem;
-            padding: 0.5rem;
-        }
-
-        .dropdown {
-            background-color: var(--grey);
-            border: 1px solid var(--grey-secondary);
-            border-radius: var(--radius-sm);
-            gap: 0;
-            display: none;
-            padding: 0.5rem;
-            position: absolute;
-            margin-top: 0;
-            left: -4.5rem;
-            right: -4.5rem;
-        }
-
-        .nav-list-item:hover > .dropdown {
-            display: block;
-        }
-
-        .nav-link {
-            padding: 0.5rem 1rem;
-        }
-
-        .hide-desktop {
-            display: none;
-        }
-    }
+}
 </style>

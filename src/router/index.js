@@ -8,13 +8,10 @@ import TypesOfSoftware from "../pages/TypesOfSoftware.vue";
 import OperatingSystems from "../pages/OperatingSystems.vue";
 import OsLayers from "../pages/OsLayers.vue";
 import FileManagement from "../pages/FileManagement.vue";
-import BinDec from "../pages/BinDec.vue";
 import BinHex from "../pages/BinHex.vue";
-import DecHex from "../pages/DecHex.vue";
-import BinAddition from "../pages/BinAddition.vue";
-import BinSubtraction from "../pages/BinSubtraction.vue";
-import HexAddition from "../pages/HexAddition.vue";
-import HexSubtraction from "../pages/HexSubtraction.vue";
+import BaseConversion from "../pages/BaseConversion.vue";
+import BinArithmetic from "../pages/BinArithmetic.vue";
+import HexArithmetic from "../pages/HexArithmetic.vue";
 import LogicSimple from "../pages/LogicSimple.vue";
 import LogicComplex from "../pages/LogicComplex.vue";
 import Glossary from "../pages/Glossary.vue";
@@ -32,13 +29,10 @@ const routes = [
     { path: "/operating-systems", name: "Operating Systems", component: OperatingSystems },
     { path: "/os-layers", name: "OS Layers", component: OsLayers },
     { path: "/file-management", name: "File Management", component: FileManagement },
-    { path: "/bin-dec", name: "Binary - Decimal", component: BinDec },
-    { path: "/bin-hex", name: "Binary - Hex", component: BinHex },
-    { path: "/dec-hex", name: "Decimal - Hex", component: DecHex },
-    { path: "/binary-addition", name: "Binary Addition", component: BinAddition },
-    { path: "/binary-subtraction", name: "Binary Subtraction", component: BinSubtraction },
-    { path: "/hex-addition", name: "Hex Addition", component: HexAddition },
-    { path: "/hex-subtraction", name: "Hex Subtraction", component: HexSubtraction },
+    { path: "/binary-hexadecimal", name: "Binary and Hexadecimal", component: BinHex },
+    { path: "/base-conversion", name: "Base Conversion", component: BaseConversion },
+    { path: "/binary-arithmetic", name: "Binary Arithmetic", component: BinArithmetic },
+    { path: "/hex-arithmetic", name: "Hex Arithmetic", component: HexArithmetic },
     { path: "/simple-logic-gates", name: "Simple Logic Gates", component: LogicSimple },
     { path: "/complex-logic-gates", name: "Complex Logic Gates", component: LogicComplex },
     { path: "/glossary", name: "Glossary", component: Glossary },
