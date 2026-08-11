@@ -1,13 +1,145 @@
 <script setup>
+import MainHeading from "../components/common/MainHeading.vue";
+import MinorHeading from "../components/common/MinorHeading.vue";
+import PrevNextNav from "../components/common/PrevNextNav.vue";
+import SideImage from "../components/common/SideImage.vue";
+import Table from "../components/common/Table.vue";
 
+const prevNextNavData = {
+    prevHref: "/operating-systems",
+    prevLabel: "Operating Systems",
+    nextHref: "/file-management",
+    nextLabel: "File Management",
+};
 </script>
 
 <template>
     <section class="section wrapper">
-        OS Layers
+        <PrevNextNav :data="prevNextNavData" />
+
+        <MainHeading>Operating System Layers</MainHeading>
+
+        <p>
+            Operating systems are often described as layered systems, where each
+            layer handles specific tasks and provides services to the layer
+            above it. These layers hide complexity from the user. While the
+            exact structure differs from OS to OS, they generally handle the
+            same responsibilities.
+        </p>
+
+        <p>
+            The kernel and memory management deal with low-level hardware, while
+            file management and user interface deal with higher-level,
+            user-facing tasks.
+        </p>
+
+        <MinorHeading>Kernel</MinorHeading>
+
+        <p>
+            The core of the OS that runs with full access to the hardware and is
+            responsible for managing processes, CPU scheduling, inter-process
+            communication and device drivers. The most famous example is likely
+            the Linux kernel often used with the GNU operating system.
+        </p>
+
+        <h4 class="h3">Memory Protection</h4>
+
+        <p>
+            The kernel uses hardware-enforced memory protection to prevent
+            unauthorised access where each process is given its own virtual
+            address space. Memory space used by the kernel is usually isolated
+            from that of other processes.
+        </p>
+
+        <p>
+            Using the memory management unit (MMU) on the CPU, it can ensure
+            that one process cannot read from or write to another process's
+            memory space. Attempts to do so result in segmentation faults or
+            access violations, stopping the process.
+        </p>
+
+        <h4 class="h3">Permissions</h4>
+
+        <p>
+            The kernel enforces access control using user IDs and group IDs
+            coupled with permission bits stored on files and resources, such as
+            read, write and execute. For example, if a user has a write
+            permission bit set on a file, they are able to overwrite its
+            contents.
+        </p>
+
+        <h4 class="h3">Ring Architecture</h4>
+
+        <p>
+            Modern CPUs implement privilege levels using rings. Ring 0 offers
+            full access and is used by the kernel, while ring 3 offers limited
+            access and is used by general applications.
+        </p>
+
+        <p>
+            This separation ensures that user-level code cannot directly execute
+            privileged instructions or access kernel memory.
+        </p>
+
+        <MinorHeading>Memory Management</MinorHeading>
+
+        <p>
+            Handles allocation and tracking of memory addresses in main memory.
+        </p>
+
+        <MinorHeading>Input / Output</MinorHeading>
+
+        <p>
+            A uniform interface for handling communication to and from system
+            devices. Since hardware devices vary widely, the OS hides this
+            complexity behind device drivers. It is also responsible for
+            handling interrupt requests coming from devices.
+        </p>
+
+        <MinorHeading>File Management</MinorHeading>
+
+        <p>
+            Manages how data is stored, retrieved and organised. Represents data
+            stored on physical devices, like HDDs and SSDs, as a logical
+            structure of files and folders for ease of use. Other
+            responsibilities include:
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>File system:</b>
+                How files are organised on physical storage. There are numerous
+                formats used depending on the operating system, such as NTFS,
+                FAT32 and EXT4.
+            </li>
+            <li>
+                <b>Access control:</b>
+                What permissions do users and user groups on the system have
+                when interacting with files, such as read, write and execute.
+                While this layer allows permissions to be defined, it is the
+                kernel that enforces them.
+            </li>
+            <li>
+                <b>File operations:</b>
+                Defines what can be done with files, such as creation, opening,
+                writing and deletion.
+            </li>
+            <li>
+                <b>Space management:</b>
+                Keeps track of free and used space on physical storage.
+            </li>
+        </ul>
+
+        <MinorHeading>User Interface</MinorHeading>
+
+        <p>
+            The topmost layer that allows users to interact with the system. Can
+            be a simple command line interface that accepts only text commands
+            or a sophisticated
+            <abbr title="Graphical User Interface">GUI</abbr> featuring windows,
+            text inputs, buttons and other common desktop metaphors.
+        </p>
     </section>
 </template>
 
-<style scoped>
-    
-</style>
+<style scoped></style>
