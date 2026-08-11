@@ -144,6 +144,24 @@ const prevNextNavData = {
             </li>
         </ul>
 
+        <MinorHeading>APIs</MinorHeading>
+
+        <p>
+            Application Programming Interfaces allow complex functionality to be
+            abstracted behind a set of functions or endpoints, often in the form
+            of a library or framework. This allows programmers to build things,
+            such as programs or user interfaces, without having to worry about
+            how the library is implemented.
+        </p>
+
+        <p>
+            APIs can also be found hosted on the internet that will return
+            structured data when requested. Requests are made by sending the API
+            a URL, which can contain various parameters. This is commonly used
+            by single-page web applications to retrieve data from a centralised
+            database.
+        </p>
+
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
