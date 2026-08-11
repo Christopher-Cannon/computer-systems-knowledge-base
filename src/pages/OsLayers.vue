@@ -113,6 +113,22 @@ const prevNextNavData = {
             allows memory space to be utilised more effectively.
         </p>
 
+        <h4 class="h3">Swapping</h4>
+
+        <p>
+            If there isn't enough space in main memory for a new process, other
+            processes, usually of a lower priority, can be moved temporarily to
+            a storage device to make room. This temporary space is known as the
+            page file on Windows and swap space on Linux distributions.
+        </p>
+
+        <p>
+            Transfers can take time if a lot of data needs to be transferred.
+            Thrashing can occur if the system spends more time swapping data
+            instead of actually executing processes, slowing the system to a
+            crawl.
+        </p>
+
         <MinorHeading>Input / Output</MinorHeading>
 
         <p>
