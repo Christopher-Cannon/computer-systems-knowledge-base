@@ -131,6 +131,51 @@ const prevNextNavData = {
             </p>
         </SideImage>
 
+        <h5 class="h4">How Data is Stored</h5>
+
+        <p>
+            Platters are divided into concentric circles called tracks, and each
+            track is split into sectors (the smallest addressable unit, usually
+            512 bytes or 4 KB). Data is stored by magnetising tiny regions of
+            the platter in different directions to represent 0s and 1s. Each
+            platter surface has its own read/write head, stacked on an actuator
+            arm.
+        </p>
+
+        <h5 class="h4">How Data is Accessed</h5>
+
+        <p>
+            Platters spin at high speed (such as 5,400 or 7,200 RPM). Actuator
+            arm moves the read/write head across the platter to the correct
+            track. The head senses the orientation of magnetised spots when
+            reading, otherwise it changes the magnetic polarity of regions to
+            encode data. HDDs can jump between files by moving the head and
+            waiting for the right platter sector to spin underneath.
+        </p>
+
+        <h5 class="h4">Performance Factors</h5>
+
+        <ol class="list numbered">
+            <li>
+                <b>Seek time:</b>
+                The time it takes to move the read/write head to the correct
+                track.
+            </li>
+            <li>
+                <b>Rotational latency:</b>
+                How long it takes for the platter to spin to the right spot.
+            </li>
+            <li>
+                <b>Transfer rate:</b>
+                How much data can be read or written in a given period of time.
+            </li>
+        </ol>
+
+        <p>
+            Low seek time, low rotational latency and high transfer rate is
+            vital for high performance and responsiveness.
+        </p>
+
         <h4 class="h3">Solid State Drives</h4>
 
         <SideImage
@@ -153,6 +198,64 @@ const prevNextNavData = {
             </p>
         </SideImage>
 
+        <h5 class="h4">How Data is Stored</h5>
+
+        <p>
+            SSDs use NAND flash, made of millions of transistors arranged in
+            grids. Each memory cell stores a charge (or lack of charge) in an
+            insulated gate to determine whether the bit is a 0 or 1. Data is
+            organised into pages (e.g. 4-16 KB each), grouped into blocks
+            (hundreds of pages).
+        </p>
+
+        <h5 class="h4">How Data is Accessed</h5>
+
+        <p>
+            The controller can read/write any page instantly as there are no
+            moving parts. Flash memory can't overwrite existing data directly.
+            To write new data:
+        </p>
+
+        <ol class="list numbered">
+            <li>Data is written to a free page.</li>
+            <li>If updating existing data, the old page is marked invalid.</li>
+            <li>
+                Entire blocks must eventually be erased and rewritten during
+                garbage collection.
+            </li>
+        </ol>
+
+        <h5 class="h4">Performance Factors</h5>
+
+        <ol class="list numbered">
+            <li>
+                <b>Latency:</b>
+                The time it takes to read or write data and is much faster than
+                hard drives, with times measured in microseconds instead of
+                milliseconds.
+            </li>
+            <li>
+                <b>Parallelism:</b>
+                The ability to read and write data to many cells at once as
+                opposed to the linear nature of hard drives.
+            </li>
+            <li>
+                <b>Interface:</b>
+                How the device connects to the system.
+                <abbr title="Serial Advanced Technology Attachment">SATA</abbr>
+                SSDs, as shown above, are limited by the SATA bus (~600MB/s)
+                while NVMe SSDs can reach several GB/s over
+                <abbr title="Peripheral Component Interconnect Express"
+                    >PCI Express</abbr
+                >.
+            </li>
+        </ol>
+
+        <p>
+            Even a slow SSD is usually faster than a hard drive, but for maximum
+            performance an NVMe drive is your best bet.
+        </p>
+
         <h4 class="h3">NVMe Drives</h4>
 
         <SideImage
@@ -161,24 +264,37 @@ const prevNextNavData = {
         >
             <p>
                 Non-Volatile Memory Express is a protocol designed for flash
-                storage using the <abbr title="">PCIe</abbr> bus instead of
-                <abbr title="">SATA</abbr> for faster read/write speeds. The
-                best option when performance is required. Its small size makes
-                it well-suited for laptops.
+                storage using the
+                <abbr title="Peripheral Component Interconnect Express"
+                    >PCI Express</abbr
+                >
+                bus instead of
+                <abbr title="Serial Advanced Technology Attachment">SATA</abbr>
+                for faster read/write speeds. The best option when performance
+                is required. Its small size makes it well-suited for laptops.
             </p>
         </SideImage>
 
-        <MinorHeading>Performance Factors</MinorHeading>
+        <MinorHeading>Comparing Disk Performance</MinorHeading>
 
         <p>
-            Consider the three hard disk drives compared below. Which one do you
-            think is the ideal choice?
+            Consider the three disk drives compared below. Which one do you
+            think is the ideal choice based on the following benchmarks?
         </p>
 
         <ImageFigure
             src="/public/images/storage/disk performance comparison.avif"
-            alt="A comparison of three hard disk drives based on transfer rate and seek time."
+            alt="A comparison of three disk drives based on transfer rate and seek time."
         />
+
+        <p>
+            Hover to reveal answer:
+            <span class="spoiler">
+                Disk 3 is the ideal choice as it has a competitive transfer rate
+                and the fastest seek time. While disk 1 has a slightly higher
+                transfer rate, it has the slowest seek time.
+            </span>
+        </p>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>

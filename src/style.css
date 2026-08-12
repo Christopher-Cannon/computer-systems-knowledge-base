@@ -160,6 +160,16 @@ img {
     list-style: decimal;
 }
 
+.spoiler {
+    background-color: var(--text-colour);
+    color: var(--text-colour);
+    transition: background-color 0.1s ease-in-out;
+}
+
+.spoiler:hover {
+    background-color: var(--bg-colour);
+}
+
 @media (min-width: 900px) {
     .h1 {
         font-size: 3.4rem;
