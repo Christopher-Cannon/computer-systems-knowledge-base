@@ -144,7 +144,7 @@ const navLinks = [
 ];
 </script>
 
-<style>
+<style scoped>
 .page-header {
     border-bottom: 1px solid var(--grey-secondary);
 }
