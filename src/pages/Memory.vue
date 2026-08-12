@@ -171,6 +171,11 @@ const prevNextNavData = {
 
         <p>The heap grows from the lowest memory address up.</p>
 
+        <ImageFigure
+            src="/public/images/memory/heap stack diagram.avif"
+            alt="Graphic showing how the heap and stack grow in main memory."
+        />
+
         <h4 class="h3">Virtual Memory</h4>
 
         <p>
@@ -194,12 +199,18 @@ const prevNextNavData = {
         <p>
             Allows hardware devices, such as disk controllers, sound cards and
             network adapters, to read or write to memory directly without
-            needing the CPU's assistance.
+            needing the CPU's assistance. This speeds up data transfers and
+            allows the CPU to concentrate on other tasks without constantly
+            being interrupted.
         </p>
 
         <p>
-            This speeds up data transfers and allows the CPU to concentrate on
-            other tasks without constantly being interrupted.
+            It involves a technique known as cycle stealing that allows
+            peripheral devices to access system memory without fully
+            interrupting the CPU. It uses idle CPU time to transfer data between
+            memory and a device, so in a sense it "steals clock cycles". It is
+            more efficient than an interrupt-based approach which would fully
+            divert the CPU's attention.
         </p>
 
         <MinorHeading>Read-Only Memory</MinorHeading>
@@ -216,19 +227,24 @@ const prevNextNavData = {
 
         <h4 class="h3">Programmable ROM</h4>
 
-        <p>
-            Starts blank and can only be programmed once after manufacture since
-            the writing process is destructive.
-        </p>
+        <SideImage src="/public/images/memory/prom.avif" alt="A PROM chip.">
+            <p>
+                Starts blank and can only be programmed once after manufacture
+                since the writing process is destructive.
+            </p>
 
-        <p>
-            One PROM chip can be configured in many ways as opposed to classic
-            ROM that is programmed at the factory.
-        </p>
+            <p>
+                One PROM chip can be configured in many ways as opposed to
+                classic ROM that is programmed at the factory.
+            </p>
+        </SideImage>
 
         <h4 class="h3">Erasable PROM</h4>
 
-        <SideImage src="/public/images/forest.avif" alt="A dense forest.">
+        <SideImage
+            src="/public/images/memory/eprom.avif"
+            alt="An EPROM chip with window for erasing data with UV light."
+        >
             <p>
                 Can be erased using ultraviolet light and reprogrammed many
                 times using special tools.
