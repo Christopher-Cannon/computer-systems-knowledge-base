@@ -1,4 +1,6 @@
 <script setup>
+import ImageFigure from "../components/common/ImageFigure.vue";
+import ImageGallery from "../components/common/ImageGallery.vue";
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
@@ -58,6 +60,21 @@ const singleMultiProcessorData = [
             "Examples include modern Windows and Linux distributions.",
     },
 ];
+
+const computerData = [
+    {
+        src: "/public/images/operating systems/laptop.avif",
+        alt: "A generic laptop computer.",
+    },
+    {
+        src: "/public/images/operating systems/microcontroller.avif",
+        alt: "A car engine microcontroller.",
+    },
+    {
+        src: "/public/images/operating systems/servers.avif",
+        alt: "Rows of server racks in a data centre.",
+    },
+];
 </script>
 
 <template>
@@ -88,6 +105,8 @@ const singleMultiProcessorData = [
                 distributed OS.
             </li>
         </ul>
+
+        <ImageGallery :data="computerData" col3 />
 
         <MinorHeading>Single and Multi User</MinorHeading>
 
@@ -152,13 +171,22 @@ const singleMultiProcessorData = [
         <p>
             Focused on providing services to computers across a network and
             includes features such as remote file access, resource sharing (e.g.
-            printers), centralised security and user management.
+            printers), centralised security and user management. Computers on
+            the network that connect to the server may be 'thin clients'. These
+            low-spec machines run an OS with minimal features that act as way to
+            access server software and resources.
         </p>
 
         <p>
             Common in companies where many individuals need to collaborate.
             Examples include Windows Server and Linux with Samba.
         </p>
+
+        <ImageFigure
+            src="/public/images/operating systems/server os diagram.avif"
+            alt="A visualisation of how a computer network interacts with a server-based OS."
+            caption="How a computer network interacts with a server-based OS."
+        />
 
         <MinorHeading>Real-time OS</MinorHeading>
 

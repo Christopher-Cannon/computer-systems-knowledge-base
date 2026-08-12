@@ -6,7 +6,7 @@
     I don't know how good this looks, so maybe stick to even numbered data
     sets instead.
     -->
-    <div class="grid">
+    <div class="grid" :class="props.col3 ? `col-3` : ``">
         <a
             v-for="(image, index) in props.data"
             :key="index"
@@ -24,6 +24,10 @@ const props = defineProps({
         type: [Object],
         required: true,
     },
+    col3: {
+        type: Boolean,
+        required: false,
+    },
 });
 </script>
 
@@ -37,6 +41,7 @@ const props = defineProps({
 
 .gallery-image {
     border-radius: var(--radius-md);
+    height: 100%;
 }
 
 .gallery-image:hover {
@@ -47,11 +52,19 @@ const props = defineProps({
     .grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (min-width: 900px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 </style>
