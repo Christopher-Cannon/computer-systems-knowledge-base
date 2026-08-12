@@ -44,10 +44,6 @@ const props = defineProps({
     height: 100%;
 }
 
-.gallery-image:hover {
-    opacity: 0.9;
-}
-
 @media (min-width: 600px) {
     .grid {
         grid-template-columns: 1fr 1fr;

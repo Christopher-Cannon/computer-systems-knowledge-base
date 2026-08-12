@@ -1,4 +1,5 @@
 <script setup>
+import ImageGallery from "../components/common/ImageGallery.vue";
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
@@ -11,6 +12,40 @@ const prevNextNavData = {
     nextHref: "/operating-systems",
     nextLabel: "Operating Systems",
 };
+
+const applicationData = [
+    {
+        src: "/public/images/software/msword.avif",
+        alt: "Logo for the Microsoft Word word processor.",
+    },
+    {
+        src: "/public/images/software/inkscape.avif",
+        alt: "Logo for the open-source vector tool Inkscape.",
+    },
+    {
+        src: "/public/images/software/audacity.avif",
+        alt: "Logo for the audio editing tool Audacity.",
+    },
+];
+
+const utilityData = [
+    {
+        src: "/public/images/software/sevenzip.avif",
+        alt: "Logo for the 7Zip file compression software'.",
+    },
+    {
+        src: "/public/images/software/winrar.avif",
+        alt: "Logo for the WinRAR file compression software.",
+    },
+    {
+        src: "/public/images/software/avg.avif",
+        alt: "Logo for the AVG antivirus software.",
+    },
+    {
+        src: "/public/images/software/malwarebytes.avif",
+        alt: "Logo for the MalwareBytes antivirus software.",
+    },
+];
 </script>
 
 <template>
@@ -35,6 +70,8 @@ const prevNextNavData = {
             recreational purposes (video games, audio and video players). All
             other types of software are to ensure these can run effectively.
         </p>
+
+        <ImageGallery :data="applicationData" col3 />
 
         <MinorHeading>System Software</MinorHeading>
 
@@ -76,6 +113,8 @@ const prevNextNavData = {
             <li>Disk management tools</li>
             <li>System diagnostics and optimisers</li>
         </ul>
+
+        <ImageGallery :data="utilityData" />
 
         <h4 class="h3">Security</h4>
 

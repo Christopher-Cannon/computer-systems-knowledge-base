@@ -75,6 +75,21 @@ const computerData = [
         alt: "Rows of server racks in a data centre.",
     },
 ];
+
+const systemData = [
+    {
+        src: "/public/images/software/windows.avif",
+        alt: "Logo for the Microsoft's Windows operating system'.",
+    },
+    {
+        src: "/public/images/software/macos.avif",
+        alt: "Logo for Apple's MacOS.",
+    },
+    {
+        src: "/public/images/software/linux.avif",
+        alt: "Logo for the Linux kernel.",
+    },
+];
 </script>
 
 <template>
@@ -89,6 +104,8 @@ const computerData = [
             platform for applications to run, and ensures efficient and secure
             operation of the system.
         </p>
+
+        <ImageGallery :data="systemData" col3 />
 
         <p>
             You've likely heard of Windows, macOS and Linux distributions, but
