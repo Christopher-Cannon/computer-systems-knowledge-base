@@ -200,9 +200,9 @@ const asciiDataTwo = [
 
         <p>
             New Technology File System was purpose built for modern Windows
-            systems and has been in use since XP. It has many useful features,
-            such as file permission and compression, journaling for data
-            recovery after crashes and support for very large files.
+            systems and has been in use since XP. It supports file permissions
+            and compression, journaling for data recovery after crashes and can
+            handle very large files.
         </p>
 
         <h4 class="h3">EXT</h4>
