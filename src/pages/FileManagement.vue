@@ -8,8 +8,8 @@ import Table from "../components/common/Table.vue";
 const prevNextNavData = {
     prevHref: "/os-layers",
     prevLabel: "Operating System Layers",
-    nextHref: "/binary-hexadecimal",
-    nextLabel: "Binary and Hexadecimal",
+    nextHref: "/number-bases",
+    nextLabel: "Number Bases",
 };
 
 const asciiDataOne = [
