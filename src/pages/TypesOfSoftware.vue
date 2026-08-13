@@ -95,6 +95,17 @@ const utilityData = [
             </li>
         </ul>
 
+        <h4 class="h3">Device Drivers</h4>
+
+        <p>
+            A small piece of software that enables an operating system the
+            ability to understand and communicate with hardware devices. All
+            peripherals require drivers to be used and, while operating systems
+            come with generic drivers for standard devices like keyboards and
+            mice, specialist devices often require driver installation before
+            they can be fully utilised.
+        </p>
+
         <MinorHeading>Utility Software</MinorHeading>
 
         <p>
@@ -289,7 +300,7 @@ const utilityData = [
         <p>
             While there is no such thing as perfect security, there are ways to
             defend yourself, whether by technical means or through simple
-            awareness:
+            awareness.
         </p>
 
         <ul class="list">
@@ -312,7 +323,7 @@ const utilityData = [
         <p>
             A password is a common way to prove a user is who they say they are
             so they can be granted access to accounts and systems. Attackers may
-            try to gain access to accounts via several methods:
+            try to gain access to accounts via several methods.
         </p>
 
         <ul class="list">
@@ -332,6 +343,8 @@ const utilityData = [
             </li>
         </ul>
 
+        <h5 class="h4">Good Practices</h5>
+
         <p>
             Strong passwords are important, especially if an account or system
             has financial information attached to it. Ideally, they should:
@@ -349,7 +362,10 @@ const utilityData = [
 
         <p>
             Other recommendations include using a password manager and
-            multi-factor authentication as an extra layer of security.
+            multi-factor authentication as an extra layer of security. While
+            some of these methods can result in time-consuming logins, it's
+            better to be safe than sorry when important personal information is
+            on the line.
         </p>
 
         <PrevNextNav :data="prevNextNavData" />

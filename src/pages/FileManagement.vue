@@ -229,7 +229,7 @@ const asciiDataTwo = [
         <h4 class="h3">Logical Drives</h4>
 
         <p>
-            A virtual division of a physical storagae device into one or more
+            A virtual division of a physical storage device into one or more
             partitions. Each partition is given its own drive letter, like C:,
             D:, etc.
         </p>
