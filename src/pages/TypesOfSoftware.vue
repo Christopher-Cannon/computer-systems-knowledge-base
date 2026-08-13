@@ -203,6 +203,155 @@ const utilityData = [
             data from a centralised database.
         </p>
 
+        <MinorHeading>Security Concerns</MinorHeading>
+
+        <p>
+            We use software and the internet regularly for all kinds of
+            purposes, from professional work and recreation to conducting
+            financial transactions and managing government services. Criminals
+            see a valuable opportunity to sabotage systems, steal valuable
+            information, gain unauthorised access to user accounts and bank
+            details or even simply deny access to important resources.
+        </p>
+
+        <p>
+            It is vital to be aware of security issues that affect users of
+            software and the internet to prevent harm or significant loss.
+        </p>
+
+        <h4 class="h3">Malware</h4>
+
+        <p>
+            Software designed to steal sensitive data, damage computer systems
+            or spy on users.
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>Virus:</b>
+                Infects files and spreads when the host program runs, usually
+                interfering with the running of the system.
+            </li>
+            <li>
+                <b>Worm:</b>
+                Automatically replicates itself across networks.
+            </li>
+            <li>
+                <b>Trojan:</b>
+                A virus disguised as legitimate software.
+            </li>
+            <li>
+                <b>Spyware:</b>
+                Secretly monitors user activity, such as keyboard input for
+                uncovering user credentials, which is sent back to the attacker.
+            </li>
+            <li>
+                <b>Ransomware:</b>
+                Encrypts files, preventing them from being opened, and demands
+                payment for decryption.
+            </li>
+        </ul>
+
+        <h4 class="h3">Network Attacks</h4>
+
+        <p>
+            These target users and networked computing infrastructure to steal
+            sensitive data, take over systems or deny access to resources.
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>Phishing:</b>
+                The practice of deceiving users with fake emails or websites to
+                get them to hand over sensitive information, such as login
+                credentials or session keys.
+            </li>
+            <li>
+                <b>Directed Denial of Service:</b>
+                Floods a server with high-volumes of network traffic to deny
+                access by genuine users.
+            </li>
+            <li>
+                <b>SQL Injection:</b>
+                A technique that involves getting the server to run unauthorised
+                database queries by sending SQL through form inputs, search
+                bars, etc.
+            </li>
+            <li>
+                <b>Man in the Middle:</b>
+                The interception of traffic between two parties, potentially
+                revealing data like login credentials or encryption keys.
+            </li>
+        </ul>
+
+        <h4 class="h3">Mitigation</h4>
+
+        <p>
+            While there is no such thing as perfect security, there are ways to
+            defend yourself, whether by technical means or through simple
+            awareness:
+        </p>
+
+        <ul class="list">
+            <li>Use firewalls to block unauthorised traffic.</li>
+            <li>Install anti-virus software to detect and remove malware.</li>
+            <li>Encrypt data to better protect it during transit.</li>
+            <li>Ensure important software is kept up-to-date.</li>
+            <li>
+                Be wary of suspicious emails, especially if they come with
+                unanticipated attachments.
+            </li>
+            <li>
+                Check URLs to ensure they are legitimate before entering any
+                sensitive data.
+            </li>
+        </ul>
+
+        <h4 class="h3">Passwords</h4>
+
+        <p>
+            A password is a common way to prove a user is who they say they are
+            so they can be granted access to accounts and systems. Attackers may
+            try to gain access to accounts via several methods:
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>Brute force:</b>
+                All combinations of a password are tried until a match is found.
+            </li>
+            <li>
+                <b>Dictionary attack:</b>
+                A more considerate approach where common words and entries in
+                leaked password lists are tried.
+            </li>
+            <li>
+                <b>Credential stuffing:</b>
+                Username and password combinations from previous data breaches
+                are tried.
+            </li>
+        </ul>
+
+        <p>
+            Strong passwords are important, especially if an account or system
+            has financial information attached to it. Ideally, they should:
+        </p>
+
+        <ul class="list">
+            <li>Be long, containing at least 12 characters or more.</li>
+            <li>
+                Contain a mix of upper and lowercase letters, numbers and
+                symbols.
+            </li>
+            <li>Avoid predictable patterns or personal information.</li>
+            <li>Be unique to the account it's used for.</li>
+        </ul>
+
+        <p>
+            Other recommendations include using a password manager and
+            multi-factor authentication as an extra layer of security.
+        </p>
+
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
