@@ -29,7 +29,7 @@ const routes = [
     { path: "/operating-systems", name: "Operating Systems", component: OperatingSystems },
     { path: "/os-layers", name: "OS Layers", component: OsLayers },
     { path: "/file-management", name: "File Management", component: FileManagement },
-    { path: "/binary-hexadecimal", name: "Binary and Hexadecimal", component: BinHex },
+    { path: "/number-bases", name: "Number Bases", component: BinHex },
     { path: "/base-conversion", name: "Base Conversion", component: BaseConversion },
     { path: "/binary-arithmetic", name: "Binary Arithmetic", component: BinArithmetic },
     { path: "/hex-arithmetic", name: "Hex Arithmetic", component: HexArithmetic },

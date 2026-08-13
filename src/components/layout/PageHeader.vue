@@ -1,6 +1,6 @@
 <template>
     <header class="page-header">
-        <div class="top-bar wrapper">
+        <div class="top-bar">
             <h1 class="h3">
                 <router-link to="/#top">
                     Computer Systems Fundamentals
@@ -113,7 +113,7 @@ const navLinks = [
         path: "/",
         label: "Conversions",
         sublinks: [
-            { path: "/binary-hexadecimal", label: "Binary and Hexadecimal" },
+            { path: "/number-bases", label: "Number Bases" },
             { path: "/base-conversion", label: "Base Conversion" },
         ],
     },
@@ -147,6 +147,8 @@ const navLinks = [
 <style scoped>
 .page-header {
     border-bottom: 1px solid var(--grey-secondary);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 nav {
@@ -219,6 +221,9 @@ nav {
 }
 
 @media (max-width: 1439.97px) {
+    .nav-list {
+        border-bottom: 1px solid var(--grey-secondary);
+    }
     .hide-mobile {
         display: none;
     }
@@ -250,6 +255,8 @@ nav {
         justify-content: flex-end;
         align-items: center;
         gap: 1rem;
+        padding-left: 0;
+        padding-right: 0;
         flex-wrap: nowrap;
         position: static;
     }
