@@ -7,6 +7,13 @@
     src: url(/public/fonts/InterVariable.ttf);
 }
 
+@font-face {
+    font-family: "Inconsolata";
+    font-display: auto;
+    font-weight: 400 700;
+    src: url(/public/fonts/InconsolataVariable.ttf);
+}
+
 :root {
     --page-width: 1280px;
     --radius-sm: 0.25rem;
@@ -95,6 +102,10 @@ p {
 img {
     object-fit: cover;
     width: 100%;
+}
+
+.monospaced {
+    font-family: "Inconsolata", monospace;
 }
 
 .wrapper {

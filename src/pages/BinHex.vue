@@ -148,7 +148,7 @@ const baseComparisonData = [
 
         <MinorHeading>Comparing Number Bases</MinorHeading>
 
-        <Table :data="baseComparisonData" />
+        <Table :data="baseComparisonData" monospaced />
 
         <PrevNextNav :data="prevNextNavData" />
     </section>

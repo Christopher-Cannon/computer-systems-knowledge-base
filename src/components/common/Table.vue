@@ -10,7 +10,12 @@
             </thead>
             <tbody>
                 <tr v-for="(row, index) in props.data" :key="index">
-                    <td v-for="value in row">{{ value }}</td>
+                    <td
+                        v-for="value in row"
+                        :class="props.monospaced ? `monospaced` : ``"
+                    >
+                        {{ value }}
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -18,12 +23,16 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
 const props = defineProps({
     data: {
         type: [Object],
         required: true,
+    },
+    monospaced: {
+        type: Boolean,
+        required: false,
     },
 });
 
@@ -31,6 +40,10 @@ const tableHeadings = computed(() => Object.keys(props.data[0]));
 </script>
 
 <style scoped>
+.monospaced {
+    font-size: 110%;
+}
+
 .table-wrapper {
     overflow-x: auto;
     width: 100%;
@@ -59,15 +72,15 @@ td {
     text-align: center;
 }
 
-tbody>tr {
+tbody > tr {
     transition: background-color 0.15s ease-in-out;
 }
 
-tbody>tr:nth-child(2n) {
+tbody > tr:nth-child(2n) {
     background-color: var(--grey);
 }
 
-tbody>tr:hover {
+tbody > tr:hover {
     background-color: var(--grey-secondary);
 }
 </style>
