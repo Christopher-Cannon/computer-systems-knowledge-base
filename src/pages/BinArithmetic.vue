@@ -11,7 +11,7 @@ import SlideGallery from "../components/common/SlideGallery.vue";
 const prevNextNavData = {
     prevHref: "/base-conversion",
     prevLabel: "Base Conversion",
-    nextHref: "/hexadecimal-arithmetic",
+    nextHref: "/hex-arithmetic",
     nextLabel: "Hexadecimal Arithmetic",
 };
 
