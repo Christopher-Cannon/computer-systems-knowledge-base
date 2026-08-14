@@ -5,6 +5,7 @@ import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
 import SideImage from "../components/common/SideImage.vue";
 import Table from "../components/common/Table.vue";
+import InfoBox from "../components/common/InfoBox.vue";
 
 const prevNextNavData = {
     prevHref: "/number-bases",
@@ -177,13 +178,21 @@ const hexToDecData = [
             functions using the following methods.
         </p>
 
-        <p>
-            Note that the little number placed to the side of it indicates its
-            number base. 285<sub>10</sub> is base 10 while 0110<sub>2</sub> is
-            base 2. It's not required, but is a good idea if its omission might
-            cause confusion, such as between 412<sub>10</sub> and 412
-            <sub>16</sub> which are quite different.
-        </p>
+        <InfoBox label="Number Base Indicators">
+            <p class="!mt-0">
+                The little number placed to the side of a number indicates its
+                number base. 285<sub>10</sub> is base 10 while
+                <span class="monospaced">0110</span><sub>2</sub>
+                is base 2.
+            </p>
+
+            <p class="!mb-0">
+                It's a good idea to include if its omission might cause
+                confusion, such as between decimal 412<sub>10</sub> and
+                hexadecimal 412<sub>16</sub> which differ greatly in actual
+                value.
+            </p>
+        </InfoBox>
 
         <MinorHeading>Decimal Binary Conversion</MinorHeading>
 
