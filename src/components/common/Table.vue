@@ -1,10 +1,16 @@
 <template>
     <div class="table-wrapper">
+        <div v-if="props.annotations" class="row-annotations">
+            <div v-for="label in props.annotations" :key="label">
+                {{ label }}
+            </div>
+        </div>
+
         <table :style="props.fixed ? `table-layout: fixed` : ``">
             <thead>
                 <tr>
                     <th v-for="heading in tableHeadings" :key="heading">
-                        {{ heading }}
+                        {{ heading.replace("_", "") }}
                     </th>
                 </tr>
             </thead>
@@ -30,6 +36,10 @@ const props = defineProps({
         type: [Object],
         required: true,
     },
+    annotations: {
+        type: [String],
+        required: false,
+    },
     fixed: {
         type: Boolean,
         required: false,
@@ -49,8 +59,22 @@ const tableHeadings = computed(() => Object.keys(props.data[0]));
 }
 
 .table-wrapper {
+    display: flex;
+    gap: 1rem;
     overflow-x: auto;
     width: 100%;
+}
+
+.row-annotations {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.row-annotations div {
+    padding: 0.33rem 0;
 }
 
 table {
