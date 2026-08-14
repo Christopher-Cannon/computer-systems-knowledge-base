@@ -106,6 +106,7 @@ img {
 
 .monospaced {
     font-family: "Inconsolata", monospace;
+    font-size: 110%;
 }
 
 .wrapper {

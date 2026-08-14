@@ -54,10 +54,6 @@ const tableHeadings = computed(() => Object.keys(props.data[0]));
 </script>
 
 <style scoped>
-.monospaced {
-    font-size: 110%;
-}
-
 .table-wrapper {
     display: flex;
     gap: 1rem;
