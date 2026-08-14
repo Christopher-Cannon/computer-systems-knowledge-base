@@ -66,7 +66,11 @@ const hexToDecData = [
 
         <h4 class="h3">Hex to Decimal</h4>
 
-        <p></p>
+        <p>
+            Draw a table with the values of 16 raised to the power of 0 onwards,
+            starting from the right side, for as many digits there are. Write
+            the hex digits in each column and convert them to decimal.
+        </p>
 
         <Table
             :data="hexToDecData"
@@ -74,6 +78,17 @@ const hexToDecData = [
             monospaced
             fixed
         />
+
+        <p>
+            Finally, multiply each decimal number with its associated column
+            value.
+        </p>
+
+        <p class="h5 text-center">13 * 4096 + 2 * 256 + 14 * 16 + 9 * 1</p>
+
+        <p class="h5 text-center">
+            53248 + 512 + 224 + 9 = <b><u>53993</u></b>
+        </p>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
