@@ -21,6 +21,8 @@
 }
 
 :root {
+    --white: #fffcfd;
+    --mid-grey: #81807f;
     --bg-colour: #fffcfd;
     --text-colour: #262626;
     --text-grey: #6e6e6e;
@@ -35,6 +37,8 @@
 }
 
 [data-theme="dark"] {
+    --white: #fffcfd;
+    --mid-grey: #81807f;
     --bg-colour: #262626;
     --text-colour: #fffcfd;
     --text-grey: #b6b0b2;

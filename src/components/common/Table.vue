@@ -59,6 +59,7 @@ const tableHeadings = computed(() => Object.keys(props.data[0]));
     gap: 1rem;
     overflow-x: auto;
     width: 100%;
+    margin: 2rem 0;
 }
 
 .row-annotations {
@@ -77,9 +78,8 @@ table {
     background-color: var(--bg-colour);
     border: 2px solid var(--primary);
     border-collapse: separate;
-    border-spacing: 0;
     border-radius: var(--radius-md);
-    margin: 1rem 0;
+    border-spacing: 0;
     overflow: hidden;
     width: 100%;
 }
