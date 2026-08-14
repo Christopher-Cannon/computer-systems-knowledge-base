@@ -15,49 +15,49 @@ const prevNextNavData = {
 
 const baseComparisonData = [
     {
-        Binary: "0000",
+        Binary: "0",
         Octal: "0",
         Decimal: "0",
         Hexadecimal: "0",
     },
     {
-        Binary: "0001",
+        Binary: "1",
         Octal: "1",
         Decimal: "1",
         Hexadecimal: "1",
     },
     {
-        Binary: "0010",
+        Binary: "10",
         Octal: "2",
         Decimal: "2",
         Hexadecimal: "2",
     },
     {
-        Binary: "0011",
+        Binary: "11",
         Octal: "3",
         Decimal: "3",
         Hexadecimal: "3",
     },
     {
-        Binary: "0100",
+        Binary: "100",
         Octal: "4",
         Decimal: "4",
         Hexadecimal: "4",
     },
     {
-        Binary: "0101",
+        Binary: "101",
         Octal: "5",
         Decimal: "5",
         Hexadecimal: "5",
     },
     {
-        Binary: "0110",
+        Binary: "110",
         Octal: "6",
         Decimal: "6",
         Hexadecimal: "6",
     },
     {
-        Binary: "0111",
+        Binary: "111",
         Octal: "7",
         Decimal: "7",
         Hexadecimal: "7",
@@ -164,7 +164,7 @@ const baseComparisonData = [
 
         <MinorHeading>Comparing Number Bases</MinorHeading>
 
-        <Table :data="baseComparisonData" monospaced />
+        <Table :data="baseComparisonData" monospaced fixed />
 
         <PrevNextNav :data="prevNextNavData" />
     </section>

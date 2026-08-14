@@ -1,6 +1,6 @@
 <template>
     <div class="table-wrapper">
-        <table>
+        <table :style="props.fixed ? `table-layout: fixed` : ``">
             <thead>
                 <tr>
                     <th v-for="heading in tableHeadings" :key="heading">
@@ -29,6 +29,10 @@ const props = defineProps({
     data: {
         type: [Object],
         required: true,
+    },
+    fixed: {
+        type: Boolean,
+        required: false,
     },
     monospaced: {
         type: Boolean,
@@ -63,7 +67,6 @@ table {
 th {
     background-color: var(--primary);
     color: var(--bg-colour);
-    /* text-transform: capitalize; */
 }
 
 th,
