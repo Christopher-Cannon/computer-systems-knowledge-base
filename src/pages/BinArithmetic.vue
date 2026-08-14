@@ -77,6 +77,63 @@ const binAdditionSlidePaths = [
         description: "Leftover carry digits go in their own column.",
     },
 ];
+
+const binSubtractionSlidePaths = [
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-0a.png",
+        description: "Label each number as A and B respectively.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-0b.png",
+        description: "Invert the second number and add 1 to it.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-1.png",
+        description:
+            "Write each binary number down with one on top of the other.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-2.png",
+        description: "1 + 1 = 0, carry 1 to the next column.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-3.png",
+        description: "1 + 0 = 1.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-4.png",
+        description: "1 + 0 = 1.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-5.png",
+        description: "1 + 1 = 0, carry 1 to the next column.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-6.png",
+        description: "1 + 0 = 1.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-7.png",
+        description: "0 + 0 = 0.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-8.png",
+        description: "1 + 0 = 0.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-9.png",
+        description: "1 + 1 = 0, carry 1 to the next column.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-10.png",
+        description: "Leftover carry digits go in their own column.",
+    },
+    {
+        path: "/public/images/binary subtraction/binary-add-2c-11.png",
+        description:
+            "The result of a subtraction should be the same length as its input terms, so remove the 8th bit.",
+    },
+];
 </script>
 
 <template>
@@ -95,12 +152,12 @@ const binAdditionSlidePaths = [
 
         <Table :data="binAdditionRulesData" />
 
-        <h4 class="h3">Example</h4>
-
         <p>
-            This example will demonstrate how to add
-            <span class="monospaced">11011110</span> and
-            <span class="monospaced">00101100</span> together.
+            Here is a demonstration on how to carry out
+            <b class="monospaced">11011110</b><sub>2</sub> +
+            <b class="monospaced">00101100</b><sub>2</sub> together to get
+            <b class="monospaced"><u>100001010</u></b
+            ><sub>2</sub>.
         </p>
 
         <SlideGallery :data="binAdditionSlidePaths" />
@@ -115,6 +172,31 @@ const binAdditionSlidePaths = [
         </InfoBox>
 
         <MinorHeading>Subtraction</MinorHeading>
+
+        <p>
+            Subtracting binary numbers can be easier if you use the
+            <a href="#" class="link">two's complement</a> method. This involves
+            inverting the second number and performing long addition as before.
+            Because this is still technically a subtraction operation, any
+            overflow should be omitted from the solution.
+        </p>
+
+        <p>
+            If the left-most bit of the solution (AKA most significant bit or
+            MSB) is 0, the result is a positive number and you leave it as is.
+            If it's 1, the result is a negative number, meaning you have to
+            invert the result and add 1 to it again.
+        </p>
+
+        <p>
+            Here is a demonstration on how to carry out
+            <b class="monospaced">10001001</b><sub>2</sub> -
+            <b class="monospaced">00110011</b><sub>2</sub> together to get
+            <b class="monospaced"><u>01010110</u></b
+            ><sub>2</sub>.
+        </p>
+
+        <SlideGallery :data="binSubtractionSlidePaths" />
 
         <PrevNextNav :data="prevNextNavData" />
     </section>

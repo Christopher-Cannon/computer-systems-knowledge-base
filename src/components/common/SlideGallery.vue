@@ -62,6 +62,8 @@ function nextStep() {
 }
 
 .slide {
+    background-color: var(--white);
+    border: 2px solid var(--primary);
     border-radius: var(--radius-md);
 }
 
