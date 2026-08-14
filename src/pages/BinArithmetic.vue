@@ -175,10 +175,17 @@ const binSubtractionSlidePaths = [
 
         <p>
             Subtracting binary numbers can be easier if you use the
-            <a href="#" class="link">two's complement</a> method. This involves
-            inverting the second number and performing long addition as before.
-            Because this is still technically a subtraction operation, any
-            overflow should be omitted from the solution.
+            <a
+                href="https://www.geeksforgeeks.org/digital-logic/twos-complement/"
+                class="link"
+                target="_blank"
+                >two's complement</a
+            >
+            method, which is a way of representing signed integers in computer
+            systems. This involves inverting the second number and performing
+            long addition as before. Because this is still technically a
+            subtraction operation, any overflow should be omitted from the
+            solution.
         </p>
 
         <p>
