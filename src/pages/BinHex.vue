@@ -164,6 +164,14 @@ const baseComparisonData = [
 
         <MinorHeading>Comparing Number Bases</MinorHeading>
 
+        <p>
+            This chart demonstrates how binary, octal, decimal and hexademical
+            compare between their first 16 numbers. Octal has been added since
+            it occasionally appears in computing contexts and makes the
+            comparison a little clearer, though this guide won't be covering
+            octal conversion or arithmetic.
+        </p>
+
         <Table :data="baseComparisonData" monospaced fixed />
 
         <PrevNextNav :data="prevNextNavData" />

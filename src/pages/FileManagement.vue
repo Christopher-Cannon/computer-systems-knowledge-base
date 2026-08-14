@@ -17,7 +17,7 @@ const asciiDataOne = [
     { Character: "START OF HEADING", Decimal: 1, Binary: "00000001" },
     { Character: "START OF TEXT", Decimal: 2, Binary: "00000010" },
     { Character: "END OF TEXT", Decimal: 3, Binary: "00000011" },
-    { Character: "END OF TRANSMISSION", Decimal: 4, Binary: "00000100" },
+    { Character: "TRANSMISSION END", Decimal: 4, Binary: "00000100" },
     { Character: "ENQUIRY", Decimal: 5, Binary: "00000101" },
     { Character: "ACKNOWLEDGE", Decimal: 6, Binary: "00000110" },
     { Character: "BELL", Decimal: 7, Binary: "00000111" },
