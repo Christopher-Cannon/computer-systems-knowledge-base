@@ -255,7 +255,9 @@ const asciiDataTwo = [
             facilitate organisation and reduce the likelihood of name conflicts.
             The root folder is the starting point and is usually referred to by
             the drive letter. Individual files can be found by following their
-            path from the root.
+            path from the root. The folder you are currently in (viewed from a
+            command line, file explorer, etc) is known as the 'current working
+            directory'.
         </p>
 
         <SideImage
@@ -282,8 +284,9 @@ const asciiDataTwo = [
 
             <p>
                 The path to a file from elsewhere in the file hierarchy. For
-                example, if we wanted to use mountain.jpg in index.html, the
-                following relative path would be required:<br />
+                example, if we wanted to access mountain.jpg and website was the
+                current working directory, the following relative path would be
+                required:<br />
                 <span class="monospaced inline-block !mt-[0.5rem]"
                     ><b>../Pictures/mountain.jpg</b></span
                 >
@@ -310,10 +313,12 @@ const asciiDataTwo = [
 
         <p>
             This type of path is often used in web and software development
-            projects where a project root has been defined, allowing for shorter
-            absolute paths to be used anywhere in that project. You can safely
-            ignore this until you start working with, for example, React JS or
-            Vue JS.
+            projects where a project root has been defined, allowing for
+            absolute paths that start relative to the project root instead of
+            the drive root (like C:, D:, etc). This means the project can be
+            moved anywhere else in the project hierarchy without the links
+            breaking. You can safely ignore this until you start working with,
+            for example, React JS or Vue JS.
         </p>
 
         <InfoBox label="File and Folder Naming" warning>
