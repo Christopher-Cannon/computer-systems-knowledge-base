@@ -149,27 +149,35 @@ const prevNextNavData = {
             and the heap.
         </p>
 
-        <h5 class="h4">The Stack</h5>
+        <div class="row">
+            <div>
+                <h5 class="h4">The Stack</h5>
 
-        <p>
-            A region of memory used for short-lived and automatically managed
-            data like function parameters, local variables and return addresses
-            that specify where to go after executing a function. Follows a last
-            in, first out structure, much like a stack of plates.
-        </p>
+                <p>
+                    A region of memory used for short-lived and automatically
+                    managed data like function parameters, local variables and
+                    return addresses that specify where to go after executing a
+                    function. Follows a last in, first out structure, much like
+                    a stack of plates.
+                </p>
 
-        <p>The stack grows from the highest memory address down.</p>
+                <p>The stack grows from the highest memory address down.</p>
+            </div>
 
-        <h5 class="h4">The Heap</h5>
+            <div>
+                <h5 class="h4">The Heap</h5>
 
-        <p>
-            A region of memory used for dynamic allocation of objects and data
-            structures and isn't as ordered as the stack, meaning it tends to be
-            slower. There is a risk of memory leaks if the programmer or garbage
-            collector does not free memory correctly.
-        </p>
+                <p>
+                    A region of memory used for dynamic allocation of objects
+                    and data structures and isn't as ordered as the stack,
+                    meaning it tends to be slower. There is a risk of memory
+                    leaks if the programmer or garbage collector does not free
+                    memory correctly.
+                </p>
 
-        <p>The heap grows from the lowest memory address up.</p>
+                <p>The heap grows from the lowest memory address up.</p>
+            </div>
+        </div>
 
         <ImageFigure
             src="/public/images/memory/heap stack diagram.avif"
@@ -277,4 +285,12 @@ const prevNextNavData = {
     </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media (min-width: 900px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+</style>
