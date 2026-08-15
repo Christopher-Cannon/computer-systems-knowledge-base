@@ -155,7 +155,7 @@ const binSubtractionSlidePaths = [
         <p>
             Here is a demonstration on how to carry out
             <b class="monospaced">11011110</b><sub>2</sub> +
-            <b class="monospaced">00101100</b><sub>2</sub> together to get
+            <b class="monospaced">00101100</b><sub>2</sub> to get
             <b class="monospaced"><u>100001010</u></b
             ><sub>2</sub>.
         </p>
@@ -198,7 +198,7 @@ const binSubtractionSlidePaths = [
         <p>
             Here is a demonstration on how to carry out
             <b class="monospaced">10001001</b><sub>2</sub> -
-            <b class="monospaced">00110011</b><sub>2</sub> together to get
+            <b class="monospaced">00110011</b><sub>2</sub> to get
             <b class="monospaced"><u>01010110</u></b
             ><sub>2</sub>.
         </p>

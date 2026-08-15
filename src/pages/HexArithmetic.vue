@@ -76,13 +76,55 @@ const hexSubtractionSlidePaths = [
 
         <MainHeading>Hexadecimal Arithmetic</MainHeading>
 
+        <p>
+            Adding and subtracting hexadecimal numbers isn't too difficult if
+            you're familiar with doing such operations on decimal numbers, it
+            just takes some practice to get used to.
+        </p>
+
         <MinorHeading>Addition</MinorHeading>
+
+        <p>
+            Hexadecimal addition is no different to long addition of decimal
+            numbers. Each number involved in the calculation is placed on top of
+            each other with addition starting from the right. Any numbers that
+            are too large for one column are carried over to the next.
+        </p>
+
+        <p>
+            Here is a demonstration on how to carry out
+            <b>5BC3</b><sub>16</sub> + <b>28CA</b><sub>16</sub> to get
+            <b><u>848D</u></b
+            ><sub>16</sub>.
+        </p>
 
         <SlideGallery :data="hexAdditionSlidePaths" />
 
         <MinorHeading>Subtraction</MinorHeading>
 
+        <p>
+            Hexadecimal subtraction is much like long subtraction of decimal
+            numbers. Each number involved in the calculation is placed on top of
+            each other with subtraction starting from the right. Numbers are
+            borrowed from the left to prevent subtractions becoming negative.
+        </p>
+
+        <p>
+            Here is a demonstration on how to carry out
+            <b>80B3</b><sub>16</sub> - <b>38E5</b><sub>16</sub> to get
+            <b><u>47CE</u></b
+            ><sub>16</sub>.
+        </p>
+
         <SlideGallery :data="hexSubtractionSlidePaths" />
+
+        <InfoBox warning>
+            <p class="!my-0">
+                Remember that all numbers in the above slides are hexadecimal.
+                Be careful that you don't confuse numbers in calculations like
+                13<sub>16</sub> - 5<sub>16</sub> for decimal values.
+            </p>
+        </InfoBox>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
