@@ -214,11 +214,12 @@ const xorSlidePaths = [
             low-level programming tasks.
         </p>
 
-        <InfoBox>
+        <InfoBox label="Truth Tables">
             <p class="!my-0">
-                Use the truth tables below to understand how to apply each
-                logical operation to binary numbers. Note that AND, OR and XOR
-                gates can have more than 2 inputs.
+                These detail what the outputs are based on input to a logical
+                operator. Truth tables have been provided below to help you
+                understand how to apply each logical operator to binary numbers.
+                Note that AND, OR and XOR gates can have more than 2 inputs.
             </p>
         </InfoBox>
 
