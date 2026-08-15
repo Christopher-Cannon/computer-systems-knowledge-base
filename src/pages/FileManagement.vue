@@ -242,6 +242,12 @@ const asciiDataTwo = [
             reasons.
         </p>
 
+        <ImageFigure
+            src="/public/images/file management/disk partitions.avif"
+            alt="Interface showing various disks containing numerous partitions."
+            caption="Disks divided into multiple partitions as shown in Windows computer management tool."
+        />
+
         <MinorHeading>File Hierarchy</MinorHeading>
 
         <p>
