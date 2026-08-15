@@ -13,7 +13,6 @@ import BaseConversion from "../pages/BaseConversion.vue";
 import BinArithmetic from "../pages/BinArithmetic.vue";
 import HexArithmetic from "../pages/HexArithmetic.vue";
 import LogicSimple from "../pages/LogicSimple.vue";
-import LogicComplex from "../pages/LogicComplex.vue";
 import Glossary from "../pages/Glossary.vue";
 import ResourceLinks from "../pages/ResourceLinks.vue";
 import Test from "../pages/Test.vue";
@@ -33,8 +32,7 @@ const routes = [
     { path: "/base-conversion", name: "Base Conversion", component: BaseConversion },
     { path: "/binary-arithmetic", name: "Binary Arithmetic", component: BinArithmetic },
     { path: "/hex-arithmetic", name: "Hex Arithmetic", component: HexArithmetic },
-    { path: "/simple-logic-gates", name: "Simple Logic Gates", component: LogicSimple },
-    { path: "/complex-logic-gates", name: "Complex Logic Gates", component: LogicComplex },
+    { path: "/logical-operations", name: "Logical Operations", component: LogicSimple },
     { path: "/glossary", name: "Glossary", component: Glossary },
     { path: "/links", name: "Links", component: ResourceLinks },
     { path: "/test", name: "Test", component: Test },

@@ -129,8 +129,7 @@ const navLinks = [
         path: "/",
         label: "Logic",
         sublinks: [
-            { path: "/simple-logic-gates", label: "Simple Logic Gates" },
-            { path: "/complex-logic-gates", label: "Complex Logic Gates" },
+            { path: "/logical-operations", label: "Logical Operations" },
         ],
     },
     {

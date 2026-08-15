@@ -11,8 +11,8 @@ import SlideGallery from "../components/common/SlideGallery.vue";
 const prevNextNavData = {
     prevHref: "/hex-arithmetic",
     prevLabel: "Hexadecimal Arithmetic",
-    nextHref: "/",
-    nextLabel: "Next Topic",
+    nextHref: "/glossary",
+    nextLabel: "Glossary",
 };
 
 const notTruthTable = [

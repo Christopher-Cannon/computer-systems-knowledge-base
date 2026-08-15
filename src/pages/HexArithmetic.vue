@@ -11,8 +11,8 @@ import SlideGallery from "../components/common/SlideGallery.vue";
 const prevNextNavData = {
     prevHref: "/binary-arithmetic",
     prevLabel: "Binary Arithmetic",
-    nextHref: "/simple-logic-gates",
-    nextLabel: "Simple Logic Gates",
+    nextHref: "/logical-operations",
+    nextLabel: "Logical Operations",
 };
 
 const hexAdditionSlidePaths = [
