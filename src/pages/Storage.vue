@@ -23,7 +23,7 @@ const prevNextNavData = {
             Computers are constantly working with and modifying data, but not
             all data needs to be stored in working memory all the time. For data
             that is only occasionally used, there needs to be a place to safely
-            store them long-term.
+            store it long-term.
         </p>
 
         <MinorHeading>Mediums</MinorHeading>
@@ -287,7 +287,7 @@ const prevNextNavData = {
         />
 
         <p>
-            Hover to reveal answer:
+            <b>Hover to reveal answer</b><br />
             <span class="spoiler">
                 Disk 3 is the ideal choice as it has a competitive transfer rate
                 and the fastest seek time. While disk 1 has a slightly higher
