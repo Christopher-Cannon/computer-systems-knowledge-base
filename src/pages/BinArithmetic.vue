@@ -1,9 +1,7 @@
 <script setup>
-import ImageGallery from "../components/common/ImageGallery.vue";
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
-import SideImage from "../components/common/SideImage.vue";
 import Table from "../components/common/Table.vue";
 import InfoBox from "../components/common/InfoBox.vue";
 import SlideGallery from "../components/common/SlideGallery.vue";
