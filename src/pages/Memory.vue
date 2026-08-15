@@ -82,14 +82,14 @@ const prevNextNavData = {
 
         <ul class="list">
             <li>
-                <b>Static RAM: </b>
-                SRAM is small but fast, used for
+                <b>Static RAM (SRAM): </b>
+                Small but fast, used for
                 <abbr title="Central Processing Unit">CPU</abbr> caches.
             </li>
             <li>
-                <b>Dynamic RAM: </b>
-                DRAM is much larger than SRAM, but a lot slower. Used for system
-                memory and needs to be constantly refreshed to preserve state.
+                <b>Dynamic RAM (DRAM): </b>
+                Much larger than SRAM, but a lot slower. Used for system memory
+                and needs to be constantly refreshed to preserve state.
             </li>
         </ul>
 
