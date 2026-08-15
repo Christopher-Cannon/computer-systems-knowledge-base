@@ -222,5 +222,3 @@ const prevNextNavData = {
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
-
-<style scoped></style>

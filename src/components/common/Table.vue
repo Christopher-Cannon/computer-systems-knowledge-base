@@ -66,7 +66,7 @@ const tableHeadings = computed(() => Object.keys(props.data[0]));
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     text-align: right;
 }
 

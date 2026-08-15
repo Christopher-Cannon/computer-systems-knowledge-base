@@ -380,5 +380,3 @@ const deviceData = [
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
-
-<style scoped></style>

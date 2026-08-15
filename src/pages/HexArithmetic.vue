@@ -126,5 +126,3 @@ const hexSubtractionSlidePaths = [
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
-
-<style scoped></style>
