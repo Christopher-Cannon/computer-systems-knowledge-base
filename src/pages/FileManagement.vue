@@ -323,7 +323,7 @@ const asciiDataTwo = [
             <p class="!mb-0">
                 However, other operating systems such as Linux distributions are
                 case-sensitive, so these paths would be considered distinct. The
-                second path would work just fine but the second would not.
+                second path would work just fine, but the first would not.
             </p>
         </InfoBox>
 
