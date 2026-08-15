@@ -133,7 +133,7 @@ const andSlidePaths = [
     },
     {
         path: "/public/images/logic/and-5.png",
-        description: "Continue until you have applied an AND to each bit.",
+        description: "Continue until you have applied an AND to each column.",
     },
 ];
 
@@ -157,7 +157,7 @@ const orSlidePaths = [
     },
     {
         path: "/public/images/logic/or-5.png",
-        description: "Continue until you have applied an OR to each bit.",
+        description: "Continue until you have applied an OR to each column.",
     },
 ];
 
@@ -181,7 +181,7 @@ const xorSlidePaths = [
     },
     {
         path: "/public/images/logic/xor-5.png",
-        description: "Continue until you have applied an XOR to each bit.",
+        description: "Continue until you have applied an XOR to each column.",
     },
 ];
 </script>
