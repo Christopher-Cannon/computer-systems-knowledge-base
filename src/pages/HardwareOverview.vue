@@ -313,14 +313,51 @@ const deviceData = [
             </p>
         </SideImage>
 
-        <MinorHeading>Trends</MinorHeading>
+        <MinorHeading>Development History</MinorHeading>
+
+        <p>
+            The world of computing hardware and software has changed greatly
+            since the 60s and 70s. The lists below highlights important trends
+            and developments of the past four decades to put in perspective how
+            much technology has developed.
+        </p>
+
+        <h4 class="h3">1990s</h4>
+
+        <ul class="list">
+            <li>
+                CPUs were single-core with speeds typically measuring in the
+                hundreds of MHz.
+            </li>
+            <li>RAM capacity went from a couple of megabytes to hundreds.</li>
+            <li>
+                Graphical hardware acceleration provided by discrete graphics
+                cards able to handle popular 3D video games grow in popularity.
+            </li>
+            <li>
+                Operating systems such as Windows 3.1 and 95 included
+                sophisticated graphical user interfaces, making it easier to
+                interact with computers outside of a command line.
+            </li>
+            <li>
+                The internet begins gaining traction, though speeds are slow
+                with dial-up connections allowing for data transfer rates of up
+                to 56Kbps.
+            </li>
+            <li>
+                The Linux kernel was developed early in the decade for inclusion
+                with the GNU operating system which became a popular server OS
+                due to it's free and open-source nature.
+            </li>
+        </ul>
 
         <h4 class="h3">2000s</h4>
 
         <ul class="list">
             <li>
-                CPUs were mostly single-core with a focus on increasing clock
-                speeds before dual and quad-core appeared later in the decade.
+                CPUs were initially mostly single-core with a focus on
+                increasing clock speeds before dual and quad-core appeared later
+                in the decade.
             </li>
             <li>RAM space increased from megabytes to gigabytes in size.</li>
             <li>Hard drives grew from tens to hundreds of gigabytes.</li>
@@ -334,6 +371,10 @@ const deviceData = [
             <li>
                 LCD monitors become standard over CRTs due to their less bulky
                 design.
+            </li>
+            <li>
+                Years of experimentation with mobile phone form factors end with
+                the introduction of the iPhone, the first proper smartphone.
             </li>
         </ul>
 
@@ -353,13 +394,18 @@ const deviceData = [
                 USB 3 allows for much faster data transfer between the system
                 and peripherals, especially external storage.
             </li>
+            <li>
+                Smartphones grow rapidly in popularity, leading to the
+                proliferation of mobile applications and websites.
+            </li>
         </ul>
 
         <h4 class="h3">2020s</h4>
 
         <ul class="list">
             <li>
-                CPUs commonly feature 6-8 cores or more with hyperthreading.
+                CPUs commonly feature 6-8 cores or more with hyperthreading
+                technology and integrated graphics.
             </li>
             <li>
                 GPUs start including raytracing and AI-specific technologies.
