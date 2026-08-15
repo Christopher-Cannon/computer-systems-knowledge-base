@@ -1,7 +1,10 @@
 <script setup>
+import ImageFigure from "../components/common/ImageFigure.vue";
+import InfoBox from "../components/common/InfoBox.vue";
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
+import SideImage from "../components/common/SideImage.vue";
 import Table from "../components/common/Table.vue";
 
 const prevNextNavData = {
@@ -242,15 +245,87 @@ const asciiDataTwo = [
         <MinorHeading>File Hierarchy</MinorHeading>
 
         <p>
-            Files and folders follow a tree-like structure to facilitate
-            organisation and reduce the likelihood of name conflicts.
-        </p>
-
-        <p>
+            Files and folders (AKA directories) follow a tree-like structure to
+            facilitate organisation and reduce the likelihood of name conflicts.
             The root folder is the starting point and is usually referred to by
             the drive letter. Individual files can be found by following their
             path from the root.
         </p>
+
+        <SideImage
+            src="/public/images/file management/file system.png"
+            alt="A map of a typical file hierarchy."
+        >
+            <p>
+                In the following hierarchy, three folders exist at the root:
+                Pictures, Documents and website. Each contain files and/or
+                folders of their own. There are several ways file locations can
+                be expressed.
+            </p>
+
+            <h4 class="h3">Absolute Path</h4>
+
+            <p>
+                The full path starting from the drive root, for example:<br />
+                <span class="monospaced inline-block !mt-[0.5rem]"
+                    ><b>D:/Pictures/Wallpapers/duck.jpg</b></span
+                >
+            </p>
+
+            <h4 class="h3">Relative Path</h4>
+
+            <p>
+                The path to a file from elsewhere in the file hierarchy. For
+                example, if we wanted to use mountain.jpg in index.html, the
+                following relative path would be required:<br />
+                <span class="monospaced inline-block !mt-[0.5rem]"
+                    ><b>../Pictures/mountain.jpg</b></span
+                >
+            </p>
+
+            <p>
+                The '..' means 'go up one folder level'. We have to come out of
+                the website folder to reach the Pictures folder. For index.html
+                to link to another web page, it could simply use the path:<br />
+                <span class="monospaced inline-block !mt-[0.5rem]"
+                    ><b>contact.html</b></span
+                >
+            </p>
+        </SideImage>
+
+        <h4 class="h3 !mt-[1rem]">Root-relative Path</h4>
+
+        <p>
+            Occasionally, you may encounter paths like:<br />
+            <span class="monospaced inline-block !mt-[0.5rem]"
+                ><b>/images/duck.jpg</b></span
+            >
+        </p>
+
+        <p>
+            This type of path is often used in web and software development
+            projects where a project root has been defined, allowing for shorter
+            absolute paths to be used anywhere in that project. You can safely
+            ignore this until you start working with, for example, React JS or
+            Vue JS.
+        </p>
+
+        <InfoBox label="File and Folder Naming" warning>
+            <p class="!mt-0">
+                Windows tends to be case-insensitive when it comes to files and
+                folders, so
+                <span class="monospaced"><b>../pictures/Mountain.jpg</b></span>
+                and
+                <span class="monospaced"><b>../Pictures/mountain.jpg</b></span>
+                would be considered equivalent.
+            </p>
+
+            <p class="!mb-0">
+                However, other operating systems such as Linux distributions are
+                case-sensitive, so these paths would be considered distinct. The
+                second path would work just fine but the second would not.
+            </p>
+        </InfoBox>
 
         <h4 class="h3">File Locking</h4>
 
