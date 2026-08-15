@@ -1,27 +1,29 @@
 <template>
     <aside
         class="info-box"
-        :class="props.warning ? `warning-box` : props.danger ? `danger-box` : ``"
+        :class="
+            props.warning ? `warning-box` : props.danger ? `danger-box` : ``
+        "
     >
         <header class="info-box-header">
             <img
                 v-if="props.warning"
-                src="/public/icons/triangle-exclamation-solid-full.svg" 
-                alt="" 
+                src="/public/icons/triangle-exclamation-solid-full.svg"
+                alt=""
                 class="info-box-icon"
-            >
+            />
             <img
                 v-else-if="props.danger"
-                src="/public/icons/bomb-solid-full.svg" 
-                alt="" 
+                src="/public/icons/bomb-solid-full.svg"
+                alt=""
                 class="info-box-icon"
-            >
+            />
             <img
                 v-else
-                src="/public/icons/circle-info-solid-full.svg" 
-                alt="" 
+                src="/public/icons/circle-info-solid-full.svg"
+                alt=""
                 class="info-box-icon"
-            >
+            />
             <span>{{ defaultLabel }}</span>
         </header>
 
@@ -32,7 +34,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
 const props = defineProps({
     label: {
@@ -66,7 +68,7 @@ const defaultLabel = computed(() => {
 
 .info-box-header {
     background-color: var(--info);
-    color: var(--bg-colour);
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 0.5rem;

@@ -179,7 +179,7 @@ const xorSlidePaths = [
     },
     {
         path: "/public/images/logic/xor-4.png",
-        description: "1 XOR 1 = 1.",
+        description: "1 XOR 1 = 0.",
     },
     {
         path: "/public/images/logic/xor-5.png",
@@ -206,7 +206,8 @@ const xorSlidePaths = [
             which turn on and off according to their inputs and the type of gate
             it is. They can be combined in a variety of ways to form more
             complex circuits that can perform functions such as adding binary
-            numbers and storing state.
+            numbers and storing state. As shown below, each gate is represented
+            with a standard shape to make circuit diagrams easier to understand.
         </p>
 
         <p>
@@ -215,11 +216,13 @@ const xorSlidePaths = [
             low-level programming tasks.
         </p>
 
-        <p>
-            Use the truth tables below to understand how to apply each logical
-            operation to binary numbers. AND, OR and XOR gates can have more
-            than 2 inputs.
-        </p>
+        <InfoBox>
+            <p class="!my-0">
+                Use the truth tables below to understand how to apply each
+                logical operation to binary numbers. Note that AND, OR and XOR
+                gates can have more than 2 inputs.
+            </p>
+        </InfoBox>
 
         <MinorHeading>NOT</MinorHeading>
 
@@ -340,6 +343,12 @@ const xorSlidePaths = [
 </template>
 
 <style scoped>
+.logic-gate {
+    border-radius: var(--radius-md);
+    margin: 2rem auto;
+    width: 50%;
+}
+
 @media (min-width: 900px) {
     .row {
         display: flex;
@@ -365,7 +374,6 @@ const xorSlidePaths = [
 
     .logic-gate {
         margin: 2rem 0;
-        width: 50%;
     }
 }
 </style>
