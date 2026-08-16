@@ -33,7 +33,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Hardware Overview</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/hardware-overview#internal-components"
@@ -65,7 +65,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >CPU Architecture</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/cpu-architecture#core-cpu-components"
@@ -95,7 +95,7 @@ import SideImage from "../components/common/SideImage.vue";
                     <li>
                         <a href="/memory" class="link">Memory</a>
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/memory#random-access-memory"
@@ -116,7 +116,7 @@ import SideImage from "../components/common/SideImage.vue";
                     <li>
                         <a href="/storage" class="link">Storage</a>
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a href="/storage#mediums" class="link"
                                     >Mediums</a
@@ -143,7 +143,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Types of Software</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/types-of-software#application-software"
@@ -187,7 +187,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Operating Systems</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/operating-systems#single-and-multi-user"
@@ -233,7 +233,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Operating System Layers</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a href="/os-layers#kernel" class="link"
                                     >Kernel</a
@@ -280,7 +280,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >File Management</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/file-management#file-systems"
@@ -312,7 +312,7 @@ import SideImage from "../components/common/SideImage.vue";
                     <li>
                         <a href="/number-bases" class="link">Number Bases</a>
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a href="/number-bases#binary" class="link"
                                     >Binary</a
@@ -340,7 +340,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Base Conversion</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/base-conversion#decimal-binary-conversion"
@@ -376,7 +376,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Binary Arithmetic</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a
                                     href="/binary-arithmetic#addition"
@@ -401,7 +401,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Hexadecimal Arithmetic</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a href="/hex-arithmetic#addition" class="link"
                                     >Addition</a
@@ -428,7 +428,7 @@ import SideImage from "../components/common/SideImage.vue";
                             >Logical Operations</a
                         >
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li>
                                 <a href="/logical-operations#not" class="link"
                                     >NOT</a
@@ -461,7 +461,7 @@ import SideImage from "../components/common/SideImage.vue";
                     <li>
                         <a href="/glossary" class="link">Glossary</a>
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li></li>
                         </ul>
                     </li>
@@ -471,7 +471,7 @@ import SideImage from "../components/common/SideImage.vue";
                     <li>
                         <a href="/links" class="link">Links</a>
 
-                        <ul class="list">
+                        <ul class="list !mt-[0.5rem]">
                             <li></li>
                         </ul>
                     </li>
