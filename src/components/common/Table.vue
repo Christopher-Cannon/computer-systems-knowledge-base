@@ -19,6 +19,7 @@
                     <td
                         v-for="value in row"
                         :class="props.monospaced ? `monospaced` : ``"
+                        :style="props.leftAligned ? `text-align: left` : ``"
                     >
                         {{ value }}
                     </td>
@@ -38,6 +39,10 @@ const props = defineProps({
     },
     annotations: {
         type: [String],
+        required: false,
+    },
+    leftAligned: {
+        type: Boolean,
         required: false,
     },
     fixed: {
@@ -91,7 +96,7 @@ th {
 
 th,
 td {
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 1rem;
     text-align: center;
 }
 
