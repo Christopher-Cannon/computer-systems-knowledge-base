@@ -232,7 +232,7 @@ const fileFormatsGlossary = [
         <p>
             There are many acronyms used in computer systems theory and it can
             be hard to remember them all. Those that you may commonly encounter
-            have been briefly described below for your convenience.
+            have been recorded below for your convenience.
         </p>
 
         <MinorHeading>Hardware</MinorHeading>
