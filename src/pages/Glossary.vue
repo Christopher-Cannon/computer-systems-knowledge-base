@@ -14,96 +14,163 @@ const prevNextNavData = {
 const hardwareGlossary = [
     {
         Term: "CPU",
-        Description:
-            "Central Processing Unit. Processes instructions stored in system memory.",
+        "Stands For": "Central Processing Unit",
+        Description: "Processes instructions stored in system memory.",
     },
     {
         Term: "GPU",
-        Description: "Graphics Processing Unit. May be discrete or integrated.",
+        "Stands For": "Graphics Processing Unit",
+        Description: "May be discrete or integrated.",
     },
     {
         Term: "HDD",
-        Description: "Hard Disk Drive.",
+        "Stands For": "Hard Disk Drive",
+        Description: "",
     },
     {
         Term: "SSD",
-        Description: "Solid State Drive.",
+        "Stands For": "Solid State Drive",
+        Description: "",
     },
     {
         Term: "NVMe",
-        Description: "Non-Volatile Memory Express.",
+        "Stands For": "Non-Volatile Memory Express",
+        Description: "",
     },
     {
         Term: "PCI",
-        Description: "Peripheral Component Interconnect.",
+        "Stands For": "Peripheral Component Interconnect",
+        Description: "",
     },
     {
         Term: "AGP",
-        Description:
-            "Accelerated Graphics Port. PCI successor for graphics cards.",
+        "Stands For": "Accelerated Graphics Port",
+        Description: "PCI successor for graphics cards.",
     },
     {
         Term: "PCIe",
-        Description:
-            "Peripheral Component Interconnect Express. AGP successor.",
+        "Stands For": "Peripheral Component Interconnect Express",
+        Description: "AGP successor.",
     },
     {
         Term: "IDE",
-        Description: "Integrated Drive Electronics.",
+        "Stands For": "Integrated Drive Electronics",
+        Description: "",
     },
     {
         Term: "SATA",
-        Description: "Serial Advanced Technology Attachment. IDE successor.",
+        "Stands For": "Serial Advanced Technology Attachment",
+        Description: "IDE successor.",
     },
     {
         Term: "USB",
-        Description: "Universal Serial Bus.",
+        "Stands For": "Universal Serial Bus",
+        Description: "",
     },
     {
         Term: "CRT",
-        Description: "Cathode Ray Tube.",
+        "Stands For": "Cathode Ray Tube",
+        Description: "",
     },
     {
         Term: "LCD",
-        Description: "Liquid Crystal Display.",
+        "Stands For": "Liquid Crystal Display",
+        Description: "",
+    },
+];
+
+const cpuGlossary = [
+    {
+        Term: "CU",
+        "Stands For": "Control Unit",
+        Description: "",
     },
     {
+        Term: "ALU",
+        "Stands For": "Arithmetic and Logic Unit",
+        Description: "",
+    },
+    {
+        Term: "PC",
+        "Stands For": "Program Counter",
+        Description: "",
+    },
+    {
+        Term: "IR",
+        "Stands For": "Instruction Register",
+        Description: "",
+    },
+    {
+        Term: "MAR",
+        "Stands For": "Memory Address Register",
+        Description: "",
+    },
+    {
+        Term: "MDR",
+        "Stands For": "Memory Data Register",
+        Description: "",
+    },
+];
+
+const memoryGlossary = [
+    {
         Term: "RAM",
-        Description: "Random Access Memory. Temporary data storage.",
+        "Stands For": "Random Access Memory",
+        Description: "Temporary data storage.",
     },
     {
         Term: "SRAM",
-        Description: "Static RAM. Used for CPU cache.",
+        "Stands For": "Static RAM",
+        Description: "Used for CPU cache.",
     },
     {
         Term: "DRAM",
-        Description: "Dynamic RAM. Main system memory.",
+        "Stands For": "Dynamic RAM",
+        Description: "Main system memory.",
     },
     {
         Term: "ROM",
+        "Stands For": "Read-only Memory",
         Description:
-            "Read-only Memory. Microchips that are programmed in the factory and cannot be changed afterwards.",
+            "Microchips that are programmed in the factory and cannot be changed afterwards.",
     },
     {
         Term: "PROM",
-        Description:
-            "Programmable ROM. Re-programmable only once after leaving the factory.",
+        "Stands For": "Programmable ROM",
+        Description: "Re-programmable only once after leaving the factory.",
     },
     {
         Term: "EPROM",
+        "Stands For": "Erasable PROM",
         Description:
-            "Erasable PROM. Data can be erased by shining UV light through a window for re-programming.",
+            "Data can be erased by shining UV light through a window for re-programming.",
     },
     {
         Term: "EEPROM",
-        Description:
-            "Electronically Erasable ROM. Data can be erased electronically for re-programming.",
+        "Stands For": "Electronically Erasable ROM",
+        Description: "Data can be erased electronically for re-programming.",
     },
 ];
 
 const softwareGlossary = [
     {
+        Term: "OS",
+        "Stands For": "Operating System",
+        Description: "",
+    },
+    {
         Term: "",
+        "Stands For": "",
+        Description: "",
+    },
+    {
+        Term: "",
+        "Stands For": "",
+        Description: "",
+    },
+    {
+        Term: "",
+        "Stands For": "",
         Description: "",
     },
 ];
@@ -117,11 +184,19 @@ const softwareGlossary = [
 
         <MinorHeading>Hardware</MinorHeading>
 
-        <Table :data="hardwareGlossary" leftAligned />
+        <Table :data="hardwareGlossary" align="left" />
+
+        <MinorHeading>CPU</MinorHeading>
+
+        <Table :data="cpuGlossary" align="left" />
+
+        <MinorHeading>Memory</MinorHeading>
+
+        <Table :data="memoryGlossary" align="left" />
 
         <MinorHeading>Software</MinorHeading>
 
-        <Table :data="softwareGlossary" leftAligned />
+        <Table :data="softwareGlossary" align="left" />
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
