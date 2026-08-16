@@ -70,7 +70,9 @@ const deviceData = [
 
         <ImageGallery :data="deviceData" />
 
-        <MinorHeading>Internal Components</MinorHeading>
+        <MinorHeading id="internal-components"
+            >Internal Components</MinorHeading
+        >
 
         <p>
             These are the components that make up a typical system unit of a
@@ -216,7 +218,7 @@ const deviceData = [
             </p>
         </SideImage>
 
-        <MinorHeading>Peripherals</MinorHeading>
+        <MinorHeading id="peripherals">Peripherals</MinorHeading>
 
         <p>
             These are external devices that enable interaction with computer
@@ -313,7 +315,9 @@ const deviceData = [
             </p>
         </SideImage>
 
-        <MinorHeading>Development History</MinorHeading>
+        <MinorHeading id="development-history"
+            >Development History</MinorHeading
+        >
 
         <p>
             The world of computing hardware and software has changed greatly

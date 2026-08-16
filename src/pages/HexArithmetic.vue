@@ -79,7 +79,7 @@ const hexSubtractionSlidePaths = [
             just takes some practice to get used to.
         </p>
 
-        <MinorHeading>Addition</MinorHeading>
+        <MinorHeading id="addition">Addition</MinorHeading>
 
         <p>
             Hexadecimal addition is no different to long addition of decimal
@@ -97,7 +97,7 @@ const hexSubtractionSlidePaths = [
 
         <SlideGallery :data="hexAdditionSlidePaths" />
 
-        <MinorHeading>Subtraction</MinorHeading>
+        <MinorHeading id="subtraction">Subtraction</MinorHeading>
 
         <p>
             Hexadecimal subtraction is much like long subtraction of decimal

@@ -31,7 +31,7 @@ const prevNextNavData = {
             user-facing tasks.
         </p>
 
-        <MinorHeading>Kernel</MinorHeading>
+        <MinorHeading id="kernel">Kernel</MinorHeading>
 
         <p>
             The core of the OS that runs with full access to the hardware and is
@@ -79,7 +79,7 @@ const prevNextNavData = {
             privileged instructions or access kernel memory.
         </p>
 
-        <MinorHeading>Memory Management</MinorHeading>
+        <MinorHeading id="memory-management">Memory Management</MinorHeading>
 
         <p>
             Handles allocation and tracking of memory addresses in main memory.
@@ -127,7 +127,7 @@ const prevNextNavData = {
             crawl.
         </p>
 
-        <MinorHeading>Input / Output</MinorHeading>
+        <MinorHeading id="input-output">Input / Output</MinorHeading>
 
         <p>
             A uniform interface for handling communication to and from system
@@ -136,7 +136,7 @@ const prevNextNavData = {
             handling interrupt requests coming from devices.
         </p>
 
-        <MinorHeading>File Management</MinorHeading>
+        <MinorHeading id="file-management">File Management</MinorHeading>
 
         <p>
             Manages how data is stored, retrieved and organised. Represents data
@@ -170,7 +170,7 @@ const prevNextNavData = {
             </li>
         </ul>
 
-        <MinorHeading>User Interface</MinorHeading>
+        <MinorHeading id="user-interface">User Interface</MinorHeading>
 
         <p>
             The topmost layer that allows users to interact with the system. Can
@@ -180,7 +180,7 @@ const prevNextNavData = {
             text inputs, buttons and other common desktop metaphors.
         </p>
 
-        <MinorHeading>Layer Interaction</MinorHeading>
+        <MinorHeading id="layer-interaction">Layer Interaction</MinorHeading>
 
         <p>
             A typical file operation might result in the following actions taken

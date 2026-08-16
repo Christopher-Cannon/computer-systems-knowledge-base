@@ -29,7 +29,9 @@ const prevNextNavData = {
             various components, such as registers, buses and interrupt lines.
         </p>
 
-        <MinorHeading>Common Components</MinorHeading>
+        <MinorHeading id="core-cpu-components"
+            >Core CPU Components</MinorHeading
+        >
 
         <h4 class="h3">Control Unit</h4>
 
@@ -210,9 +212,11 @@ const prevNextNavData = {
             errors.
         </p>
 
-        <MinorHeading>Fetch-Execute Cycle</MinorHeading>
+        <MinorHeading id="fetch-execute-cycle"
+            >Fetch-Execute Cycle</MinorHeading
+        >
 
-        <MinorHeading>Architecture</MinorHeading>
+        <MinorHeading id="architectures">Architectures</MinorHeading>
 
         <p>
             Single VS multi-core CPUs, notable architectures (x86-64, Intel

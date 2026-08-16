@@ -223,7 +223,7 @@ const xorSlidePaths = [
             </p>
         </InfoBox>
 
-        <MinorHeading>NOT</MinorHeading>
+        <MinorHeading id="not">NOT</MinorHeading>
 
         <div class="row">
             <div class="content-box">
@@ -250,7 +250,7 @@ const xorSlidePaths = [
 
         <SlideGallery :data="notSlidePaths" />
 
-        <MinorHeading>AND</MinorHeading>
+        <MinorHeading id="and">AND</MinorHeading>
 
         <div class="row">
             <div class="content-box">
@@ -278,7 +278,7 @@ const xorSlidePaths = [
 
         <SlideGallery :data="andSlidePaths" />
 
-        <MinorHeading>OR</MinorHeading>
+        <MinorHeading id="or">OR</MinorHeading>
 
         <div class="row">
             <div class="content-box">
@@ -306,7 +306,7 @@ const xorSlidePaths = [
 
         <SlideGallery :data="orSlidePaths" />
 
-        <MinorHeading>XOR</MinorHeading>
+        <MinorHeading id="xor">XOR</MinorHeading>
 
         <div class="row">
             <div class="content-box">

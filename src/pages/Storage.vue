@@ -26,7 +26,7 @@ const prevNextNavData = {
             store it long-term.
         </p>
 
-        <MinorHeading>Mediums</MinorHeading>
+        <MinorHeading id="mediums">Mediums</MinorHeading>
 
         <h4 class="h3">Magnetic Tape</h4>
 
@@ -274,7 +274,9 @@ const prevNextNavData = {
             </p>
         </SideImage>
 
-        <MinorHeading>Comparing Disk Performance</MinorHeading>
+        <MinorHeading id="comparing-disk-performance"
+            >Comparing Disk Performance</MinorHeading
+        >
 
         <p>
             Consider the three disk drives compared below. Which one do you

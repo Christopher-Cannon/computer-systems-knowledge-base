@@ -73,7 +73,9 @@ const prevNextNavData = {
 
         <p>It comes in a variety of forms to meet the needs of the system.</p>
 
-        <MinorHeading>Random Access Memory</MinorHeading>
+        <MinorHeading id="random-access-memory"
+            >Random Access Memory</MinorHeading
+        >
 
         <p>
             Volatile memory used to store data, instructions and memory
@@ -221,7 +223,7 @@ const prevNextNavData = {
             divert the CPU's attention.
         </p>
 
-        <MinorHeading>Read-Only Memory</MinorHeading>
+        <MinorHeading id="read-only-memory">Read-Only Memory</MinorHeading>
 
         <p>
             ROM is non-volatile memory that retains data when power is off and

@@ -60,7 +60,9 @@ const utilityData = [
             top, like web browsers, image editors and games.
         </p>
 
-        <MinorHeading>Application Software</MinorHeading>
+        <MinorHeading id="application-software"
+            >Application Software</MinorHeading
+        >
 
         <p>
             We use these to carry out specific tasks, whether for professional
@@ -71,7 +73,7 @@ const utilityData = [
 
         <ImageGallery :data="applicationData" col3 />
 
-        <MinorHeading>System Software</MinorHeading>
+        <MinorHeading id="system-software">System Software</MinorHeading>
 
         <p>
             Runs the computer, managing hardware and providing a platform for
@@ -104,7 +106,7 @@ const utilityData = [
             they can be fully utilised.
         </p>
 
-        <MinorHeading>Utility Software</MinorHeading>
+        <MinorHeading id="utility-software">Utility Software</MinorHeading>
 
         <p>
             Designed to maintain, manage and optimise a computer system. It
@@ -192,7 +194,7 @@ const utilityData = [
             </li>
         </ul>
 
-        <MinorHeading>APIs</MinorHeading>
+        <MinorHeading id="apis">APIs</MinorHeading>
 
         <p>
             Application Programming Interfaces allow complex functionality to be
@@ -212,7 +214,7 @@ const utilityData = [
             data from a centralised database.
         </p>
 
-        <MinorHeading>Security Concerns</MinorHeading>
+        <MinorHeading id="security-concerns">Security Concerns</MinorHeading>
 
         <p>
             We use software and the internet regularly for all kinds of

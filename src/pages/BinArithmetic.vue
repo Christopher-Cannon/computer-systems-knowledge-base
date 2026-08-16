@@ -140,12 +140,19 @@ const binSubtractionSlidePaths = [
 
         <MainHeading>Binary Arithmetic</MainHeading>
 
-        <MinorHeading>Addition</MinorHeading>
+        <p>
+            Adding and subtracting binary numbers can feel a little alien at
+            first due to all the 1s and 0s, but it isn't that different to
+            decimal arithmetic. Interestingly, if you know how to add binary
+            numbers together, then you almost know enough to subtract them too
+            using a particular method.
+        </p>
+
+        <MinorHeading id="addition">Addition</MinorHeading>
 
         <p>
-            Binary addition is just like long addition with decimal numbers,
-            though it can feel a little alien at first due to all the 1s and 0s.
-            The rules of binary addition are as follows:
+            Binary addition is just like long addition with decimal numbers. The
+            rules of binary addition are as follows:
         </p>
 
         <Table :data="binAdditionRulesData" />
@@ -169,10 +176,11 @@ const binSubtractionSlidePaths = [
             </p>
         </InfoBox>
 
-        <MinorHeading>Subtraction</MinorHeading>
+        <MinorHeading id="subtraction">Subtraction</MinorHeading>
 
         <p>
-            Subtracting binary numbers can be easier if you use the
+            Subtracting binary numbers can be done using long subtraction as
+            with decimal numbers, but is arguably easier if you use the
             <a
                 href="https://www.geeksforgeeks.org/digital-logic/twos-complement/"
                 class="link"

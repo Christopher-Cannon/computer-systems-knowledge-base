@@ -168,7 +168,7 @@ const asciiDataTwo = [
             drives, including metadata about each file.
         </p>
 
-        <MinorHeading>File Systems</MinorHeading>
+        <MinorHeading id="file-systems">File Systems</MinorHeading>
 
         <p>
             The method and structure an operating system uses to store, retrieve
@@ -248,7 +248,7 @@ const asciiDataTwo = [
             caption="Disks divided into multiple partitions as shown in Windows computer management tool."
         />
 
-        <MinorHeading>File Hierarchy</MinorHeading>
+        <MinorHeading id="file-hierarchy">File Hierarchy</MinorHeading>
 
         <p>
             Files and folders (AKA directories) follow a tree-like structure to
@@ -420,7 +420,7 @@ const asciiDataTwo = [
             many people still say “KB” when they really mean “KiB.”
         </p>
 
-        <MinorHeading>ASCII</MinorHeading>
+        <MinorHeading id="ascii">ASCII</MinorHeading>
 
         <p>
             Computers represent characters like letters and digits with binary.

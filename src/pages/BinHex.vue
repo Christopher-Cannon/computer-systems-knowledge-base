@@ -130,7 +130,7 @@ const baseComparisonData = [
             more optimised programs.
         </p>
 
-        <MinorHeading>Binary</MinorHeading>
+        <MinorHeading id="binary">Binary</MinorHeading>
 
         <p>
             Also known as base 2, it's a number system that only uses two
@@ -144,7 +144,7 @@ const baseComparisonData = [
             to this 'machine code' for the computer to actually run it.
         </p>
 
-        <MinorHeading>Hexadecimal</MinorHeading>
+        <MinorHeading id="hexadecimal">Hexadecimal</MinorHeading>
 
         <p>
             Also known as base 16, this number system uses 16 digits with A - F
@@ -160,7 +160,9 @@ const baseComparisonData = [
             environments.
         </p>
 
-        <MinorHeading>Comparing Number Bases</MinorHeading>
+        <MinorHeading id="comparing-number-bases"
+            >Comparing Number Bases</MinorHeading
+        >
 
         <p>
             This chart demonstrates how binary, octal, decimal and hexademical

@@ -1,8 +1,17 @@
 <template>
-    <h3 class="h2 minor-heading">
+    <h3 class="h2 minor-heading" :id="props.id ? props.id : ``">
         <slot></slot>
     </h3>
 </template>
+
+<script setup>
+const props = defineProps({
+    id: {
+        type: String,
+        required: false,
+    },
+});
+</script>
 
 <style scoped>
 .minor-heading {

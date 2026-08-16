@@ -192,7 +192,9 @@ const hexToDecData = [
             </p>
         </InfoBox>
 
-        <MinorHeading>Decimal Binary Conversion</MinorHeading>
+        <MinorHeading id="decimal-binary-conversion"
+            >Decimal Binary Conversion</MinorHeading
+        >
 
         <h4 class="h3">Decimal to Binary</h4>
 
@@ -248,7 +250,9 @@ const hexToDecData = [
             128 + 16 + 8 + 2 + 1 = <b><u>155</u><sub>10</sub></b>
         </p>
 
-        <MinorHeading>Hexadecimal Binary Conversion</MinorHeading>
+        <MinorHeading id="hexadecimal-binary-conversion"
+            >Hexadecimal Binary Conversion</MinorHeading
+        >
 
         <h4 class="h3">Hexadecimal to Binary</h4>
 
@@ -299,7 +303,9 @@ const hexToDecData = [
             <b><u>B6C</u><sub>16</sub></b>
         </p>
 
-        <MinorHeading>Decimal Hexadecimal Conversion</MinorHeading>
+        <MinorHeading id="decimal-hexadecimal-conversion"
+            >Decimal Hexadecimal Conversion</MinorHeading
+        >
 
         <h4 class="h3">Decimal to Hexadecimal</h4>
 

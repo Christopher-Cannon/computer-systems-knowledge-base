@@ -124,7 +124,9 @@ const systemData = [
 
         <ImageGallery :data="computerData" col3 />
 
-        <MinorHeading>Single and Multi User</MinorHeading>
+        <MinorHeading id="single-and-multi-user"
+            >Single and Multi User</MinorHeading
+        >
 
         <p>
             Operating systems can be designed to work with just one user or
@@ -133,7 +135,9 @@ const systemData = [
 
         <Table :data="singleMultiUserData" />
 
-        <MinorHeading>Single and Multi Processor</MinorHeading>
+        <MinorHeading id="single-and-multi-processor"
+            >Single and Multi Processor</MinorHeading
+        >
 
         <p>
             Operating systems can be designed for single CPU cores or several at
@@ -142,7 +146,7 @@ const systemData = [
 
         <Table :data="singleMultiProcessorData" />
 
-        <MinorHeading>Multi-tasking</MinorHeading>
+        <MinorHeading id="multi-tasking">Multi-tasking</MinorHeading>
 
         <p>
             Allows more than one program to run at the same time, making the
@@ -182,7 +186,7 @@ const systemData = [
             </li>
         </ul>
 
-        <MinorHeading>Network OS</MinorHeading>
+        <MinorHeading id="network-os">Network OS</MinorHeading>
 
         <p>
             Focused on providing services to computers across a network and
@@ -204,7 +208,7 @@ const systemData = [
             caption="How a computer network interacts with a server-based OS."
         />
 
-        <MinorHeading>Real-time OS</MinorHeading>
+        <MinorHeading id="real-time-os">Real-time OS</MinorHeading>
 
         <p>
             Designed for applications where the system must respond within
