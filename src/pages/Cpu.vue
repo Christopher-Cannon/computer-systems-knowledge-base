@@ -221,10 +221,19 @@ const prevNextNavData = {
             pipeline that the CPU follows from the moment it is powered on until
             the system is shut down and involves the fetching of program
             instructions from memory, decoding and then executing them before
-            restarting the cycle. Modern CPUs can handle billions of
-            instructions every second and are optimised to handle fetching while
-            decoding, decoding while executing and executing while fetching to
-            reduce downtime and boost performance.
+            restarting the cycle.
+        </p>
+
+        <p>
+            Modern CPUs can handle billions of instructions every second and are
+            optimised to handle fetching while decoding, decoding while
+            executing and executing while fetching to reduce downtime and boost
+            performance.
+        </p>
+
+        <p>
+            While not mentioned below, reading memory addresses and fetching
+            data from memory will involve the address and data buses.
         </p>
 
         <ol class="list numbered">
@@ -246,7 +255,7 @@ const prevNextNavData = {
             <li>
                 The control unit decodes the instruction in the instruction
                 register.
-                <ul class="list">
+                <ul class="list !mb-0">
                     <li>
                         A instruction is made up of an op code, which describes
                         what operation should be performed, and an operand,
@@ -259,7 +268,7 @@ const prevNextNavData = {
 
             <li>
                 The CPU executes the instruction according to its op code.
-                <ul class="list">
+                <ul class="list !mb-[0.5rem]">
                     <li>
                         This may involve moving or storing data, comparing
                         values or performing calculations using the ALU.
