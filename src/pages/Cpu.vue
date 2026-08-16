@@ -33,6 +33,11 @@ const prevNextNavData = {
             >Core CPU Components</MinorHeading
         >
 
+        <p>
+            While processors are built and arranged in different ways, they tend
+            to contain the same basic components in some shape or form.
+        </p>
+
         <h4 class="h3">Control Unit</h4>
 
         <p>
