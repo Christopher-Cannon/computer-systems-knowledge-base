@@ -144,11 +144,11 @@ const prevNextNavData = {
         <h5 class="h4">How Data is Accessed</h5>
 
         <p>
-            Platters spin at high speed (such as 5,400 or 7,200 RPM). Actuator
-            arm moves the read/write head across the platter to the correct
-            track. The head senses the orientation of magnetised spots when
-            reading, otherwise it changes the magnetic polarity of regions to
-            encode data. HDDs can jump between files by moving the head and
+            Platters spin at high speed (such as 5,400 or 7,200 RPM). The
+            actuator arm moves the read/write head across the platter to the
+            correct track. The head senses the orientation of magnetised spots
+            when reading, otherwise it changes the magnetic polarity of regions
+            to encode data. HDDs can jump between files by moving the head and
             waiting for the right platter sector to spin underneath.
         </p>
 
