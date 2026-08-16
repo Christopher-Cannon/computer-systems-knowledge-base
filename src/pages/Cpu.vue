@@ -216,6 +216,62 @@ const prevNextNavData = {
             >Fetch-Execute Cycle</MinorHeading
         >
 
+        <p>
+            Also known as the fetch-decode-execute cycle, this is the execution
+            pipeline that the CPU follows from the moment it is powered on until
+            the system is shut down and involves the fetching of program
+            instructions from memory, decoding and then executing them before
+            restarting the cycle. Modern CPUs can handle billions of
+            instructions every second and are optimised to handle fetching while
+            decoding, decoding while executing and executing while fetching to
+            reduce downtime and boost performance.
+        </p>
+
+        <ol class="list numbered">
+            <h4 class="h3 !ml-[-2rem] !mt-[1rem] !mb-[0.5rem]">Fetch</h4>
+
+            <li>
+                Read program counter for the memory address of the next
+                instruction.
+            </li>
+            <li>Copy the address into the MAR.</li>
+            <li>Fetch the instruction at the MAR address into the MDR.</li>
+            <li>
+                Copy the instruction in the MDR into the instruction register.
+            </li>
+            <li>The program counter moves to the next instruction.</li>
+
+            <h4 class="h3 !ml-[-2rem] !mt-[1rem] !mb-[0.5rem]">Decode</h4>
+
+            <li>
+                The control unit decodes the instruction in the instruction
+                register.
+                <ul class="list">
+                    <li>
+                        A instruction is made up of an op code, which describes
+                        what operation should be performed, and an operand,
+                        which is data or the memory address of a piece of data.
+                    </li>
+                </ul>
+            </li>
+
+            <h4 class="h3 !ml-[-2rem] !mt-[1rem] !mb-[0.5rem]">Execute</h4>
+
+            <li>
+                The CPU executes the instruction according to its op code.
+                <ul class="list">
+                    <li>
+                        This may involve moving or storing data, comparing
+                        values or performing calculations using the ALU.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                The result of the instruction is stored in the accumulator or
+                elsewhere in memory.
+            </li>
+        </ol>
+
         <MinorHeading id="architectures">Architectures</MinorHeading>
 
         <p>
