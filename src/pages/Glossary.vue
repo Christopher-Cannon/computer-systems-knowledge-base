@@ -77,6 +77,21 @@ const hardwareGlossary = [
         "Stands For": "Liquid Crystal Display",
         Description: "",
     },
+    {
+        Term: "TFT",
+        "Stands For": "Thin Film Transistor",
+        Description: "",
+    },
+    {
+        Term: "IPS",
+        "Stands For": "In-Plane Switching",
+        Description: "",
+    },
+    {
+        Term: "OLED",
+        "Stands For": "Organic Light Emitting Diode",
+        Description: "",
+    },
 ];
 
 const cpuGlossary = [
@@ -174,6 +189,35 @@ const softwareGlossary = [
         Description: "",
     },
 ];
+
+const fileFormatsGlossary = [
+    {
+        Term: "exe",
+        "Stands For": "Executable File",
+        Description: "",
+    },
+    {
+        Term: "jpg",
+        "Stands For": "Joint Photographic Experts Group",
+        Description: "Lossy image format.",
+    },
+    {
+        Term: "png",
+        "Stands For": "Portable Network Graphic",
+        Description: "Lossless image format.",
+    },
+    {
+        Term: "gif",
+        "Stands For": "Graphics Interchange Format",
+        Description:
+            "Lossless image format with limited colours. Supports animation.",
+    },
+    {
+        Term: "bmp",
+        "Stands For": "Bitmap",
+        Description: "",
+    },
+];
 </script>
 
 <template>
@@ -181,6 +225,12 @@ const softwareGlossary = [
         <PrevNextNav :data="prevNextNavData" />
 
         <MainHeading>Glossary</MainHeading>
+
+        <p>
+            There are many acronyms used in computer systems theory and it can
+            be hard to remember them all. Those that you may commonly encounter
+            have been briefly described below for your convenience.
+        </p>
 
         <MinorHeading>Hardware</MinorHeading>
 
@@ -197,6 +247,10 @@ const softwareGlossary = [
         <MinorHeading>Software</MinorHeading>
 
         <Table :data="softwareGlossary" align="left" />
+
+        <MinorHeading>File Formats</MinorHeading>
+
+        <Table :data="fileFormatsGlossary" align="left" />
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
