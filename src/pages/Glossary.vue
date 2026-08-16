@@ -98,32 +98,35 @@ const cpuGlossary = [
     {
         Term: "CU",
         "Stands For": "Control Unit",
-        Description: "",
+        Description: "Coordinates the activites of the CPU and system.",
     },
     {
         Term: "ALU",
         "Stands For": "Arithmetic and Logic Unit",
-        Description: "",
+        Description: "Carries out binary arithmetic and logical comparisons.",
     },
     {
         Term: "PC",
         "Stands For": "Program Counter",
-        Description: "",
+        Description:
+            "Points to the memory address of the next instruction in memory to be copied to the MAR. Increments to the next address after copying.",
     },
     {
         Term: "IR",
         "Stands For": "Instruction Register",
-        Description: "",
+        Description:
+            "Holds the current instruction to be decoded and executed.",
     },
     {
         Term: "MAR",
         "Stands For": "Memory Address Register",
-        Description: "",
+        Description:
+            "Holds the address of the next instruction in memory to be placed in the MDR.",
     },
     {
         Term: "MDR",
         "Stands For": "Memory Data Register",
-        Description: "",
+        Description: "Holds the next instruction for copying to the IR.",
     },
 ];
 
