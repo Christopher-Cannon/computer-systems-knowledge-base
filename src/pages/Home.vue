@@ -21,6 +21,10 @@ import SideImage from "../components/common/SideImage.vue";
             topics in the order prescribed. Contents are subject to change.
         </p>
 
+        <router-link to="/hardware-overview" class="button"
+            >Get Started</router-link
+        >
+
         <MinorHeading>Topics Covered</MinorHeading>
 
         <div class="topic-grid">
@@ -516,6 +520,15 @@ import SideImage from "../components/common/SideImage.vue";
 </template>
 
 <style scoped>
+.button {
+    display: block;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
 @media (min-width: 900px) {
     .topic-grid {
         display: grid;

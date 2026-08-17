@@ -40,14 +40,14 @@ function nextStep() {
         <div class="button-group">
             <button
                 @click="prevStep"
-                class="w-[100%]"
+                class="button w-[100%]"
                 :class="slideIndex === 0 ? `disabled` : ``"
             >
                 Previous Step
             </button>
             <button
                 @click="nextStep"
-                class="w-[100%]"
+                class="button w-[100%]"
                 :class="slideIndex === props.data.length - 1 ? `disabled` : ``"
             >
                 Next Step
@@ -71,22 +71,6 @@ function nextStep() {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-}
-
-button {
-    background-color: var(--primary);
-    border-radius: var(--radius-sm);
-    color: var(--white);
-    padding: 0.5rem 1rem;
-    transition: background-color 0.1s ease-in-out;
-}
-
-.disabled {
-    background-color: var(--mid-grey);
-}
-
-button:not(.disabled):hover {
-    background-color: var(--primary-darker);
 }
 
 @media (min-width: 1024px) {
