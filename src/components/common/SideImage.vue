@@ -55,6 +55,10 @@ const props = defineProps({
 }
 
 @media (min-width: 1280px) {
+    .side-image {
+        gap: 2rem;
+    }
+
     .text-box {
         flex: 9;
     }

@@ -2,6 +2,7 @@
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
+import SideImage from "../components/common/SideImage.vue";
 
 const prevNextNavData = {
     prevHref: "/operating-systems",
@@ -129,12 +130,17 @@ const prevNextNavData = {
 
         <MinorHeading id="input-output">Input / Output</MinorHeading>
 
-        <p>
-            A uniform interface for handling communication to and from system
-            devices. Since hardware devices vary widely, the OS hides this
-            complexity behind device drivers. It is also responsible for
-            handling interrupt requests coming from devices.
-        </p>
+        <SideImage
+            src="/public/images/os-layers/input output.png"
+            alt="A venn diagram showing hardware devices that count as input and/or output devices."
+        >
+            <p>
+                A uniform interface for handling communication to and from
+                system devices. Since hardware devices vary widely, the OS hides
+                this complexity behind device drivers. It is also responsible
+                for handling interrupt requests coming from devices.
+            </p>
+        </SideImage>
 
         <MinorHeading id="file-management">File Management</MinorHeading>
 
@@ -173,12 +179,59 @@ const prevNextNavData = {
         <MinorHeading id="user-interface">User Interface</MinorHeading>
 
         <p>
-            The topmost layer that allows users to interact with the system. Can
-            be a simple command line interface that accepts only text commands
-            or a sophisticated
+            The topmost layer that facilitates system interaction by translating
+            events or commands initated by the user into system calls (i.e. the
+            execution of programs and functions). Can be a simple command line
+            interface that accepts only text commands or a sophisticated
             <abbr title="Graphical User Interface">GUI</abbr> featuring windows,
             text inputs, buttons and other common desktop metaphors.
         </p>
+
+        <h4 class="h3">Command Line Interface</h4>
+
+        <SideImage
+            src="/public/images/os-layers/terminal.avif"
+            alt="A typical command line interface."
+        >
+            <p>
+                These text-based interfaces used to be the standard for
+                interacting with computer systems. Even today, they see frequent
+                use by computing professionals since it's fast and cheap to make
+                programs and utilities that run through a command line. It can
+                be a very powerful tool if you know what you are doing.
+            </p>
+
+            <p>
+                It can take time getting used to if you're coming from years of
+                using graphical interfaces. The main hurdles include having to
+                learn the commands necessary to do anything, whether with the
+                operating system or specific programs.
+            </p>
+        </SideImage>
+
+        <h4 class="h3">Graphical User Interface</h4>
+
+        <SideImage
+            src="/public/images/os-layers/winxp.avif"
+            alt="The desktop graphical user interface of the Windows XP operating system."
+        >
+            <p>
+                These allow users to interact with a system using visuals and
+                controls based on real-world analogues. Programs appear as
+                windows containing buttons, tabs, text inputs, scroll bars and a
+                variety of other controls to make interaction more intuitive
+                with a mouse and keyboard.
+            </p>
+
+            <p>
+                The GUI came about as part of a research program from Xerox
+                which was eventually picked up by Apple who used it for their
+                Lisa desktop computer. Microsoft would later adopt this medium a
+                decade later for Windows 3.1, evolving significantly with
+                Windows 95. It became the dominant way of system interaction
+                since it made more immediate sense to users.
+            </p>
+        </SideImage>
 
         <MinorHeading id="layer-interaction">Layer Interaction</MinorHeading>
 
