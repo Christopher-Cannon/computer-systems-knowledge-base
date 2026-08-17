@@ -137,7 +137,7 @@ const navLinks = [
         label: "Resources",
         sublinks: [
             { path: "/glossary", label: "Glossary" },
-            { path: "/links", label: "Links" },
+            { path: "/links", label: "Resource Links" },
         ],
     },
 ];

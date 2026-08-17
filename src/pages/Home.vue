@@ -506,11 +506,15 @@ import SideImage from "../components/common/SideImage.vue";
                 <ul class="list">
                     <li>
                         <router-link to="/links" class="link"
-                            >Links</router-link
+                            >Resource Links</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
-                            <li></li>
+                            <li>
+                                <router-link to="/links#cpu" class="link"
+                                    >CPU</router-link
+                                >
+                            </li>
                         </ul>
                     </li>
                 </ul>

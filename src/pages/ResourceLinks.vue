@@ -19,10 +19,18 @@ const prevNextNavData = {
 
         <MainHeading>Resource Links</MainHeading>
 
+        <MinorHeading id="cpu">CPU</MinorHeading>
+
         <ul class="list">
             <li>
-                <a href="#" class="link">Resource Link</a> - A description about
-                the link, such as what information you can find through it.
+                <a
+                    href="https://www.baeldung.com/cs/fetch-execute-cycle"
+                    class="link"
+                    target="_blank"
+                    >Introduction to the Fetch-Execute Cycle</a
+                >
+                - <b>baeldung.com</b><br />An alternative overview of the
+                fetch-execute cycle.
             </li>
         </ul>
 
