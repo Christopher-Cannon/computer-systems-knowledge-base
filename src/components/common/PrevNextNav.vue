@@ -1,20 +1,23 @@
 <template>
     <div class="container">
-        <a :href="props.data.prevHref" class="section-button">
+        <router-link :to="props.data.prevHref" class="section-button">
             <div class="subtitle">Previous Section</div>
 
             <div class="h4">
                 {{ props.data.prevLabel }}
             </div>
-        </a>
+        </router-link>
 
-        <a :href="props.data.nextHref" class="section-button next-button">
+        <router-link
+            :to="props.data.nextHref"
+            class="section-button next-button"
+        >
             <div class="subtitle">Next Section</div>
 
             <div class="h4">
                 {{ props.data.nextLabel }}
             </div>
-        </a>
+        </router-link>
     </div>
 </template>
 

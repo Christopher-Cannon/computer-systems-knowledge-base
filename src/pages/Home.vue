@@ -29,30 +29,30 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/hardware-overview" class="link"
-                            >Hardware Overview</a
+                        <router-link to="/hardware-overview" class="link"
+                            >Hardware Overview</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/hardware-overview#internal-components"
+                                <router-link
+                                    to="/hardware-overview#internal-components"
                                     class="link"
-                                    >Internal Components</a
+                                    >Internal Components</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/hardware-overview#peripherals"
+                                <router-link
+                                    to="/hardware-overview#peripherals"
                                     class="link"
-                                    >Peripherals</a
+                                    >Peripherals</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/hardware-overview#development-history"
+                                <router-link
+                                    to="/hardware-overview#development-history"
                                     class="link"
-                                    >Development History</a
+                                    >Development History</router-link
                                 >
                             </li>
                         </ul>
@@ -61,30 +61,30 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/cpu-architecture" class="link"
-                            >CPU Architecture</a
+                        <router-link to="/cpu-architecture" class="link"
+                            >CPU Architecture</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/cpu-architecture#core-cpu-components"
+                                <router-link
+                                    to="/cpu-architecture#core-cpu-components"
                                     class="link"
-                                    >Core CPU Components</a
+                                    >Core CPU Components</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/cpu-architecture#fetch-execute-cycle"
+                                <router-link
+                                    to="/cpu-architecture#fetch-execute-cycle"
                                     class="link"
-                                    >Fetch-Execute Cycle</a
+                                    >Fetch-Execute Cycle</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/cpu-architecture#architectures"
+                                <router-link
+                                    to="/cpu-architecture#architectures"
                                     class="link"
-                                    >Architectures</a
+                                    >Architectures</router-link
                                 >
                             </li>
                         </ul>
@@ -93,19 +93,23 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/memory" class="link">Memory</a>
+                        <router-link to="/memory" class="link"
+                            >Memory</router-link
+                        >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/memory#random-access-memory"
+                                <router-link
+                                    to="/memory#random-access-memory"
                                     class="link"
-                                    >Random Access Memory</a
+                                    >Random Access Memory</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/memory#read-only-memory" class="link"
-                                    >Read-Only Memory</a
+                                <router-link
+                                    to="/memory#read-only-memory"
+                                    class="link"
+                                    >Read-Only Memory</router-link
                                 >
                             </li>
                         </ul>
@@ -114,19 +118,21 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/storage" class="link">Storage</a>
+                        <router-link to="/storage" class="link"
+                            >Storage</router-link
+                        >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a href="/storage#mediums" class="link"
-                                    >Mediums</a
+                                <router-link to="/storage#mediums" class="link"
+                                    >Mediums</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/storage#comparing-disk-performance"
+                                <router-link
+                                    to="/storage#comparing-disk-performance"
                                     class="link"
-                                    >Comparing Disk Performance</a
+                                    >Comparing Disk Performance</router-link
                                 >
                             </li>
                         </ul>
@@ -139,42 +145,44 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/types-of-software" class="link"
-                            >Types of Software</a
+                        <router-link to="/types-of-software" class="link"
+                            >Types of Software</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/types-of-software#application-software"
+                                <router-link
+                                    to="/types-of-software#application-software"
                                     class="link"
-                                    >Application Software</a
+                                    >Application Software</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/types-of-software#system-software"
+                                <router-link
+                                    to="/types-of-software#system-software"
                                     class="link"
-                                    >System Software</a
+                                    >System Software</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/types-of-software#utility-software"
+                                <router-link
+                                    to="/types-of-software#utility-software"
                                     class="link"
-                                    >Utility Software</a
+                                    >Utility Software</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/types-of-software#apis" class="link"
-                                    >APIs</a
+                                <router-link
+                                    to="/types-of-software#apis"
+                                    class="link"
+                                    >APIs</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/types-of-software#security-concerns"
+                                <router-link
+                                    to="/types-of-software#security-concerns"
                                     class="link"
-                                    >Security Concerns</a
+                                    >Security Concerns</router-link
                                 >
                             </li>
                         </ul>
@@ -183,44 +191,44 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/operating-systems" class="link"
-                            >Operating Systems</a
+                        <router-link to="/operating-systems" class="link"
+                            >Operating Systems</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/operating-systems#single-and-multi-user"
+                                <router-link
+                                    to="/operating-systems#single-and-multi-user"
                                     class="link"
-                                    >Single and Multi User</a
+                                    >Single and Multi User</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/operating-systems#single-and-multi-processor"
+                                <router-link
+                                    to="/operating-systems#single-and-multi-processor"
                                     class="link"
-                                    >Single and Multi Processor</a
+                                    >Single and Multi Processor</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/operating-systems#multi-tasking"
+                                <router-link
+                                    to="/operating-systems#multi-tasking"
                                     class="link"
-                                    >Multi-tasking</a
+                                    >Multi-tasking</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/operating-systems#network-os"
+                                <router-link
+                                    to="/operating-systems#network-os"
                                     class="link"
-                                    >Network OS</a
+                                    >Network OS</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/operating-systems#real-time-os"
+                                <router-link
+                                    to="/operating-systems#real-time-os"
                                     class="link"
-                                    >Real-time OS</a
+                                    >Real-time OS</router-link
                                 >
                             </li>
                         </ul>
@@ -229,45 +237,49 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/os-layers" class="link"
-                            >Operating System Layers</a
+                        <router-link to="/os-layers" class="link"
+                            >Operating System Layers</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a href="/os-layers#kernel" class="link"
-                                    >Kernel</a
+                                <router-link to="/os-layers#kernel" class="link"
+                                    >Kernel</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/os-layers#memory-management"
+                                <router-link
+                                    to="/os-layers#memory-management"
                                     class="link"
-                                    >Memory Management</a
+                                    >Memory Management</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/os-layers#input-output" class="link"
-                                    >Input / Output</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="/os-layers#file-management"
+                                <router-link
+                                    to="/os-layers#input-output"
                                     class="link"
-                                    >File Management</a
+                                    >Input / Output</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/os-layers#user-interface" class="link"
-                                    >User Interface</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="/os-layers#layer-interaction"
+                                <router-link
+                                    to="/os-layers#file-management"
                                     class="link"
-                                    >Layer Interaction</a
+                                    >File Management</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
+                                    to="/os-layers#user-interface"
+                                    class="link"
+                                    >User Interface</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
+                                    to="/os-layers#layer-interaction"
+                                    class="link"
+                                    >Layer Interaction</router-link
                                 >
                             </li>
                         </ul>
@@ -276,28 +288,30 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/file-management" class="link"
-                            >File Management</a
+                        <router-link to="/file-management" class="link"
+                            >File Management</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/file-management#file-systems"
+                                <router-link
+                                    to="/file-management#file-systems"
                                     class="link"
-                                    >File Systems</a
+                                    >File Systems</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/file-management#file-hierarchy"
+                                <router-link
+                                    to="/file-management#file-hierarchy"
                                     class="link"
-                                    >File Hierarchy</a
+                                    >File Hierarchy</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/file-management#ascii" class="link"
-                                    >ASCII</a
+                                <router-link
+                                    to="/file-management#ascii"
+                                    class="link"
+                                    >ASCII</router-link
                                 >
                             </li>
                         </ul>
@@ -310,24 +324,30 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/number-bases" class="link">Number Bases</a>
+                        <router-link to="/number-bases" class="link"
+                            >Number Bases</router-link
+                        >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a href="/number-bases#binary" class="link"
-                                    >Binary</a
-                                >
-                            </li>
-                            <li>
-                                <a href="/number-bases#hexadecimal" class="link"
-                                    >Hexadecimal</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="/number-bases#comparing-number-bases"
+                                <router-link
+                                    to="/number-bases#binary"
                                     class="link"
-                                    >Comparing Number Bases</a
+                                    >Binary</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
+                                    to="/number-bases#hexadecimal"
+                                    class="link"
+                                    >Hexadecimal</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
+                                    to="/number-bases#comparing-number-bases"
+                                    class="link"
+                                    >Comparing Number Bases</router-link
                                 >
                             </li>
                         </ul>
@@ -336,30 +356,30 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/base-conversion" class="link"
-                            >Base Conversion</a
+                        <router-link to="/base-conversion" class="link"
+                            >Base Conversion</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/base-conversion#decimal-binary-conversion"
+                                <router-link
+                                    to="/base-conversion#decimal-binary-conversion"
                                     class="link"
-                                    >Decimal Binary Conversion</a
+                                    >Decimal Binary Conversion</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/base-conversion#hexadecimal-binary-conversion"
+                                <router-link
+                                    to="/base-conversion#hexadecimal-binary-conversion"
                                     class="link"
-                                    >Hexadecimal Binary Conversion</a
+                                    >Hexadecimal Binary Conversion</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/base-conversion#decimal-hexadecimal-conversion"
+                                <router-link
+                                    to="/base-conversion#decimal-hexadecimal-conversion"
                                     class="link"
-                                    >Decimal Hexadecimal Conversion</a
+                                    >Decimal Hexadecimal Conversion</router-link
                                 >
                             </li>
                         </ul>
@@ -372,23 +392,23 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/binary-arithmetic" class="link"
-                            >Binary Arithmetic</a
+                        <router-link to="/binary-arithmetic" class="link"
+                            >Binary Arithmetic</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a
-                                    href="/binary-arithmetic#addition"
+                                <router-link
+                                    to="/binary-arithmetic#addition"
                                     class="link"
-                                    >Addition</a
+                                    >Addition</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/binary-arithmetic#subtraction"
+                                <router-link
+                                    to="/binary-arithmetic#subtraction"
                                     class="link"
-                                    >Subtraction</a
+                                    >Subtraction</router-link
                                 >
                             </li>
                         </ul>
@@ -397,21 +417,23 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/hex-arithmetic" class="link"
-                            >Hexadecimal Arithmetic</a
+                        <router-link to="/hex-arithmetic" class="link"
+                            >Hexadecimal Arithmetic</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a href="/hex-arithmetic#addition" class="link"
-                                    >Addition</a
+                                <router-link
+                                    to="/hex-arithmetic#addition"
+                                    class="link"
+                                    >Addition</router-link
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/hex-arithmetic#subtraction"
+                                <router-link
+                                    to="/hex-arithmetic#subtraction"
                                     class="link"
-                                    >Subtraction</a
+                                    >Subtraction</router-link
                                 >
                             </li>
                         </ul>
@@ -424,29 +446,37 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/logical-operations" class="link"
-                            >Logical Operations</a
+                        <router-link to="/logical-operations" class="link"
+                            >Logical Operations</router-link
                         >
 
                         <ul class="list !mt-[0.5rem]">
                             <li>
-                                <a href="/logical-operations#not" class="link"
-                                    >NOT</a
+                                <router-link
+                                    to="/logical-operations#not"
+                                    class="link"
+                                    >NOT</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/logical-operations#and" class="link"
-                                    >AND</a
+                                <router-link
+                                    to="/logical-operations#and"
+                                    class="link"
+                                    >AND</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/logical-operations#or" class="link"
-                                    >OR</a
+                                <router-link
+                                    to="/logical-operations#or"
+                                    class="link"
+                                    >OR</router-link
                                 >
                             </li>
                             <li>
-                                <a href="/logical-operations#xor" class="link"
-                                    >XOR</a
+                                <router-link
+                                    to="/logical-operations#xor"
+                                    class="link"
+                                    >XOR</router-link
                                 >
                             </li>
                         </ul>
@@ -459,7 +489,9 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/glossary" class="link">Glossary</a>
+                        <router-link to="/glossary" class="link"
+                            >Glossary</router-link
+                        >
 
                         <ul class="list !mt-[0.5rem]">
                             <li></li>
@@ -469,7 +501,9 @@ import SideImage from "../components/common/SideImage.vue";
 
                 <ul class="list">
                     <li>
-                        <a href="/links" class="link">Links</a>
+                        <router-link to="/links" class="link"
+                            >Links</router-link
+                        >
 
                         <ul class="list !mt-[0.5rem]">
                             <li></li>
