@@ -235,23 +235,23 @@ const fileFormatsGlossary = [
             have been recorded below for your convenience.
         </p>
 
-        <MinorHeading>Hardware</MinorHeading>
+        <MinorHeading id="hardware">Hardware</MinorHeading>
 
         <Table :data="hardwareGlossary" align="left" />
 
-        <MinorHeading>CPU</MinorHeading>
+        <MinorHeading id="cpu">CPU</MinorHeading>
 
         <Table :data="cpuGlossary" align="left" />
 
-        <MinorHeading>Memory</MinorHeading>
+        <MinorHeading id="memory">Memory</MinorHeading>
 
         <Table :data="memoryGlossary" align="left" />
 
-        <MinorHeading>Software</MinorHeading>
+        <MinorHeading id="software">Software</MinorHeading>
 
         <Table :data="softwareGlossary" align="left" />
 
-        <MinorHeading>File Formats</MinorHeading>
+        <MinorHeading id="file-formats">File Formats</MinorHeading>
 
         <Table :data="fileFormatsGlossary" align="left" />
 

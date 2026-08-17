@@ -498,7 +498,37 @@ import SideImage from "../components/common/SideImage.vue";
                         >
 
                         <ul class="list !mt-[0.5rem]">
-                            <li></li>
+                            <li>
+                                <router-link
+                                    to="/glossary#hardware"
+                                    class="link"
+                                    >Hardware</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link to="/glossary#cpu" class="link"
+                                    >CPU</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link to="/glossary#memory" class="link"
+                                    >Memory</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
+                                    to="/glossary#software"
+                                    class="link"
+                                    >Software</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
+                                    to="/glossary#file-formats"
+                                    class="link"
+                                    >File Formats</router-link
+                                >
+                            </li>
                         </ul>
                     </li>
                 </ul>
