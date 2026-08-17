@@ -37,6 +37,7 @@ const props = defineProps({
     grid-template-columns: 1fr;
     gap: 1rem;
     margin: 3rem auto;
+    max-width: 900px;
 }
 
 .gallery-image {

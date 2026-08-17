@@ -303,16 +303,20 @@ const utilityData = [
             awareness.
         </p>
 
-        <ul class="list">
-            <li>Use firewalls to block unauthorised traffic.</li>
-            <li>Install anti-virus software to detect and remove malware.</li>
-            <li>Encrypt data to better protect it during transit.</li>
-            <li>Ensure important software is kept up-to-date.</li>
-            <li>
+        <ul class="card-grid">
+            <li class="card">Use firewalls to block unauthorised traffic.</li>
+            <li class="card">
+                Install anti-virus software to detect and remove malware.
+            </li>
+            <li class="card">
+                Encrypt data to better protect it during transit.
+            </li>
+            <li class="card">Ensure important software is kept up-to-date.</li>
+            <li class="card">
                 Be wary of suspicious emails, especially if they come with
                 unanticipated attachments.
             </li>
-            <li>
+            <li class="card">
                 Check URLs to ensure they are legitimate before entering any
                 sensitive data.
             </li>
@@ -358,6 +362,10 @@ const utilityData = [
             </li>
             <li>Avoid predictable patterns or personal information.</li>
             <li>Be unique to the account it's used for.</li>
+            <li>
+                Be changed every couple of months, especially after a major data
+                breach.
+            </li>
         </ul>
 
         <p>

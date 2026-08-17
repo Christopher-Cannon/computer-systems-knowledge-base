@@ -186,6 +186,27 @@ img {
     background-color: var(--bg-colour);
 }
 
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.card {
+    background-color: var(--grey);
+    border: 1px solid var(--grey-secondary);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    transition: background-color 0.1s ease-in-out, border 0.1s ease-in-out;
+    width: 100%;
+}
+
+.card:hover {
+    background-color: var(--grey-secondary);
+    border: 1px solid var(--grey-tertiary);
+}
+
 @media (min-width: 900px) {
     .h1 {
         font-size: 3.4rem;
@@ -209,5 +230,15 @@ img {
 
     .h6 {
         font-size: 1.1rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1280px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
