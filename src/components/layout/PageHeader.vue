@@ -12,12 +12,12 @@
 
                 <button class="mobile-nav-btn hide-desktop" @click="toggleNav">
                     <img
-                        :src="`/public/icons/bars-solid-full${suffix}.svg`"
+                        :src="`/icons/bars-solid-full${suffix}.svg`"
                         alt=""
                         id="open-btn"
                     />
                     <img
-                        :src="`/public/icons/xmark-solid-full${suffix}.svg`"
+                        :src="`/icons/xmark-solid-full${suffix}.svg`"
                         alt=""
                         id="close-btn"
                         class="hide-mobile"
