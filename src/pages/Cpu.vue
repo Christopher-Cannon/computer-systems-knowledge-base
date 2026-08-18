@@ -94,7 +94,7 @@ const prevNextNavData = {
         </ul>
 
         <p>
-            Number and naming convention can differ between CPU architectures
+            Number and naming convention differ between CPU architectures
             (x86-64, ARM, RISC-V).
         </p>
 
@@ -133,15 +133,15 @@ const prevNextNavData = {
 
         <p>
             As with general purpose registers, the number and naming convention
-            may differ between CPU architectures.
+            differ between CPU architectures.
         </p>
 
         <h4 class="h3">Cache</h4>
 
         <p>
             Small and fast storage space on the CPU die for holding recently
-            used instructions and data. Larger but a little slower than
-            registers, but much faster than main memory due to being in the CPU.
+            used instructions and data. Larger and slower than registers, but
+            much faster than main memory due to being in the CPU.
         </p>
 
         <p>
