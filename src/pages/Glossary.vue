@@ -121,12 +121,12 @@ const cpuGlossary = [
         Term: "MAR",
         "Stands For": "Memory Address Register",
         Description:
-            "Holds the address of the next instruction in memory to be placed in the MDR.",
+            "Holds the address of the next piece of data in memory to be placed in the MDR.",
     },
     {
         Term: "MDR",
         "Stands For": "Memory Data Register",
-        Description: "Holds the next instruction for copying to the IR.",
+        Description: "Holds data to be retrieved from or sent to memory.",
     },
 ];
 

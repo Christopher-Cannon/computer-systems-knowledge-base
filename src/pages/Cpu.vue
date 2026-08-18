@@ -70,10 +70,12 @@ const prevNextNavData = {
             These are small storage spaces inside the CPU used for temporary
             data and instructions. While their close proximity makes them the
             fastest memory space accessible by the CPU, they are also the
-            smallest, being anywhere from 1 to 8 bytes in size.
+            smallest, being anywhere from 8 to 64-bits in size.
         </p>
 
         <p>
+            A modern 64-bit processor is named so because that's how big its
+            registers are, which in turn support 64-bit operating systems.
             Registers can be general purpose or specialised towards a particular
             task.
         </p>
@@ -102,24 +104,30 @@ const prevNextNavData = {
 
         <ul class="list">
             <li>
-                <b>Program counter:</b>
+                <b>Program Counter:</b>
                 Holds the address of the next instruction.
             </li>
             <li>
-                <b>Instructions counter:</b>
+                <b>Instructions Register:</b>
                 Stores the current instruction being executed.
             </li>
             <li>
-                <b>Memory address register (MAR):</b>
+                <b>Memory Address Register (MAR):</b>
                 Holds the memory address of data to fetch or store.
             </li>
             <li>
-                <b>Memory data register (MDR):</b>
+                <b>Memory Data Register (MDR):</b>
                 Temporarily holds data being transferred to or from memory.
             </li>
             <li>
                 <b>Accumulator:</b>
                 Stores the result of the last calculation carried out.
+            </li>
+            <li>
+                <b>Stack Pointer:</b>
+                Points to the top of the stack, an area in main memory for
+                storing function calls, variables and where to go once a
+                function has finished executing.
             </li>
         </ul>
 
@@ -275,7 +283,7 @@ const prevNextNavData = {
                 The CPU executes the instruction according to its op code.
                 <ul class="list !mb-[0.5rem]">
                     <li>
-                        This may involve moving or storing data, comparing
+                        This may involve storing data in a register, comparing
                         values or performing calculations using the ALU.
                     </li>
                 </ul>
