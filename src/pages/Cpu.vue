@@ -296,15 +296,43 @@ const prevNextNavData = {
 
         <MinorHeading id="architectures">Architectures</MinorHeading>
 
+        <p>
+            Many CPU architectures have been developed over the years to meet different requirements, whether it's performance, compatibility or power efficiency. A desktop workstation will require more computational power than a thermostat, so each will have an appropriate CPU to suit their needs.
+        </p>
+
+        <p>
+            Below is a brief overview of the most relevant architectures today.
+        </p>
+
         <h4 class="h3">x86-64</h4>
+
+        <p>
+            Also known as AMD64, A 64-bit extension of the x86 architecture that allows for over 18 million <abbr title="TeraBytes">TB</abbr> memory addresses instead of the previous ~4GB limit.
+            Developed by AMD in 1999 in response to Intel's Itanium (IA-64) architecture and first saw use in AMD's Opteron processor in 2003. Intel later developed their own variation called Intel64, though the differences between the two are minimal.
+        </p>
+
+        <p>
+            Remains the most common architecture for desktop and laptop computers and has seen multiple revisions since its inception.
+        </p>
+
         <h5 class="h4">Intel Core</h5>
         <h5 class="h4">AMD Ryzen</h5>
 
-
         <h4 class="h3">RISC-V</h4>
-        <h4 class="h3">ARM</h4>
-        <h4 class="h3">Snapdragon</h4>
-        <h4 class="h3">Apple M</h4>
+
+        <p>
+            Several major CPU architectures are based on RISC.
+        </p>
+
+        <h5 class="h4">PowerPC</h5>
+
+        <p>
+            Saw use in Apply desktop and laptop computers from 1994 to 2006, major games consoles like the Xbox 360, Playstation 3 and Wii as well as some Martian rovers. It doesn't see much use these days outside of embedded systems.
+        </p>
+
+        <h5 class="h4">ARM</h5>
+        <h5 class="h4">Snapdragon</h5>
+        <h5 class="h4">Apple M</h5>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
