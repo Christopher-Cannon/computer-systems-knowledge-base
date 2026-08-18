@@ -296,10 +296,15 @@ const prevNextNavData = {
 
         <MinorHeading id="architectures">Architectures</MinorHeading>
 
-        <p>
-            Single VS multi-core CPUs, notable architectures (x86-64, Intel
-            Core, Ryzen, RISC-V, Snapdragon, Apple M)
-        </p>
+        <h4 class="h3">x86-64</h4>
+        <h5 class="h4">Intel Core</h5>
+        <h5 class="h4">AMD Ryzen</h5>
+
+
+        <h4 class="h3">RISC-V</h4>
+        <h4 class="h3">ARM</h4>
+        <h4 class="h3">Snapdragon</h4>
+        <h4 class="h3">Apple M</h4>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>

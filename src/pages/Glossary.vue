@@ -23,6 +23,11 @@ const hardwareGlossary = [
         Description: "May be discrete or integrated.",
     },
     {
+        Term: "APU",
+        "Stands For": "Accelerated Processing Unit",
+        Description: "Name given to AMD CPUs that feature integrated graphics chips.",
+    },
+    {
         Term: "HDD",
         "Stands For": "Hard Disk Drive",
         Description: "",

@@ -24,6 +24,16 @@ const prevNextNavData = {
         <ul class="list">
             <li>
                 <a
+                    href="https://en.wikipedia.org/wiki/Microprocessor_chronology"
+                    class="link"
+                    target="_blank"
+                    >Microprocessor Chronology</a
+                >
+                - <b>wikipedia.org</b><br />
+                A timeline of microprocessors from the 70s to modern day.
+            </li>
+            <li>
+                <a
                     href="https://www.baeldung.com/cs/fetch-execute-cycle"
                     class="link"
                     target="_blank"
