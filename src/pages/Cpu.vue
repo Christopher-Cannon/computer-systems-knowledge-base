@@ -229,15 +229,25 @@ const prevNextNavData = {
         <MinorHeading id="assembly">Assembly</MinorHeading>
 
         <p>
-            Assembly is a low-level programming language that makes machine code readable to humans and allows the programmer to write programs that interact directly with hardware. It acts as an intermediary between high-level languages like Python and JavaScript and binary which the CPU understands.
+            Assembly is a low-level programming language that makes machine code
+            readable to humans and allows the programmer to write programs that
+            interact directly with hardware. It acts as an intermediary between
+            high-level languages like Python and JavaScript and binary which the
+            CPU understands.
         </p>
 
         <p>
-            Assembly programs can be highly performant if you know what you are doing, but they can be challenging to write. High-level languages were developed as abstractions of assembly to make writing programs more intuitive.
+            Assembly programs can be highly performant if you know what you are
+            doing, but they can be challenging to write. High-level languages
+            were developed as abstractions of assembly to make writing programs
+            more intuitive.
         </p>
 
         <p>
-            Instructions in assembly are generally made up of a command (such as MOV, ADD or SUB) and one or more operands which specify data or memory addresses. A simple program that adds two numbers together might look like:
+            Instructions in assembly are generally made up of a command (such as
+            MOV, ADD or SUB) and one or more operands which specify data or
+            memory addresses. A simple program that adds two numbers together
+            might look like:
         </p>
 
         <code>
@@ -261,7 +271,7 @@ const prevNextNavData = {
 <b>mov eax, 1</b>          ; System call code for exit
 <b>xor ebx, ebx</b>        ; Exit status code
 <b>int 0x80</b>            ; System call</pre>
-</code>
+        </code>
 
         <MinorHeading id="fetch-execute-cycle"
             >Fetch-Execute Cycle</MinorHeading
@@ -385,7 +395,11 @@ const prevNextNavData = {
             </li>
         </ul>
 
-        <ImageFigure src="/public/images/cpu/i5 13th gen die.jpg" alt="Diagram of a 13th gen Intel Core-i5 CPU die." caption="Layout of a 13th gen Intel Core-i5 CPU die." />
+        <ImageFigure
+            src="/public/images/cpu/i5 13th gen die.avif"
+            alt="Diagram of a 13th gen Intel Core-i5 CPU die."
+            caption="Layout of a 13th gen Intel Core-i5 CPU die."
+        />
 
         <h4 class="h3">RISC-V</h4>
 
