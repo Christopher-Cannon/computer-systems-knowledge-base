@@ -44,6 +44,15 @@ const prevNextNavData = {
             </li>
             <li>
                 <a
+                    href="https://codefinity.com/blog/Assembler-Programming"
+                    class="link"
+                    target="_blank"
+                    >Assembler Programming</a
+                >
+                - <b>codefinity.com</b><br />An introduction to assembly language concepts.
+            </li>
+            <li>
+                <a
                     href="https://www.baeldung.com/cs/fetch-execute-cycle"
                     class="link"
                     target="_blank"
