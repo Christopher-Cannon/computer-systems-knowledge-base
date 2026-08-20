@@ -448,6 +448,42 @@ const prevNextNavData = {
             </li>
         </ul>
 
+        <MinorHeading id="microarchitecture">Microarchitecture</MinorHeading>
+
+        <p>
+            This refers to the ways in which processors are designed and how
+            circuits are arranged to improve computational performance and
+            efficiency.
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>Branch Prediction:</b>
+                The CPU attempts to guess the result of a conditional branch
+                ahead of time based on prior branch results. Comes at the risk
+                of bad guesses which require work to be redone, wasting time.
+            </li>
+            <li>
+                <b>Out-of-Order Execution:</b>
+                Allows an instruction to be executed ahead an older one if its
+                required data is readily available instead of idling while data
+                is fetched.
+            </li>
+            <li>
+                <b>Multithreading:</b>
+                Allows the processor to switch to executing instructions for
+                another program thread while data is fetched from main memory
+                for the first thread. Does not speed up threads but does improve
+                multi-tasking performance.
+            </li>
+
+            <li>
+                <b>Multiprocessing:</b>
+                The system has multiple CPUs cores that allow it to work on
+                multiple program threads Simultaneously.
+            </li>
+        </ul>
+
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
