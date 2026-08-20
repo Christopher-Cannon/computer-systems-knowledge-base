@@ -2,6 +2,7 @@
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
+import ImageFigure from "../components/common/ImageFigure.vue";
 
 const prevNextNavData = {
     prevHref: "/hardware-overview",
@@ -383,6 +384,8 @@ const prevNextNavData = {
                 SRAM available to the CPU.
             </li>
         </ul>
+
+        <ImageFigure src="/public/images/cpu/i5 13th gen die.jpg" alt="Diagram of a 13th gen Intel Core-i5 CPU die." caption="Layout of a 13th gen Intel Core-i5 CPU die." />
 
         <h4 class="h3">RISC-V</h4>
 
