@@ -325,8 +325,27 @@ const prevNextNavData = {
             computers and has seen multiple revisions since its inception.
         </p>
 
-        <h5 class="h4">Intel Core</h5>
-        <h5 class="h4">AMD Ryzen</h5>
+        <ul class="list">
+            <li>
+                <b>Intel Core:</b>
+                A series of desktop and laptop-oriented processors first
+                introducing in the latter half of the 2000s. Featured
+                hyperthreading technology early on for improved performance
+                while modern chips include a mix of performance and efficiency
+                cores for more specialised handling of workloads to improve
+                power consumption.
+            </li>
+            <li>
+                <b>AMD Ryzen:</b>
+                A competitor to Intel's Core-series of processors first
+                introduced in 2017 and saw a major performance increase over
+                AMD's previous offerings. Desktop variants are popular with
+                gamers and professionals due high core counts,
+                <abbr title="Simultaneous Multi-Threading">SMT</abbr> technology
+                and 3D cache in some models that greatly increase the amount of
+                SRAM available to the CPU.
+            </li>
+        </ul>
 
         <h4 class="h3">RISC-V</h4>
 
@@ -371,8 +390,7 @@ const prevNextNavData = {
                 A series of processors based on ARM introduced in 2020 and used
                 exclusively for Apple hardware. Like Intel's recent Core-series
                 of processors, M-series chips feature a mix of performance and
-                efficiency cores for improved power efficiency, especially for
-                mobile devices.
+                efficiency cores for improved power efficiency.
             </li>
         </ul>
 
