@@ -342,6 +342,23 @@ const prevNextNavData = {
             </li>
         </ol>
 
+        <h4 class="h3">Example Program</h4>
+
+        <p>
+            The following is a simple assembly-like program (not based on a real
+            language, it is purely for demonstration purposes) that adds two
+            numbers together. Lets see how a simplified CPU might execute this
+            program.
+        </p>
+
+        <code>
+            <pre><b>MOV r0 09</b>    ; Move data at address 09 into register r0
+<b>MOV r1 0A</b>    ; Move data at address 0A into register r1
+<b>ADD r0 r1</b>    ; Add data in register r0 with data in register r0
+<b>NXT 0C</b>    ; Go to next instruction at address 0C
+</pre>
+        </code>
+
         <MinorHeading id="architectures">Architectures</MinorHeading>
 
         <p>
