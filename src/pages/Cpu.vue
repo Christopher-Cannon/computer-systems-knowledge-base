@@ -297,7 +297,11 @@ const prevNextNavData = {
         <MinorHeading id="architectures">Architectures</MinorHeading>
 
         <p>
-            Many CPU architectures have been developed over the years to meet different requirements, whether it's performance, compatibility or power efficiency. A desktop workstation will require more computational power than a thermostat, so each will have an appropriate CPU to suit their needs.
+            Many CPU architectures have been developed over the years to meet
+            different requirements, whether it's performance, compatibility or
+            power efficiency. A desktop workstation will require more
+            computational power than a thermostat, so each will have an
+            appropriate CPU to suit their needs.
         </p>
 
         <p>
@@ -307,12 +311,18 @@ const prevNextNavData = {
         <h4 class="h3">x86-64</h4>
 
         <p>
-            Also known as AMD64, A 64-bit extension of the x86 architecture that allows for over 18 million <abbr title="TeraBytes">TB</abbr> memory addresses instead of the previous ~4GB limit.
-            Developed by AMD in 1999 in response to Intel's Itanium (IA-64) architecture and first saw use in AMD's Opteron processor in 2003. Intel later developed their own variation called Intel64, though the differences between the two are minimal.
+            Also known as AMD64, A 64-bit extension of the x86 architecture that
+            allows for over 18 million <abbr title="TeraBytes">TB</abbr> memory
+            addresses instead of the previous ~4GB limit. Developed by AMD in
+            1999 in response to Intel's Itanium (IA-64) architecture and first
+            saw use in AMD's Opteron processor in 2003. Intel later developed
+            their own variation called Intel64, though the differences between
+            the two are minimal.
         </p>
 
         <p>
-            Remains the most common architecture for desktop and laptop computers and has seen multiple revisions since its inception.
+            Remains the most common architecture for desktop and laptop
+            computers and has seen multiple revisions since its inception.
         </p>
 
         <h5 class="h4">Intel Core</h5>
@@ -321,23 +331,50 @@ const prevNextNavData = {
         <h4 class="h3">RISC-V</h4>
 
         <p>
+            A free, open-source architecture developed in 2010 by the University
+            of California and is the fifth generation of RISC first developed in
+            1981. It is designed for simplicity and efficiency as its name
+            suggests: Reduced Instruction Set Computer.
+        </p>
+
+        <p>
+            Because it can be used without having to pay license fees or
+            royalties, it is a popular choice for cheap systems like
+            microcontrollers as well as for exploration in educational settings.
             Several major CPU architectures are based on RISC.
         </p>
 
-        <h5 class="h4">PowerPC</h5>
-
-        <p>
-            Saw use in Apply desktop and laptop computers from 1994 to 2006, major games consoles like the Xbox 360, Playstation 3 and Wii as well as some Martian rovers. It doesn't see much use these days outside of embedded systems.
-        </p>
-
-        <h5 class="h4">ARM</h5>
-
-        <p>
-            A popular choice for mobile computing due its low power consumption.
-        </p>
-
-        <h5 class="h4">Snapdragon</h5>
-        <h5 class="h4">Apple M</h5>
+        <ul class="list">
+            <li>
+                <b>PowerPC:</b>
+                Saw use in Apply desktop and laptop computers from 1994 to 2006,
+                major games consoles like the Xbox 360, PS3 and Wii as well as
+                some Martian rovers. It doesn't see much use these days outside
+                of embedded systems.
+            </li>
+            <li>
+                <b>ARM:</b>
+                A proprietary design introduced in 1981 for the BBC Micro, it is
+                a popular choice for mobile computing due its low power
+                consumption, though it has been used in supercomputing. Famously
+                powered the Nintendo DS.
+            </li>
+            <li>
+                <b>Snapdragon:</b>
+                A series of multi-core
+                <abbr title="Systems on Chips">SoCs</abbr> made by Qualcomm
+                based on ARM used mainly in smartphones as well as some laptops
+                and embedded devices.
+            </li>
+            <li>
+                <b>Apple Silicon:</b>
+                A series of processors based on ARM introduced in 2020 and used
+                exclusively for Apple hardware. Like Intel's recent Core-series
+                of processors, M-series chips feature a mix of performance and
+                efficiency cores for improved power efficiency, especially for
+                mobile devices.
+            </li>
+        </ul>
 
         <PrevNextNav :data="prevNextNavData" />
     </section>
