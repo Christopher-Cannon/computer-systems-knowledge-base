@@ -131,6 +131,18 @@ const prevNextNavData = {
             caption="How cache might be arranged on an eight-core CPU."
         />
 
+        <h5 class="h4">Cache Miss</h5>
+
+        <p>
+            If the CPU cannot find what it needs in cache, then it has to look
+            for it in main memory instead. This is known as a cache miss and can
+            stall the CPU for hundreds of cycles, wasting time. This can get
+            even worse if the CPU has to look beyond main memory into storage
+            devices which can be very slow if hard drives have to be searched.
+            Idle time can be filled with other tasks if the CPU supports
+            multithreading.
+        </p>
+
         <h4 class="h3">Main Memory</h4>
 
         <p>
