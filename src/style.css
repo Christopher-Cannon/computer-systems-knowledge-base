@@ -126,6 +126,20 @@ img {
     width: 100%;
 }
 
+code {
+    background-color: var(--grey);
+    border: 1px solid var(--grey-secondary);
+    border-radius: var(--radius-md);
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 .monospaced {
     font-family: "Inconsolata", monospace;
     font-size: 110%;

@@ -236,8 +236,31 @@ const prevNextNavData = {
         </p>
 
         <p>
-            Instructions in assembly are generally made up of a command (such as MOV, ADD or SUB) and one or more operands which specify data or memory addresses.
+            Instructions in assembly are generally made up of a command (such as MOV, ADD or SUB) and one or more operands which specify data or memory addresses. A simple program that adds two numbers together might look like:
         </p>
+
+        <code>
+            <pre>; Load the first number into register AL
+<b>mov al, [num1]</b>
+
+; Add the second number, which is located in memory, to AL
+<b>add al, [num2]</b>
+
+; Save the result to the appropriate memory location
+<b>mov [result], al</b>
+
+; System call to display the result
+<b>mov eax, 4</b>          ; System call code for output
+<b>mov ebx, 1</b>          ; File descriptor for output (stdout)
+<b>mov ecx, result</b>     ; Pointer to the result
+<b>mov edx, 1</b>          ; Number of bytes to output
+<b>int 0x80</b>            ; System call
+
+; Exit the program
+<b>mov eax, 1</b>          ; System call code for exit
+<b>xor ebx, ebx</b>        ; Exit status code
+<b>int 0x80</b>            ; System call</pre>
+</code>
 
         <MinorHeading id="fetch-execute-cycle"
             >Fetch-Execute Cycle</MinorHeading
