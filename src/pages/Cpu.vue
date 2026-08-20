@@ -225,6 +225,20 @@ const prevNextNavData = {
             errors.
         </p>
 
+        <MinorHeading id="assembly">Assembly</MinorHeading>
+
+        <p>
+            Assembly is a low-level programming language that makes machine code readable to humans and allows the programmer to write programs that interact directly with hardware. It acts as an intermediary between high-level languages like Python and JavaScript and binary which the CPU understands.
+        </p>
+
+        <p>
+            Assembly programs can be highly performant if you know what you are doing, but they can be challenging to write. High-level languages were developed as abstractions of assembly to make writing programs more intuitive.
+        </p>
+
+        <p>
+            Instructions in assembly are generally made up of a command (such as MOV, ADD or SUB) and one or more operands which specify data or memory addresses.
+        </p>
+
         <MinorHeading id="fetch-execute-cycle"
             >Fetch-Execute Cycle</MinorHeading
         >
