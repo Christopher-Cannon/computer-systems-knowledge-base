@@ -313,11 +313,11 @@ const prevNextNavData = {
         <p>
             Also known as AMD64, A 64-bit extension of the x86 architecture that
             allows for over 18 million <abbr title="TeraBytes">TB</abbr> memory
-            addresses instead of the previous ~4GB limit. Developed by AMD in
-            1999 in response to Intel's Itanium (IA-64) architecture and first
-            saw use in AMD's Opteron processor in 2003. Intel later developed
-            their own variation called Intel64, though the differences between
-            the two are minimal.
+            addresses instead of the previous ~4GB limit. Developed by
+            <abbr title="Advanced Micro Devices">AMD</abbr> in 1999 in response
+            to Intel's Itanium (IA-64) architecture and first saw use in AMD's
+            Opteron processor in 2003. Intel later developed their own variation
+            called Intel64, though the differences between the two are minimal.
         </p>
 
         <p>
