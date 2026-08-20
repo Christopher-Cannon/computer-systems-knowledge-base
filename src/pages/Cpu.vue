@@ -331,6 +331,11 @@ const prevNextNavData = {
         </p>
 
         <h5 class="h4">ARM</h5>
+
+        <p>
+            A popular choice for mobile computing due its low power consumption.
+        </p>
+
         <h5 class="h4">Snapdragon</h5>
         <h5 class="h4">Apple M</h5>
 

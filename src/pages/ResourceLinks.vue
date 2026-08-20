@@ -34,6 +34,16 @@ const prevNextNavData = {
             </li>
             <li>
                 <a
+                    href="https://embeddedprep.com/popular-cpu-architectures-in-2025/"
+                    class="link"
+                    target="_blank"
+                    >Popular CPU Architectures in 2026</a
+                >
+                - <b>embeddedprop.com</b><br />
+                An overview of common CPU architectures and the ways they can differ.
+            </li>
+            <li>
+                <a
                     href="https://www.baeldung.com/cs/fetch-execute-cycle"
                     class="link"
                     target="_blank"
