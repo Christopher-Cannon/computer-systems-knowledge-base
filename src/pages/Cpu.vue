@@ -546,7 +546,7 @@ const prevNextNavData = {
             <li class="card">
                 <h5 class="h5 !mt-0">Multiprocessing</h5>
                 The system has multiple CPUs cores that allow it to work on
-                multiple program threads Simultaneously.
+                multiple program threads simultaneously.
             </li>
         </ul>
 
