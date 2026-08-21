@@ -389,7 +389,9 @@ const prevNextNavData = {
             </p>
         </InfoBox>
 
-        <MinorHeading id="architectures">Architectures</MinorHeading>
+        <MinorHeading id="major-architectures"
+            >Major Architectures</MinorHeading
+        >
 
         <p>
             Many CPU architectures have been developed over the years to meet

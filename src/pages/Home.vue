@@ -79,6 +79,13 @@ import SideImage from "../components/common/SideImage.vue";
                             </li>
                             <li>
                                 <router-link
+                                    to="/cpu-architecture#assembly"
+                                    class="link"
+                                    >Assembly</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
                                     to="/cpu-architecture#fetch-execute-cycle"
                                     class="link"
                                     >Fetch-Execute Cycle</router-link
@@ -86,9 +93,16 @@ import SideImage from "../components/common/SideImage.vue";
                             </li>
                             <li>
                                 <router-link
-                                    to="/cpu-architecture#architectures"
+                                    to="/cpu-architecture#major-architectures"
                                     class="link"
-                                    >Architectures</router-link
+                                    >Major Architectures</router-link
+                                >
+                            </li>
+                            <li>
+                                <router-link
+                                    to="/cpu-architecture#microarchitecture"
+                                    class="link"
+                                    >Microarchitecture</router-link
                                 >
                             </li>
                         </ul>
