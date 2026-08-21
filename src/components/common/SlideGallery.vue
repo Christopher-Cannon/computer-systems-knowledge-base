@@ -39,7 +39,12 @@ function nextStep() {
             alt="Slide gallery background."
             class="slide-bg"
         />
-        <img :src="props.data[slideIndex].path" alt="" class="slide" />
+        <img
+            :src="props.data[slideIndex].path"
+            alt=""
+            class="slide"
+            :style="!props.bg ? `background-color: #fffcfd` : ``"
+        />
 
         <p class="text-center">
             <b>Step {{ slideIndex + 1 }}</b

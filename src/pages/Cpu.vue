@@ -107,32 +107,31 @@ const prevNextNavData = {
 
         <p>These are designed for control and coordination, such as:</p>
 
-        <ul class="list">
-            <li>
-                <b>Program Counter:</b>
+        <ul class="card-grid">
+            <li class="card">
+                <h6 class="h5 !mt-0">Program Counter</h6>
                 Holds the address of the next instruction.
             </li>
-            <li>
-                <b>Instruction Register:</b>
+            <li class="card">
+                <h6 class="h5 !mt-0">Instruction Register</h6>
                 Stores the current instruction being executed.
             </li>
-            <li>
-                <b>Memory Address Register (MAR):</b>
+            <li class="card">
+                <h6 class="h5 !mt-0">Stack Pointer</h6>
+                Points to the top of the stack, an area in main memory for
+                storing function calls, variables and such.
+            </li>
+            <li class="card">
+                <h6 class="h5 !mt-0">Memory Address Register (MAR)</h6>
                 Holds the memory address of data to fetch or store.
             </li>
-            <li>
-                <b>Memory Data Register (MDR):</b>
+            <li class="card">
+                <h6 class="h5 !mt-0">Memory Data Register (MDR)</h6>
                 Temporarily holds data being transferred to or from memory.
             </li>
-            <li>
-                <b>Accumulator:</b>
+            <li class="card">
+                <h6 class="h5 !mt-0">Accumulator</h6>
                 Stores the result of the last calculation carried out.
-            </li>
-            <li>
-                <b>Stack Pointer:</b>
-                Points to the top of the stack, an area in main memory for
-                storing function calls, variables and where to go once a
-                function has finished executing.
             </li>
         </ul>
 
@@ -282,16 +281,16 @@ const prevNextNavData = {
 <b>mov [result], al</b>
 
 ; System call to display the result
-<b>mov eax, 4</b>          ; System call code for output
-<b>mov ebx, 1</b>          ; File descriptor for output (stdout)
-<b>mov ecx, result</b>     ; Pointer to the result
-<b>mov edx, 1</b>          ; Number of bytes to output
-<b>int 0x80</b>            ; System call
+<b>mov eax, 4</b>       ; System call code for output
+<b>mov ebx, 1</b>       ; File descriptor for output (stdout)
+<b>mov ecx, result</b>  ; Pointer to the result
+<b>mov edx, 1</b>       ; Number of bytes to output
+<b>int 0x80</b>         ; System call
 
 ; Exit the program
-<b>mov eax, 1</b>          ; System call code for exit
-<b>xor ebx, ebx</b>        ; Exit status code
-<b>int 0x80</b>            ; System call</pre>
+<b>mov eax, 1</b>       ; System call code for exit
+<b>xor ebx, ebx</b>     ; Exit status code
+<b>int 0x80</b>         ; System call</pre>
         </code>
 
         <MinorHeading id="fetch-execute-cycle"
@@ -376,7 +375,7 @@ const prevNextNavData = {
             <pre><b>MOV r0 09</b>    ; Move data at address 09 into register r0
 <b>MOV r1 0A</b>    ; Move data at address 0A into register r1
 <b>ADD r0 r1</b>    ; Add data in register r0 with data in register r0
-<b>NXT 0C</b>    ; Go to next instruction at address 0C
+<b>NXT 0C</b>       ; Go to next instruction at address 0C
 </pre>
         </code>
 
@@ -523,29 +522,29 @@ const prevNextNavData = {
             efficiency.
         </p>
 
-        <ul class="list">
-            <li>
-                <b>Branch Prediction:</b>
+        <ul class="card-grid grid-col-2">
+            <li class="card">
+                <h5 class="h5 !mt-0">Branch Prediction</h5>
                 The CPU attempts to guess the result of a conditional branch
                 ahead of time based on prior branch results. Comes at the risk
                 of bad guesses which require work to be redone, wasting time.
             </li>
-            <li>
-                <b>Out-of-Order Execution:</b>
+            <li class="card">
+                <h5 class="h5 !mt-0">Out-of-Order Execution</h5>
                 Allows an instruction to be executed ahead an older one if its
                 required data is readily available instead of idling while data
                 is fetched.
             </li>
-            <li>
-                <b>Multithreading:</b>
+            <li class="card">
+                <h5 class="h5 !mt-0">Multithreading</h5>
                 Allows the processor to switch to executing instructions for
                 another program thread while data is fetched from main memory
                 for the first thread. Does not speed up threads but does improve
                 multi-tasking performance.
             </li>
 
-            <li>
-                <b>Multiprocessing:</b>
+            <li class="card">
+                <h5 class="h5 !mt-0">Multiprocessing</h5>
                 The system has multiple CPUs cores that allow it to work on
                 multiple program threads Simultaneously.
             </li>
@@ -554,3 +553,11 @@ const prevNextNavData = {
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
+
+<style scoped>
+@media (min-width: 1280px) {
+    .grid-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+</style>

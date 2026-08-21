@@ -27,6 +27,7 @@
     --text-colour: #262626;
     --text-grey: #6e6e6e;
     --primary: #840fe4;
+    --primary-lighter: #a12dff;
     --primary-darker: #6e11b9;
     --info: #402cf0;
     --warning: #dfa608;
@@ -43,6 +44,7 @@
     --text-colour: #fffcfd;
     --text-grey: #b6b0b2;
     --primary: #840fe4;
+    --primary-lighter: #a12dff;
     --primary-darker: #6e11b9;
     --info: #402cf0;
     --warning: #dfa608;
@@ -188,6 +190,7 @@ pre {
 }
 
 [data-theme="dark"] .link {
+    color: var(--primary-lighter);
     text-shadow: 2px 1px 1px var(--bg-colour);
 }
 
