@@ -325,7 +325,10 @@ const xorSlidePaths = [
 
         <MinorHeading id="xor">XOR</MinorHeading>
 
-        <p>The inputs must be a mix of 1s and 0s for the output to be 1.</p>
+        <p>
+            Short for "eXclusive OR", the inputs must be a mix of 1s and 0s for
+            the output to be 1.
+        </p>
 
         <div class="row">
             <div class="content-box">
