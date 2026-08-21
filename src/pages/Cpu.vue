@@ -112,7 +112,7 @@ const prevNextNavData = {
                 Holds the address of the next instruction.
             </li>
             <li>
-                <b>Instructions Register:</b>
+                <b>Instruction Register:</b>
                 Stores the current instruction being executed.
             </li>
             <li>
