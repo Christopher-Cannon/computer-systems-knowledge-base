@@ -3,6 +3,9 @@ import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
 import ImageFigure from "../components/common/ImageFigure.vue";
+import SlideGallery from "../components/common/SlideGallery.vue";
+import feCycleSlidePaths from "../data/fe-cycle";
+import InfoBox from "../components/common/InfoBox.vue";
 
 const prevNextNavData = {
     prevHref: "/hardware-overview",
@@ -345,10 +348,10 @@ const prevNextNavData = {
         <h4 class="h3">Example Program</h4>
 
         <p>
-            The following is a simple assembly-like program (not based on a real
-            language, it is purely for demonstration purposes) that adds two
-            numbers together. Lets see how a simplified CPU might execute this
-            program.
+            The following is part of a simple assembly-like program (not based
+            on a real language, it is purely for demonstration purposes) that
+            adds two numbers together. Lets see how a simplified CPU might
+            execute this program fragment.
         </p>
 
         <code>
@@ -358,6 +361,33 @@ const prevNextNavData = {
 <b>NXT 0C</b>    ; Go to next instruction at address 0C
 </pre>
         </code>
+
+        <InfoBox label="About This Diagram">
+            <p class="!mt-0">
+                This is a vastly simplified processor structure that has
+                necessary components like cache removed to convey the core
+                concepts of the fetch-execute cycle more clearly.
+            </p>
+
+            <p class="!mb-0">
+                In actuality, reading from memory can take many clock cycles,
+                meaning the above instructions could take much longer to
+                complete if this were factored in.
+            </p>
+        </InfoBox>
+
+        <SlideGallery
+            :data="feCycleSlidePaths"
+            bg="/public/images/fe cycle/fe cycle bg.png"
+        />
+
+        <InfoBox label="Next Steps">
+            <p class="!my-0">
+                As you can see, this sequence of 4 instructions took about 30
+                cycles to complete. Considering the contents of memory, what do
+                you think will happen next?
+            </p>
+        </InfoBox>
 
         <MinorHeading id="architectures">Architectures</MinorHeading>
 

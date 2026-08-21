@@ -6,6 +6,10 @@ const props = defineProps({
         type: [Object],
         required: true,
     },
+    bg: {
+        type: String,
+        required: false,
+    },
 });
 
 const slideIndex = ref(0);
@@ -29,6 +33,12 @@ function nextStep() {
 
 <template>
     <div class="slide-gallery">
+        <img
+            v-if="props.bg"
+            :src="props.bg"
+            alt="Slide gallery background."
+            class="slide-bg"
+        />
         <img :src="props.data[slideIndex].path" alt="" class="slide" />
 
         <p class="text-center">
@@ -58,13 +68,20 @@ function nextStep() {
 
 <style scoped>
 .slide-gallery {
+    position: relative;
     margin: 2rem auto;
 }
 
+.slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .slide {
-    background-color: var(--white);
     border: 2px solid var(--primary);
     border-radius: var(--radius-md);
+    position: relative;
 }
 
 .button-group {
