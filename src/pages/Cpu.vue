@@ -4,8 +4,9 @@ import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
 import ImageFigure from "../components/common/ImageFigure.vue";
 import SlideGallery from "../components/common/SlideGallery.vue";
-import feCycleSlidePaths from "../data/fe-cycle";
 import InfoBox from "../components/common/InfoBox.vue";
+import SideImage from "../components/common/SideImage.vue";
+import feCycleSlidePaths from "../data/fe-cycle";
 
 const prevNextNavData = {
     prevHref: "/hardware-overview",
@@ -166,26 +167,43 @@ const prevNextNavData = {
             it.
         </p>
 
+        <ImageFigure
+            src="/public/images/cpu/bus width.png"
+            alt="A comparison between an 8-bit and 16-bit bus."
+            caption="Wider buses allow more data through at once."
+        />
+
         <h5 class="h4">Address Bus</h5>
 
-        <p>
-            Connects the CPU to main memory and carries memory address location
-            to be accessed. Data only flows from CPU to main memory.
-        </p>
+        <SideImage
+            src="/public/images/cpu/address bus.png"
+            alt="A diagram showing how the address bus is uni-directional towards memory."
+        >
+            <p>
+                Connects the CPU to main memory and carries memory address
+                location to be accessed. Data only flows from CPU to main
+                memory.
+            </p>
 
-        <p>
-            Its width determines how many different memory locations can be
-            accessed. For example, an 8-bit address bus can only access
-            2<sup>8</sup>, or 256, memory locations.
-        </p>
+            <p>
+                The width of the address bus is important as it affects how many
+                memory locations can be accessed. For example, an 8-bit address
+                bus can only access 2<sup>8</sup>, or 256, memory locations.
+            </p>
+        </SideImage>
 
         <h5 class="h4">Data Bus</h5>
 
-        <p>
-            Carries data between the CPU and main memory in either direction for
-            reading from or writing to the location specified by the address
-            bus.
-        </p>
+        <SideImage
+            src="/public/images/cpu/data bus.png"
+            alt="A diagram showing how the data bus is bi-directional."
+        >
+            <p>
+                Carries data between the CPU and main memory in either direction
+                for reading from or writing to the location specified by the
+                address bus.
+            </p>
+        </SideImage>
 
         <h5 class="h4" id="control-bus">Control Bus</h5>
 
