@@ -225,9 +225,11 @@ const xorSlidePaths = [
 
         <MinorHeading id="not">NOT</MinorHeading>
 
+        <p>The input is inverted, so 0 becomes 1 and vice-versa.</p>
+
         <div class="row">
             <div class="content-box">
-                <p>The input is inverted, so 0 becomes 1 and vice-versa.</p>
+                <h4 class="h3">Logic Gate</h4>
 
                 <img
                     src="/public/images/logic/NOT gate.png"
@@ -237,9 +239,13 @@ const xorSlidePaths = [
             </div>
 
             <div class="table-reducer">
+                <h4 class="h3">Truth Table</h4>
+
                 <Table :data="notTruthTable" monospaced fixed />
             </div>
         </div>
+
+        <h4 class="h3">Binary NOT Operation</h4>
 
         <p>
             Here is a demonstration on how to carry out a NOT operation on
@@ -251,10 +257,11 @@ const xorSlidePaths = [
         <SlideGallery :data="notSlidePaths" />
 
         <MinorHeading id="and">AND</MinorHeading>
+        <p>All inputs must be 1 for the output to be 1.</p>
 
         <div class="row">
             <div class="content-box">
-                <p>All inputs must be 1 for the output to be 1.</p>
+                <h4 class="h3">Logic Gate</h4>
 
                 <img
                     src="/public/images/logic/AND gate.png"
@@ -264,9 +271,13 @@ const xorSlidePaths = [
             </div>
 
             <div class="table-reducer">
+                <h4 class="h3">Truth Table</h4>
+
                 <Table :data="andTruthTable" monospaced fixed />
             </div>
         </div>
+
+        <h4 class="h3">Binary AND Operation</h4>
 
         <p>
             Here is a demonstration on how to carry out an AND operation on
@@ -280,9 +291,11 @@ const xorSlidePaths = [
 
         <MinorHeading id="or">OR</MinorHeading>
 
+        <p>One input must be 1 for the output to be 1.</p>
+
         <div class="row">
             <div class="content-box">
-                <p>One input must be 1 for the output to be 1.</p>
+                <h4 class="h3">Logic Gate</h4>
 
                 <img
                     src="/public/images/logic/OR gate.png"
@@ -292,9 +305,13 @@ const xorSlidePaths = [
             </div>
 
             <div class="table-reducer">
+                <h4 class="h3">Truth Table</h4>
+
                 <Table :data="orTruthTable" monospaced fixed />
             </div>
         </div>
+
+        <h4 class="h3">Binary OR Operation</h4>
 
         <p>
             Here is a demonstration on how to carry out an OR operation on
@@ -308,12 +325,11 @@ const xorSlidePaths = [
 
         <MinorHeading id="xor">XOR</MinorHeading>
 
+        <p>The inputs must be a mix of 1s and 0s for the output to be 1.</p>
+
         <div class="row">
             <div class="content-box">
-                <p>
-                    The inputs must be a mix of 1s and 0s for the output to be
-                    1.
-                </p>
+                <h4 class="h3">Logic Gate</h4>
 
                 <img
                     src="/public/images/logic/XOR gate.png"
@@ -323,9 +339,13 @@ const xorSlidePaths = [
             </div>
 
             <div class="table-reducer">
+                <h4 class="h3">Truth Table</h4>
+
                 <Table :data="xorTruthTable" monospaced fixed />
             </div>
         </div>
+
+        <h4 class="h3">Binary XOR Operation</h4>
 
         <p>
             Here is a demonstration on how to carry out an XOR operation on
@@ -344,8 +364,18 @@ const xorSlidePaths = [
 <style scoped>
 .logic-gate {
     border-radius: var(--radius-md);
-    margin: 2rem auto;
-    width: 50%;
+    margin: 1.5rem auto 2rem;
+    width: 75%;
+}
+
+.table-wrapper {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 660px) {
+    .logic-gate {
+        width: 60%;
+    }
 }
 
 @media (min-width: 900px) {
@@ -355,24 +385,13 @@ const xorSlidePaths = [
         gap: 1rem;
     }
 
-    .content-box {
-        flex: 3;
-    }
-
+    .content-box,
     .table-reducer {
-        flex: 2;
-    }
-
-    .table-reducer > h4 {
-        margin: 0.5rem auto 1rem;
-    }
-
-    .table-reducer > div {
-        margin: 1rem auto;
+        flex: 1;
     }
 
     .logic-gate {
-        margin: 2rem 0;
+        margin: 1.5rem 0 2rem;
     }
 }
 </style>
