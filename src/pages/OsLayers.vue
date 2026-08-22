@@ -1,4 +1,5 @@
 <script setup>
+import ImageFigure from "../components/common/ImageFigure.vue";
 import MainHeading from "../components/common/MainHeading.vue";
 import MinorHeading from "../components/common/MinorHeading.vue";
 import PrevNextNav from "../components/common/PrevNextNav.vue";
@@ -33,6 +34,12 @@ const prevNextNavData = {
             user-facing tasks.
         </p>
 
+        <ImageFigure
+            src="/public/images/os-layers/os-layers.png"
+            alt="Diagram of the typical arrangement of operating system layers."
+            caption="Typical arrangement of the layers of operating systems with the kernel at the centre."
+        />
+
         <MinorHeading id="kernel">Kernel</MinorHeading>
 
         <p>
@@ -62,24 +69,34 @@ const prevNextNavData = {
 
         <p>
             The kernel enforces access control using user IDs and group IDs
-            coupled with permission bits stored on files and resources, such as
-            read, write and execute. For example, if a user has a write
-            permission bit set on a file, they are able to overwrite its
-            contents.
+            coupled with
+            <a href="/file-management#file-attributes" class="link"
+                >permission bits or attributes</a
+            >
+            stored on files and resources, such as read, write and execute. For
+            example, if a user has a write permission bit set on a file, they
+            are able to overwrite its contents.
         </p>
 
         <h4 class="h3">Ring Architecture</h4>
 
         <p>
             Modern CPUs implement privilege levels using rings. Ring 0 offers
-            full access and is used by the kernel, while ring 3 offers limited
-            access and is used by general applications.
+            full access and is used by the kernel, ring 3 offers limited access
+            and is used by general applications while the rings in between are
+            used by device drivers. Modern operatings systems only use two or
+            three rings.
         </p>
 
         <p>
             This separation ensures that user-level code cannot directly execute
             privileged instructions or access kernel memory.
         </p>
+
+        <ImageFigure
+            src="/public/images/os-layers/ring-architecture.png"
+            alt="Diagram of how privilege rings are arranged with most privileges lying at ring 0 in the centre."
+        />
 
         <MinorHeading id="memory-management">Memory Management</MinorHeading>
 

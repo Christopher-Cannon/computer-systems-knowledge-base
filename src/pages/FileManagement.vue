@@ -460,7 +460,7 @@ const fileSizeDecimalData = [
             open it.
         </p>
 
-        <h4 class="h3">File Attributes</h4>
+        <h4 class="h3" id="file-attributes">File Attributes</h4>
 
         <p>
             These are on/off flags that indicate a certain property or behaviour
