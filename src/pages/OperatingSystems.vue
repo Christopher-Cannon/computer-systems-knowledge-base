@@ -113,16 +113,58 @@ const systemData = [
             processors, tasks, timing and hardware environments. For example:
         </p>
 
-        <ul class="list">
-            <li>A personal laptop may use a single-user, multi-tasking OS.</li>
-            <li>A car's engine controller needs a real-time embedded OS.</li>
-            <li>
-                A server farm might use a multi-user, multi-processor,
-                distributed OS.
+        <ul class="card-grid">
+            <li class="card">
+                <span
+                    >A personal laptop may use a single-user, multi-tasking
+                    OS.</span
+                >
+
+                <a
+                    href="/public/images/operating systems/laptop.avif"
+                    class="image-link"
+                >
+                    <img
+                        src="/public/images/operating systems/laptop.avif"
+                        alt="A generic laptop computer."
+                    />
+                </a>
+            </li>
+            <li class="card">
+                <span
+                    >A car's engine controller needs a real-time embedded
+                    OS.</span
+                >
+
+                <a
+                    href="/public/images/operating systems/microcontroller.avif"
+                    class="image-link"
+                >
+                    <img
+                        src="/public/images/operating systems/microcontroller.avif"
+                        alt="A car engine microcontroller."
+                    />
+                </a>
+            </li>
+            <li class="card">
+                <span
+                    >A server farm might use a multi-user, multi-processor,
+                    distributed OS.</span
+                >
+
+                <a
+                    href="/public/images/operating systems/servers.avif"
+                    class="image-link"
+                >
+                    <img
+                        src="/public/images/operating systems/servers.avif"
+                        alt="Rows of server racks in a data centre."
+                    />
+                </a>
             </li>
         </ul>
 
-        <ImageGallery :data="computerData" col3 />
+        <!-- <ImageGallery :data="computerData" col3 /> -->
 
         <MinorHeading id="single-and-multi-user"
             >Single and Multi User</MinorHeading
@@ -238,3 +280,17 @@ const systemData = [
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
+
+<style scoped>
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.image-link > img {
+    border-radius: var(--radius-md);
+    /* height: 300px; */
+}
+</style>
