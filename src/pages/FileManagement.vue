@@ -502,7 +502,16 @@ const fileSizeDecimalData = [
             are assigned a digit representing one of up to eight sets of
             permissions. There are three categories of user (owner, group,
             other) while there are three types of permissions (read, write,
-            execute).
+            execute). These are typically managed through the command line using
+            the
+            <span class="font-bold monospaced"
+                ><abbr title="Change Mode">chmod</abbr></span
+            >
+            and
+            <span class="font-bold monospaced"
+                ><abbr title="Change Owner">chown</abbr></span
+            >
+            commands.
         </p>
 
         <Table :data="filePermissionsData" monospaced />
