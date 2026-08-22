@@ -25,7 +25,8 @@ const hardwareGlossary = [
     {
         Term: "APU",
         "Stands For": "Accelerated Processing Unit",
-        Description: "Name given to AMD CPUs that feature integrated graphics chips.",
+        Description:
+            "Name given to AMD CPUs that feature integrated graphics chips.",
     },
     {
         Term: "HDD",
@@ -152,6 +153,12 @@ const memoryGlossary = [
         Description: "Main system memory.",
     },
     {
+        Term: "DDR",
+        "Stands For": "Double Data Rate",
+        Description:
+            "Can transfer data on the system clock's rising and falling.",
+    },
+    {
         Term: "ROM",
         "Stands For": "Read-only Memory",
         Description:
@@ -179,21 +186,6 @@ const softwareGlossary = [
     {
         Term: "OS",
         "Stands For": "Operating System",
-        Description: "",
-    },
-    {
-        Term: "",
-        "Stands For": "",
-        Description: "",
-    },
-    {
-        Term: "",
-        "Stands For": "",
-        Description: "",
-    },
-    {
-        Term: "",
-        "Stands For": "",
         Description: "",
     },
 ];
