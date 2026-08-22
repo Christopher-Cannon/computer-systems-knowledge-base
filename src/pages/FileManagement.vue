@@ -154,6 +154,57 @@ const asciiDataTwo = [
     { Character: "~", Decimal: 126, Binary: "01111110" },
     { Character: "DELETE", Decimal: 127, Binary: "01111111" },
 ];
+
+const filePermissionsData = [
+    {
+        Binary: "000",
+        Octal: "0 (0+0+0)",
+        "String Representation": "---",
+        Permissions: "No Permissions",
+    },
+    {
+        Binary: "001",
+        Octal: "1 (0+0+1)",
+        "String Representation": "--x",
+        Permissions: "Execute",
+    },
+    {
+        Binary: "010",
+        Octal: "2 (0+2+0)",
+        "String Representation": "-w-",
+        Permissions: "Write",
+    },
+    {
+        Binary: "011",
+        Octal: "3 (0+2+1)",
+        "String Representation": "-wx",
+        Permissions: "Write + Execute",
+    },
+    {
+        Binary: "100",
+        Octal: "4 (4+0+0)",
+        "String Representation": "r--",
+        Permissions: "Read",
+    },
+    {
+        Binary: "101",
+        Octal: "5 (4+0+1)",
+        "String Representation": "r-x",
+        Permissions: "Read + Execute",
+    },
+    {
+        Binary: "110",
+        Octal: "6 (4+2+0)",
+        "String Representation": "rw-",
+        Permissions: "Read + Write",
+    },
+    {
+        Binary: "111",
+        Octal: "7 (4+2+1)",
+        "String Representation": "rwx",
+        Permissions: "Read + Write + Execute",
+    },
+];
 </script>
 
 <template>
@@ -280,6 +331,11 @@ const asciiDataTwo = [
                 >
             </p>
 
+            <p>
+                The path will break if the files or folders contained in it are
+                renamed, moved or deleted.
+            </p>
+
             <h4 class="h3">Relative Path</h4>
 
             <p>
@@ -338,7 +394,7 @@ const asciiDataTwo = [
             </p>
         </InfoBox>
 
-        <h4 class="h3">File Locking</h4>
+        <h4 class="h3" id="file-locking">File Locking</h4>
 
         <p>
             A mechanism that prevents multiple users or processes from editing
@@ -397,8 +453,36 @@ const asciiDataTwo = [
 
         <p>
             NTFS extends this basic set to include a lot more flags and
-            features.
+            features. File permissions on Windows operating systems are managed
+            using a combination of these attributes.
         </p>
+
+        <h5 class="h4">Unix-style Permissions</h5>
+
+        <p>
+            MacOS and Linux distributions use Unix-style permissions where files
+            are assigned a digit representing one of up to eight sets of
+            permissions. The higher the number, the more privileges a user group
+            is allowed.
+        </p>
+
+        <InfoBox label="User Categories and File Permissions">
+            <p class="!mt-0">
+                There are three categories of user (owner, group, other) while
+                there are three types of permissions (read, write, execute).
+                Each user category is assigned a permission, usually using the
+                octal representation, per file, leading to a 3-digit permission
+                sequence.
+            </p>
+
+            <p class="!mb-0">
+                Therefore, a permission sequence of 755 means that the owner of
+                that file has full permissions while the groups and other users
+                can only read or execute it.
+            </p>
+        </InfoBox>
+
+        <Table :data="filePermissionsData" monospaced />
 
         <h4 class="h3">File Sizes</h4>
 

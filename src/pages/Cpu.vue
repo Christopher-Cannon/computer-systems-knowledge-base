@@ -553,11 +553,3 @@ const prevNextNavData = {
         <PrevNextNav :data="prevNextNavData" />
     </section>
 </template>
-
-<style scoped>
-@media (min-width: 1280px) {
-    .grid-col-2 {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-</style>

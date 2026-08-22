@@ -202,6 +202,18 @@ const systemData = [
             Examples include Windows Server and Linux with Samba.
         </p>
 
+        <p>
+            A concern that arises when multiple users have access to the same
+            resources is what happens if two or more users try to open the same
+            file. The common solution is to allow the first user the ability to
+            modify the document while other users can only read it. This is
+            known as
+            <a href="/file-management#file-locking" class="link"
+                >file locking</a
+            >
+            and helps prevent accidental file corruption.
+        </p>
+
         <ImageFigure
             src="/public/images/operating systems/server os diagram.avif"
             alt="A visualisation of how a computer network interacts with a server-based OS."
