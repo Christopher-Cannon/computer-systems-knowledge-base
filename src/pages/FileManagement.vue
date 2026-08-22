@@ -500,9 +500,9 @@ const fileSizeDecimalData = [
         <p>
             MacOS and Linux distributions use Unix-style permissions where files
             are assigned a digit representing one of up to eight sets of
-            permissions. The higher the number, the more privileges a user group
-            is allowed. There are three categories of user (owner, group, other)
-            while there are three types of permissions (read, write, execute).
+            permissions. There are three categories of user (owner, group,
+            other) while there are three types of permissions (read, write,
+            execute).
         </p>
 
         <Table :data="filePermissionsData" monospaced />
