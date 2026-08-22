@@ -60,21 +60,6 @@ const singleMultiProcessorData = [
     },
 ];
 
-const computerData = [
-    {
-        src: "/public/images/operating systems/laptop.avif",
-        alt: "A generic laptop computer.",
-    },
-    {
-        src: "/public/images/operating systems/microcontroller.avif",
-        alt: "A car engine microcontroller.",
-    },
-    {
-        src: "/public/images/operating systems/servers.avif",
-        alt: "Rows of server racks in a data centre.",
-    },
-];
-
 const systemData = [
     {
         src: "/public/images/software/windows.avif",
@@ -164,8 +149,6 @@ const systemData = [
             </li>
         </ul>
 
-        <!-- <ImageGallery :data="computerData" col3 /> -->
-
         <MinorHeading id="single-and-multi-user"
             >Single and Multi User</MinorHeading
         >
@@ -175,7 +158,7 @@ const systemData = [
             several at once.
         </p>
 
-        <Table :data="singleMultiUserData" />
+        <Table :data="singleMultiUserData" align="left" />
 
         <MinorHeading id="single-and-multi-processor"
             >Single and Multi Processor</MinorHeading
@@ -186,7 +169,7 @@ const systemData = [
             the same time.
         </p>
 
-        <Table :data="singleMultiProcessorData" />
+        <Table :data="singleMultiProcessorData" align="left" />
 
         <MinorHeading id="multi-tasking">Multi-tasking</MinorHeading>
 
@@ -291,6 +274,5 @@ const systemData = [
 
 .image-link > img {
     border-radius: var(--radius-md);
-    /* height: 300px; */
 }
 </style>
