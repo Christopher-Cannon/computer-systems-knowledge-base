@@ -501,24 +501,9 @@ const fileSizeDecimalData = [
             MacOS and Linux distributions use Unix-style permissions where files
             are assigned a digit representing one of up to eight sets of
             permissions. The higher the number, the more privileges a user group
-            is allowed.
+            is allowed. There are three categories of user (owner, group, other)
+            while there are three types of permissions (read, write, execute).
         </p>
-
-        <InfoBox label="User Categories and File Permissions">
-            <p class="!mt-0">
-                There are three categories of user (owner, group, other) while
-                there are three types of permissions (read, write, execute).
-                Each user category is assigned a permission, usually using the
-                octal representation, per file, leading to a 3-digit permission
-                sequence.
-            </p>
-
-            <p class="!mb-0">
-                Therefore, a permission sequence of 755 means that the owner of
-                that file has full permissions while the groups and other users
-                can only read or execute it.
-            </p>
-        </InfoBox>
 
         <Table :data="filePermissionsData" monospaced />
 
