@@ -205,6 +205,44 @@ const filePermissionsData = [
         Permissions: "Read + Write + Execute",
     },
 ];
+
+const fileSizeBinaryData = [
+    {
+        "Binary Name": "Kibibyte (KiB)",
+        Binary: "1,024",
+    },
+    {
+        "Binary Name": "Mebibyte (MiB)",
+        Binary: "1,048,576",
+    },
+    {
+        "Binary Name": "Gibibyte (GiB)",
+        Binary: "1,073,741,824",
+    },
+    {
+        "Binary Name": "Tebibyte (TiB)",
+        Binary: "1,099,511,627,776",
+    },
+];
+
+const fileSizeDecimalData = [
+    {
+        "Decimal Name": "Kilobyte (KB)",
+        Decimal: "1,000",
+    },
+    {
+        "Decimal Name": "Megabyte (MB)",
+        Decimal: "1,000,000",
+    },
+    {
+        "Decimal Name": "Gigabyte (GB)",
+        Decimal: "1,000,000,000",
+    },
+    {
+        "Decimal Name": "Terabyte (TB)",
+        Decimal: "1,000,000,000,000",
+    },
+];
 </script>
 
 <template>
@@ -504,6 +542,20 @@ const filePermissionsData = [
             many people still say “KB” when they really mean “KiB.”
         </p>
 
+        <div class="table-columns">
+            <Table :data="fileSizeBinaryData" monospaced />
+            <Table :data="fileSizeDecimalData" monospaced />
+        </div>
+
+        <InfoBox class="!mt-[1rem]">
+            <p class="!my-0">
+                This means that a HDD advertised with a capacity of 500GB
+                contains only 5,000,000,000 bytes instead of 5,368,709,120 bytes
+                since the decimal system is being used, which is why the drive
+                reports a capacity of 465GB in the operating system.
+            </p>
+        </InfoBox>
+
         <MinorHeading id="ascii">ASCII</MinorHeading>
 
         <p>
@@ -541,6 +593,10 @@ const filePermissionsData = [
         display: flex;
         justify-content: space-between;
         gap: 1rem;
+    }
+
+    .table-columns > .table-wrapper {
+        margin: 1rem 0;
     }
 }
 </style>
