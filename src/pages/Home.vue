@@ -52,7 +52,7 @@ import SideImage from "../components/common/SideImage.vue";
                                     >Peripherals</router-link
                                 >
                             </li>
-                            <li>
+                            <li style="display:none">
                                 <router-link
                                     to="/hardware-overview#development-history"
                                     class="link"
