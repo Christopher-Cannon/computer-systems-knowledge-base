@@ -146,38 +146,37 @@ const prevNextNavData = {
         <h4 class="h3">Main Memory</h4>
 
         <p>
-            A type of DRAM used for temporary storage of bulk data that will be
-            lost unless powered. Organised into pages of around 4KB in size that
-            are allocated to processes by the operating system as required.
+            Often referred to as just "RAM", this is a type of DRAM used for
+            temporary storage of bulk data that will be lost unless powered.
+            Organised into pages of around 4KB in size that are allocated to
+            processes by the operating system as required.
         </p>
 
         <p>
             Double data rate (DDR) memory can transfer data on the rising and
-            falling edge of the system clock.
+            falling edge of the system clock for better efficiency.
         </p>
+
+        <ImageFigure
+            src="/public/images/memory/single data rate.png"
+            alt="A diagram showing how single data rate memory only transfers data on the rising of the system clock."
+            caption="Data is only transferred on the rising of the system clock."
+        />
+
+        <ImageFigure
+            src="/public/images/memory/double data rate.png"
+            alt="A diagram showing how double data rate memory transfers data on the rising and falling of the system clock."
+            caption="Data is transferred on the rising and falling of the system clock."
+        />
 
         <Table :data="ddrData" />
 
         <p>
-            Main memory contains two primary areas for storing data: the stack
-            and the heap.
+            Main memory contains two primary areas for storing data: the heap
+            and the stack.
         </p>
 
         <div class="row">
-            <div>
-                <h5 class="h4">The Stack</h5>
-
-                <p>
-                    A region of memory used for short-lived and automatically
-                    managed data like function parameters, local variables and
-                    return addresses that specify where to go after executing a
-                    function. Follows a last in, first out structure, much like
-                    a stack of plates.
-                </p>
-
-                <p>The stack grows from the highest memory address down.</p>
-            </div>
-
             <div>
                 <h5 class="h4">The Heap</h5>
 
@@ -191,11 +190,26 @@ const prevNextNavData = {
 
                 <p>The heap grows from the lowest memory address up.</p>
             </div>
+
+            <div>
+                <h5 class="h4">The Stack</h5>
+
+                <p>
+                    A region of memory used for short-lived and automatically
+                    managed data like function parameters, local variables and
+                    return addresses that specify where to go after executing a
+                    function. Follows a last in, first out structure, much like
+                    a stack of plates.
+                </p>
+
+                <p>The stack grows from the highest memory address down.</p>
+            </div>
         </div>
 
         <ImageFigure
-            src="/public/images/memory/heap stack diagram.avif"
+            src="/public/images/memory/stack and heap.png"
             alt="Graphic showing how the heap and stack grow in main memory."
+            caption="The '0x' prefix is another way to denote a hexadecimal number."
         />
 
         <h4 class="h3">Virtual Memory</h4>
