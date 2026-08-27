@@ -95,6 +95,35 @@ const prevNextNavData = {
             </li>
         </ul>
 
+        <p>
+            The below diagram compares the size of cache on a typical modern CPU
+            against RAM.
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>A:</b>
+                512KB level 1 cache.
+            </li>
+            <li>
+                <b>B:</b>
+                4MB level 2 cache.
+            </li>
+            <li>
+                <b>C:</b>
+                32MB level 3 cache.
+            </li>
+            <li>
+                <b>D:</b>
+                8GB main memory.
+            </li>
+        </ul>
+
+        <ImageFigure
+            src="/public/images/memory/cache ram comparison.png"
+            alt="Size comparison between L1, L2, L3 cache and RAM."
+        />
+
         <h4 class="h3" id="cpu-cache">CPU Cache</h4>
 
         <p>
@@ -111,17 +140,21 @@ const prevNextNavData = {
                 Closest to the CPU cores with each core usually getting its own
                 dedicated L1 cache. Very small (in the tens of
                 <abbr title="KiloBytes">KB</abbr>) but the fastest to access.
+                Often split in half with each side responsible for storing data
+                and instructions respectively.
             </li>
             <li>
                 <b>L2:</b>
                 Larger (hundreds of KB to several
                 <abbr title="MegaBytes">MB</abbr>), but slower than L1 cache.
-                May be shared between several CPU cores.
+                May be shared between several CPU cores or dedicated to just
+                one.
             </li>
             <li>
                 <b>L3:</b>
                 Much larger (tens or hundreds of MB) and slower than L2 cache,
-                but is shared by all CPU cores and reduces need to access RAM.
+                but is shared by all CPU cores and reduces the need to access
+                RAM.
             </li>
         </ul>
 
