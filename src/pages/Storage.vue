@@ -130,27 +130,34 @@ const prevNextNavData = {
             </p>
         </SideImage>
 
-        <h5 class="h4">How Data is Stored</h5>
+        <SideImage
+            src="/public/images/storage/hdd platter visualisation.png"
+            alt="A diagram showing how data is stored on a hard disk platter."
+            class="mt-[2rem]"
+        >
+            <h5 class="h4">How Data is Stored</h5>
 
-        <p>
-            Platters are divided into concentric circles called tracks, and each
-            track is split into sectors (the smallest addressable unit, usually
-            512 bytes or 4 KB). Data is stored by magnetising tiny regions of
-            the platter in different directions to represent 0s and 1s. Each
-            platter surface has its own read/write head, stacked on an actuator
-            arm.
-        </p>
+            <p>
+                Platters are divided into concentric circles called tracks, and
+                each track is split into sectors (the smallest addressable unit,
+                usually 512 bytes or 4 KB). Data is stored by magnetising tiny
+                regions of the platter in different directions to represent 0s
+                and 1s. Each platter surface has its own read/write head,
+                stacked on an actuator arm.
+            </p>
 
-        <h5 class="h4">How Data is Accessed</h5>
+            <h5 class="h4">How Data is Accessed</h5>
 
-        <p>
-            Platters spin at high speed (such as 5,400 or 7,200 RPM). The
-            actuator arm moves the read/write head across the platter to the
-            correct track. The head senses the orientation of magnetised spots
-            when reading, otherwise it changes the magnetic polarity of regions
-            to encode data. HDDs can jump between files by moving the head and
-            waiting for the right platter sector to spin underneath.
-        </p>
+            <p>
+                Platters spin at high speed (such as 5,400 or 7,200 RPM). The
+                actuator arm moves the read/write head across the platter to the
+                correct track. The head senses the orientation of magnetised
+                spots when reading, otherwise it changes the magnetic polarity
+                of regions to encode data. HDDs can jump between files by moving
+                the head and waiting for the right platter sector to spin
+                underneath.
+            </p>
+        </SideImage>
 
         <h5 class="h4">Performance Factors</h5>
 
@@ -197,32 +204,40 @@ const prevNextNavData = {
             </p>
         </SideImage>
 
-        <h5 class="h4">How Data is Stored</h5>
+        <SideImage
+            src="/public/images/storage/ssd grid visualisation.png"
+            alt="A diagram showing how data is stored on a solid state drive."
+            class="mt-[2rem]"
+        >
+            <h5 class="h4">How Data is Stored</h5>
 
-        <p>
-            SSDs use NAND flash, made of millions of transistors arranged in
-            grids. Each memory cell stores a charge (or lack of charge) in an
-            insulated gate to determine whether the bit is a 0 or 1. Data is
-            organised into pages (e.g. 4-16 KB each), grouped into blocks
-            (hundreds of pages).
-        </p>
+            <p>
+                SSDs use NAND flash, made of millions of transistors arranged in
+                grids. Each memory cell stores a charge (or lack of charge) in
+                an insulated gate to determine whether the bit is a 0 or 1. Data
+                is organised into pages (e.g. 4-16 KB each), grouped into blocks
+                (hundreds of pages).
+            </p>
 
-        <h5 class="h4">How Data is Accessed</h5>
+            <h5 class="h4">How Data is Accessed</h5>
 
-        <p>
-            The controller can read/write any page instantly as there are no
-            moving parts. Flash memory can't overwrite existing data directly.
-            To write new data:
-        </p>
+            <p>
+                The controller can read/write any page instantly as there are no
+                moving parts. Flash memory can't overwrite existing data
+                directly. To write new data:
+            </p>
 
-        <ol class="list numbered">
-            <li>Data is written to a free page.</li>
-            <li>If updating existing data, the old page is marked invalid.</li>
-            <li>
-                Entire blocks must eventually be erased and rewritten during
-                garbage collection.
-            </li>
-        </ol>
+            <ol class="list numbered">
+                <li>Data is written to a free page.</li>
+                <li>
+                    If updating existing data, the old page is marked invalid.
+                </li>
+                <li>
+                    Entire blocks must eventually be erased and rewritten during
+                    garbage collection.
+                </li>
+            </ol>
+        </SideImage>
 
         <h5 class="h4">Performance Factors</h5>
 
