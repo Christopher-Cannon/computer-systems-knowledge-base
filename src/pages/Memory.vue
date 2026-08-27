@@ -225,28 +225,41 @@ const prevNextNavData = {
         </p>
 
         <p>
-            Thrashing can occur if the system spends more time swapping between
-            RAM and disk than executing processes. This is made worse by
-            fragmented file systems, slow hard drives or simply a lack of RAM.
+            <a
+                href="https://kindatechnical.com/operating-systems/thrashing-causes-detection-and-prevention.html"
+                class="link"
+                target="_blank"
+                >Thrashing</a
+            >
+            can occur if the system spends more time swapping between RAM and
+            disk than executing processes. This is made worse by fragmented file
+            systems, slow hard drives or simply a lack of RAM.
         </p>
 
         <h4 class="h3">Direct Memory Access</h4>
 
         <p>
             Allows hardware devices, such as disk controllers, sound cards and
-            network adapters, to read or write to memory directly without
-            needing the CPU's assistance. This speeds up data transfers and
-            allows the CPU to concentrate on other tasks without constantly
-            being interrupted.
+            network adapters, to read or write to memory directly with little
+            assistance required from the CPU. This speeds up data transfers and
+            allows the CPU to concentrate on other tasks without having to focus
+            entirely on transferring data.
+        </p>
+
+        <h5 class="h4">Cycle Stealing</h5>
+
+        <p>
+            A similar technique to DMA known as cycle stealing allows peripheral
+            devices to access system memory without fully interrupting the CPU.
+            It uses idle CPU time to transfer data between memory and a device,
+            so in a sense it "steals clock cycles". It is more efficient than an
+            interrupt-based approach which would fully divert the CPU's
+            attention.
         </p>
 
         <p>
-            It involves a technique known as cycle stealing that allows
-            peripheral devices to access system memory without fully
-            interrupting the CPU. It uses idle CPU time to transfer data between
-            memory and a device, so in a sense it "steals clock cycles". It is
-            more efficient than an interrupt-based approach which would fully
-            divert the CPU's attention.
+            It is hard to achieve in modern systems since CPUs are designed to
+            minimise downtime as much as possible.
         </p>
 
         <MinorHeading id="read-only-memory">Read-Only Memory</MinorHeading>
