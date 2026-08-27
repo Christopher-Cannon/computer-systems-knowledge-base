@@ -124,6 +124,12 @@ const cpuGlossary = [
             "Holds the current instruction to be decoded and executed.",
     },
     {
+        Term: "SP",
+        "Stands For": "Stack Pointer",
+        Description:
+            "Points to the top of the stack in memory.",
+    },
+    {
         Term: "MAR",
         "Stands For": "Memory Address Register",
         Description:
@@ -153,6 +159,11 @@ const memoryGlossary = [
         Description: "Main system memory.",
     },
     {
+        Term: "SDRAM",
+        "Stands For": "Synchronous Dynamic RAM",
+        Description: "RAM that syncs transfers with the system clock.",
+    },
+    {
         Term: "DDR",
         "Stands For": "Double Data Rate",
         Description:
@@ -179,14 +190,6 @@ const memoryGlossary = [
         Term: "EEPROM",
         "Stands For": "Electronically Erasable ROM",
         Description: "Data can be erased electronically for re-programming.",
-    },
-];
-
-const softwareGlossary = [
-    {
-        Term: "OS",
-        "Stands For": "Operating System",
-        Description: "",
     },
 ];
 
@@ -243,10 +246,6 @@ const fileFormatsGlossary = [
         <MinorHeading id="memory">Memory</MinorHeading>
 
         <Table :data="memoryGlossary" align="left" />
-
-        <MinorHeading id="software">Software</MinorHeading>
-
-        <Table :data="softwareGlossary" align="left" />
 
         <MinorHeading id="file-formats">File Formats</MinorHeading>
 
